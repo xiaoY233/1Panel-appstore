@@ -1,0 +1,19 @@
+name: OpenTDP
+tags:
+  - 实用工具
+title: 可以跨平台部署的云资源管理面板
+description: 可以跨平台部署的云资源管理面板
+additionalProperties:
+  key: opentdp
+  name: OpenTDP
+  tags:
+    - Tool
+  shortDescZh: 可以跨平台部署的云资源管理面板
+  shortDescEn: Cloud resource management dashboard for cross-platform deployment
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://docs.opentdp.org
+  github: https://github.com/opentdp/tdp-cloud
+  document: https://docs.opentdp.org

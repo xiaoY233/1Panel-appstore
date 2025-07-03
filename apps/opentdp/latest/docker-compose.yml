@@ -1,0 +1,16 @@
+services:
+  opentdp:
+    image: rehiy/tdp-cloud:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:7800"
+    volumes:
+      - ./data/conf:/etc/tdp-cloud
+      - ./data/data:/var/lib/tdp-cloud
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
