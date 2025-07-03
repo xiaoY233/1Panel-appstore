@@ -1,0 +1,19 @@
+name: TinyFileManager
+tags:
+  - 建站
+title: 一个基于 PHP 的轻量级文件管理器
+description: 一个基于 PHP 的轻量级文件管理器
+additionalProperties:
+  key: tinyfilemanager
+  name: TinyFileManager
+  tags:
+    - Website
+  shortDescZh: 一个基于 PHP 的轻量级文件管理器
+  shortDescEn: A lightweight file manager based on PHP
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://tinyfilemanager.github.io
+  github: https://github.com/prasathmani/tinyfilemanager
+  document: https://github.com/prasathmani/tinyfilemanager/wiki

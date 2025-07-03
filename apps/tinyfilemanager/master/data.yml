@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: "40304"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "./data/index.php"
+      disabled: true
+      envKey: INDEX_PHP_PATH
+      labelEn: Index.php Path
+      labelZh: Index.php 路径
+      required: true
+      type: text
