@@ -1,0 +1,19 @@
+name: Vertex
+tags:
+  - 工具
+title: 适用于 PT 玩家的追剧刷流一体化综合管理工具
+description: 适用于 PT 玩家的追剧刷流一体化综合管理工具
+additionalProperties:
+  key: vertex
+  name: Vertex
+  tags:
+    - Tool
+  shortDescZh: 适用于 PT 玩家的追剧刷流一体化综合管理工具
+  shortDescEn: An all-in-one comprehensive management tool for PT players
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://wiki.vertex.icu
+  github: https://github.com/vertex-app/vertex
+  document: https://wiki.vertex.icu

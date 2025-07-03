@@ -1,0 +1,20 @@
+services:
+  vertex:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    volumes:
+      - "${DATA_PATH}:/vertex"
+    environment:
+      - TZ=Asia/Shanghai
+      - PORT=${PANEL_APP_PORT_HTTP}
+    image: lswl/vertex:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
