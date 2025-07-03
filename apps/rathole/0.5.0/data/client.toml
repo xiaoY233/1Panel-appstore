@@ -1,0 +1,13 @@
+[client]
+remote_addr = "127.0.0.1:7333"
+default_token = "puKAproP46cofREn3sTa"
+
+[client.transport]
+type = "tls"
+[client.transport.tls]
+trusted_root = "tls/rootCA.crt"
+hostname = "localhost"
+
+[client.services.my_nas_ssh]
+token = "use_a_secret_that_only_you_know" # 必须与服务器相同以通过验证
+local_addr = "127.0.0.1:22" # 需要被转发的服务的地址

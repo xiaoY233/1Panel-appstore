@@ -1,0 +1,33 @@
+additionalProperties:
+  formFields:
+    - default: 7333
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port (determined by the configuration file)
+      labelZh: 端口 (由配置文件决定)
+      required: true
+      type: number
+    - default: "./data/server.toml"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: select
+      values:
+        - label: Client Config
+          value: ./data/client.toml
+        - label: Server Config
+          value: ./data/server.toml
+    - default: "server"
+      edit: true
+      envKey: SERVICE_MODE
+      labelEn: Service Mode
+      labelZh: 服务模式
+      required: true
+      type: select
+      values:
+        - label: Server
+          value: server
+        - label: Client
+          value: client

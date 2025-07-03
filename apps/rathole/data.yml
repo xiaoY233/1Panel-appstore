@@ -1,0 +1,19 @@
+name: Rathole
+tags:
+  - 实用工具
+title: 安全、稳定、高性能的内网穿透工具
+description: 安全、稳定、高性能的内网穿透工具
+additionalProperties:
+  key: rathole
+  name: Rathole
+  tags:
+    - Tool
+  shortDescZh: 安全、稳定、高性能的内网穿透工具
+  shortDescEn: A secure, stable and high-performance reverse proxy for NAT traversal
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/rapiz1/rathole
+  github: https://github.com/rapiz1/rathole
+  document: https://github.com/rapiz1/rathole/blob/main/README-zh.md

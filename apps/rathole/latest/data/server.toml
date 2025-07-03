@@ -1,0 +1,13 @@
+[server]
+bind_addr = "0.0.0.0:7333"
+default_token = "puKAproP46cofREn3sTa"
+
+[server.transport]
+type = "tls"
+[server.transport.tls]
+pkcs12 = "tls/identity.pfx"
+pkcs12_password = "1234"
+
+[server.services.my_nas_ssh]
+token = "use_a_secret_that_only_you_know" # 用于验证的 token
+bind_addr = "0.0.0.0:5202" # `5202` 配置了将 `my_nas_ssh` 暴露给互联网的端口
