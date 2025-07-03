@@ -1,0 +1,22 @@
+ZXname: Qexo
+tags:
+  - 建站
+title: 快速、强大、美观的在线静态博客编辑器
+description: 快速、强大、美观的在线静态博客编辑器
+additionalProperties:
+  key: qexo
+  name: Qexo
+  tags:
+    - Website
+  shortDescZh: 快速、强大、美观的在线静态博客编辑器
+  shortDescEn: A fast, powerful & beautiful online static blog editor
+  description:
+    zh: Qexo 是一个快速、强大、美观的在线静态博客编辑器。
+    en: Qexo is a fast, powerful, and beautiful online static blog editor. 
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.oplog.cn/qexo/
+  github: https://github.com/Qexo/Qexo
+  document: https://www.oplog.cn/qexo/start.html
