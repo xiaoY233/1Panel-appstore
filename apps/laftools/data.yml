@@ -1,0 +1,19 @@
+name: 秒达工具箱
+tags:
+  - 开发工具
+title: 免费安全的一键式呼出工具箱
+description: 免费安全的一键式呼出工具箱
+additionalProperties:
+  key: laftools
+  name: 秒达工具箱
+  tags:
+    - DevTool
+  shortDescZh: 免费安全的一键式呼出工具箱
+  shortDescEn: Free and Secure One-Click Callout Toolkit
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://mdgjx.com
+  github: https://github.com/work7z/MDGJX
+  document: https://github.com/work7z/MDGJX

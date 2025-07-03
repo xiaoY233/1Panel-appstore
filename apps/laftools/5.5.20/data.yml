@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: "40306"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "CN"
+      edit: true
+      envKey: LAF_REGION
+      labelEn: LAF Region
+      labelZh: 地区
+      required: true
+      type: text
+    - default: "zh_CN"
+      edit: true
+      envKey: APP_LANG
+      labelEn: App Language
+      labelZh: 应用语言
+      required: true
+      type: text
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
