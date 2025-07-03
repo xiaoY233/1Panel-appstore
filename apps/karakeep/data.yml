@@ -1,0 +1,21 @@
+name: karakeep
+tags:
+  - 书签管理
+  - AI工具
+title: karakeep书签管理器
+description: 原名Hoarder，一个自托管的全能书签管理工具，支持保存链接、笔记和图片，具有AI自动标签功能。
+additionalProperties:
+  key: karakeep
+  name: karakeep
+  tags:
+    - Tool
+    - AI
+  shortDescZh: 智能书签和笔记管理工具
+  shortDescEn: Smart Bookmark and Note Manager
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://karakeep.app/
+  github: https://github.com/karakeep-app/karakeep
+  document: https://docs.karakeep.app/

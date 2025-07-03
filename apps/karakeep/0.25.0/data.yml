@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: 30012
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "ky0QvBQNLBQFxY6OurQV/6Wg2KjHqS0YSktBRPJw23QWqq5m"
+      edit: true
+      envKey: NEXTAUTH_SECRET
+      labelEn: NextAuth Secret
+      labelZh: NextAuth密钥
+      required: true
+      type: text
+    - default: "a+BQCRpK74QuCSqZPhJ6hDeryTn/1rFKhwuc5DC19hOrI8VR"
+      edit: true
+      envKey: MEILI_MASTER_KEY
+      labelEn: Meilisearch Master Key
+      labelZh: Meilisearch主密钥
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: OPENAI_API_KEY
+      labelEn: OpenAI API Key
+      labelZh: OpenAI API 密钥
+      required: false
+      type: text
