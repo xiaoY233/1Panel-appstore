@@ -1,0 +1,17 @@
+services:
+  mi-gpt-gui:
+    image: "lmk123/migpt-server:1.12.0"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:36592"
+    command: --user ${LOGIN_USER} --pwd ${LOGIN_PASSWORD}
+    labels:
+      createdBy: "Apps"
+
+
+networks:
+  1panel-network:
+    external: true

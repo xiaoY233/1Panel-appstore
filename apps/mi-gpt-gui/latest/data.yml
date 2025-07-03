@@ -1,0 +1,28 @@
+additionalProperties:
+  formFields:
+    - default: "40305"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "admin"
+      edit: true
+      envKey: LOGIN_USER
+      labelEn: Username
+      labelZh: 用户名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "password"
+      edit: true
+      envKey: LOGIN_PASSWORD
+      labelEn: Password
+      labelZh: 密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

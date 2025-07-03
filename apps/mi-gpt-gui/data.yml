@@ -1,0 +1,19 @@
+name: MiGPT GUI
+tags:
+  - AI / 大模型
+title: 安全、快速的给你的小爱音箱接入人工智能
+description: 安全、快速的给你的小爱音箱接入人工智能
+additionalProperties:
+  key: mi-gpt-gui
+  name: MiGPT GUI
+  tags:
+    - AI
+  shortDescZh: 安全、快速的给你的小爱音箱接入人工智能
+  shortDescEn: Securely and Quickly Access Artificial Intelligence for Xiaomi Speaker
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://migptgui.com
+  github: https://github.com/lmk123/migpt-cli
+  document: https://migptgui.com
