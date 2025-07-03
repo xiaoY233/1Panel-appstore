@@ -1,0 +1,106 @@
+additionalProperties:
+  formFields:
+    - default: mysql
+      envKey: PANEL_DB_TYPE
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: apps
+      values:
+        - label: MySQL
+          value: mysql
+        - label: LocalMySQL
+          value: localmysql
+      child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        labelEn: Database Service
+        labelZh: 数据库服务
+        required: true
+        type: service
+    - default: mysql_root_password
+      envKey: PANEL_DB_ROOT_PASSWORD
+      labelEn: Database root password
+      labelZh: 数据库 root 密码
+      random: false
+      edit: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: admin@localhost.com
+      edit: true
+      envKey: ADMIN_EMAIL
+      labelEn: Admin email
+      labelZh: 管理员邮箱
+      required: true
+      type: text
+    - default: seafile
+      edit: true
+      envKey: ADMIN_PASSWORD
+      labelEn: Admin password
+      labelZh: 管理员密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 40130
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: memcached
+      envKey: MEMCACHED_TYPE
+      labelEn: Memcached Service
+      labelZh: Memcached 服务
+      required: true
+      type: apps
+      values:
+        - label: Memcached
+          value: memcached
+        - label: LocalMemcached
+          value: localmemcached
+      child:
+        default: ""
+        envKey: MEMCACHED_HOST
+        labelEn: Memcached Service
+        labelZh: Memcached 服务
+        required: true
+        type: service
+    - default: localhost.com
+      edit: true
+      envKey: SERVER_HOSTNAME
+      labelEn: Server hostname (Domain or IP)
+      labelZh: 服务端主机名 (域名 或 IP)
+      required: true
+      type: text
+  #- default: 40130
+#  edit: true
+
+#  envKey: PANEL_APP_PORT_HTTPS
+
+#  labelEn: HTTPS Port
+
+#  labelZh: HTTPS 端口
+
+#  required: true
+
+#  rule: paramPort
+
+#  type: number

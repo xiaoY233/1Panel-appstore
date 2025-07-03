@@ -1,0 +1,19 @@
+name: Seafile
+tags:
+  - 工具
+title: 具有隐私保护和团队合作功能的开源云存储系统
+description: 具有隐私保护和团队合作功能的开源云存储系统
+additionalProperties:
+  key: seafile
+  name: Seafile
+  tags:
+    - Tool
+  shortDescZh: 具有隐私保护和团队合作功能的开源云存储系统
+  shortDescEn: An open source cloud storage system with privacy protection and teamwork features
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://www.seafile.com
+  github: https://github.com/haiwen/seafile
+  document: https://manual.seafile.com
