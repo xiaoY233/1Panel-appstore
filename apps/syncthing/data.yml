@@ -1,0 +1,19 @@
+name: Syncthing
+tags:
+  - 工具
+title: 开源的连续文件同步程序
+description: 开源的连续文件同步程序
+additionalProperties:
+  key: syncthing
+  name: Syncthing
+  tags:
+    - Tool
+  shortDescZh: 开源的连续文件同步程序
+  shortDescEn: Open Source Continuous File Synchronization
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://syncthing.net
+  github: https://github.com/syncthing/syncthing
+  document: https://docs.syncthing.net
