@@ -1,0 +1,19 @@
+name: nvPress
+tags:
+  - 工具
+title: 一个完全由 Javascript 驱动的内容管理程序
+description: 一个完全由 Javascript 驱动的内容管理程序
+additionalProperties:
+  key: nvpress
+  name: nvPress
+  tags:
+    - Tool
+  shortDescZh: 一个完全由 Javascript 驱动的内容管理程序
+  shortDescEn: A content management program driven entirely by Javascript
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://docs.panda-studio.cn:8282/docs/post-19/page-100
+  github: https://docs.panda-studio.cn:8282/docs/post-19/page-100
+  document: https://docs.panda-studio.cn:8282/docs/post-19/page-100
