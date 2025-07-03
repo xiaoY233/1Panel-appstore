@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: 40218
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: '192.168.31.254:5254'
+      edit: true
+      envKey: ALIST_HOST
+      labelEn: Alist Service Address
+      labelZh: Alist 服务地址
+      required: true
+      type: text
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
