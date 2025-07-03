@@ -1,0 +1,19 @@
+name: Chevereto
+tags:
+  - 建站
+title: 一个图像托管平台
+description: 一个图像托管平台
+additionalProperties:
+  key: chevereto
+  name: Chevereto
+  tags:
+    - Website
+  shortDescZh: 一个图像托管平台
+  shortDescEn: An image hosting platform
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://chevereto.com
+  github: https://github.com/chevereto/chevereto
+  document: https://chevereto.com/docs

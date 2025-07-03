@@ -1,0 +1,104 @@
+additionalProperties:
+  formFields:
+    - child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        required: true
+        type: service
+      default: mysql
+      envKey: PANEL_DB_TYPE
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: apps
+      values:
+        - label: MySQL
+          value: mysql
+    - default: "chevereto"
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "chevereto"
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "chevereto"
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "40328"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "2G"
+      edit: true
+      envKey: CHEVERETO_MAX_POST_SIZE
+      labelEn: Max Post Size
+      labelZh: 最大 POST 大小
+      required: true
+      type: text
+    - default: "2G"
+      edit: true
+      envKey: CHEVERETO_MAX_UPLOAD_SIZE
+      labelEn: Max Upload Size
+      labelZh: 最大上传大小
+      required: true
+      type: text
+    - default: "server"
+      disabled: true
+      envKey: CHEVERETO_SERVICING
+      labelEn: Servicing
+      labelZh: 服务模式
+      required: true
+      type: text
+    - default: "./data/images"
+      edit: true
+      envKey: CHEVERETO_IMAGES_PATH
+      labelEn: Images Path
+      labelZh: 图片路径
+      required: true
+      type: text
+    - default: "hostname.com"
+      edit: true
+      envKey: CHEVERETO_HOSTNAME
+      labelEn: Hostname
+      labelZh: 主机名
+      required: true
+      type: text
+    - default: "/"
+      edit: true
+      envKey: CHEVERETO_HOSTNAME_PATH
+      labelEn: Hostname Path
+      labelZh: 主机名路径
+      required: true
+      type: text
+    - default: "X-Real-IP"
+      edit: true
+      envKey: CHEVERETO_HEADER_CLIENT_IP
+      labelEn: Client IP Header
+      labelZh: 客户端 IP 标头
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: ENCRYPTION_KEY
+      labelEn: Encryption Key
+      labelZh: 加密密钥
+      required: false
+      type: text
