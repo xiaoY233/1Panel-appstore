@@ -1,0 +1,20 @@
+additionalProperties:
+  networkMode: bridge
+  formFields:
+    - default: 9118
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Service Port (bridge mode)
+      labelZh: 服务端口（bridge模式）
+      label:
+        en: Service Port (bridge mode)
+        ja: サービスポート（bridgeモード）
+        ms: Port Perkhidmatan (mod bridge)
+        pt-br: Porta de Serviço (modo bridge)
+        ru: Порт сервиса (bridge)
+        ko: 서비스 포트(bridge 모드)
+        zh-Hant: 服務埠（bridge模式）
+        zh: 服务端口（bridge模式）
+      required: true
+      rule: paramPort
+      type: number 

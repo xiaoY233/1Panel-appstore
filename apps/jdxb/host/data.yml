@@ -1,0 +1,20 @@
+additionalProperties:
+  networkMode: host
+  formFields:
+    - default: 9118
+      edit: false
+      envKey: JDxB_PORT
+      labelEn: Service Port (fixed, host mode)
+      labelZh: 服务端口（固定，host模式）
+      label:
+        en: Service Port (fixed, host mode)
+        ja: サービスポート（固定、hostモード）
+        ms: Port Perkhidmatan (tetap, mod host)
+        pt-br: Porta de Serviço (fixa, modo host)
+        ru: Порт сервиса (фиксированный, host)
+        ko: 서비스 포트(고정, host 모드)
+        zh-Hant: 服務埠（固定，host模式）
+        zh: 服务端口（固定，host模式）
+      required: false
+      rule: paramPort
+      type: number 

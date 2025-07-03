@@ -1,0 +1,15 @@
+services:
+  jdxb:
+    image: ionewu/owjdxb
+    container_name: ${CONTAINER_NAME}
+    network_mode: host
+    volumes:
+      - ./store:/data/store
+    devices:
+      - "/dev/net/tun:/dev/net/tun"
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    restart: unless-stopped
+    labels:
+      createdBy: "Apps" 

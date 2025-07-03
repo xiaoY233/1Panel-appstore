@@ -1,0 +1,47 @@
+name: 节点小宝
+
+tags:
+    - 实用工具
+    - 远程管理
+    - 网络加速
+    - 内网穿透
+    - NAS
+    - 路由器
+    - 云存储
+    - 备份
+    - 跨平台
+title: 一站式远程管理与网络加速工具
+description: 节点小宝是一款支持多平台的远程管理与网络加速工具，轻松实现远程访问、内网穿透、NAS/路由/PC管理、相册备份等。
+additionalProperties:
+    key: jdxb
+    name: 节点小宝
+    tags:
+        - Tool
+        - Remote
+        - Network
+        - NAS
+        - Router
+        - Backup
+        - CrossPlatform
+    shortDescZh: 一站式远程管理与网络加速工具，支持多平台和多架构。
+    shortDescEn: All-in-one remote management and network acceleration tool, cross-platform and multi-architecture supported.
+    description:
+        en: All-in-one remote management and network acceleration tool, supporting remote access, NAT traversal, NAS/router/PC management, photo backup, and more. Cross-platform and secure.
+        ja: 多機能リモート管理・ネットワーク加速ツール。リモートアクセス、NAT越え、NAS/ルーター/PC管理、写真バックアップ等をサポート。
+        ms: Alat pengurusan jauh dan pecutan rangkaian serba lengkap, menyokong pelbagai platform dan ciri keselamatan.
+        pt-br: Ferramenta completa de gerenciamento remoto e aceleração de rede, com suporte multiplataforma e multi-arquitetura.
+        ru: Многофункциональный инструмент для удалённого управления и ускорения сети, поддержка разных платформ и архитектур.
+        ko: 원스톱 원격 관리 및 네트워크 가속 도구, 다양한 플랫폼 및 아키텍처 지원.
+        zh-hant: 一站式遠程管理與網絡加速工具，支援多平台和多架構。
+        zh: 节点小宝是一款支持多平台的远程管理与网络加速工具，轻松实现远程访问、内网穿透、NAS/路由/PC管理、相册备份等。
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://iepose.com/jdxb/pc/
+    github: https://github.com/ionewu/owjdxb
+    document: https://iepose.com/helpcenter_v3/
+    architectures:
+        - amd64
+        - arm64
+        - arm/v7 
