@@ -1,0 +1,64 @@
+additionalProperties:
+  formFields:
+    - child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        required: true
+        type: service
+      default: mysql
+      envKey: PANEL_DB_TYPE
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: apps
+      values:
+        - label: MySQL
+          value: mysql
+        - label: PostgreSQL
+          value: postgresql
+    - default: sscms
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: sscms
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: sscms
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 40221
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 'e2a3d303-ac9b-41ff-9154-930710af0845'
+      edit: true
+      envKey: SSCMS_SECURITY_KEY
+      labelEn: Communication key (GUID string)
+      labelZh: 通信密钥 (GUID 字符串)
+      required: true
+      type: text
+    - default: ''
+      edit: true
+      envKey: SSCMS_REDIS_CONNECTION_STRING
+      labelEn: Redis Connection Information (redis:6379,password=123456)
+      labelZh: Redis 连接信息 (redis:6379,password=123456)
+      required: false
+      type: text

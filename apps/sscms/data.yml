@@ -1,0 +1,19 @@
+name: SSCMS 内容管理系统
+tags:
+  - 建站
+title: 开源免费、企业级、可商用的CMS内容管理系统
+description: 开源免费、企业级、可商用的CMS内容管理系统
+additionalProperties:
+  key: sscms
+  name: SSCMS 内容管理系统
+  tags:
+    - Website
+  shortDescZh: 开源免费、企业级、可商用的CMS内容管理系统
+  shortDescEn: Open source free, enterprise-class, commercially available CMS content management system
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://sscms.com
+  github: https://github.com/siteserver/cms
+  document: https://sscms.com/docs
