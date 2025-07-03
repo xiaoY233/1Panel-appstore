@@ -1,0 +1,19 @@
+name: Stash
+tags:
+  - 多媒体
+title: 媒体管理工具
+description: 媒体管理工具
+additionalProperties:
+  key: stash
+  name: Stash
+  tags:
+    - Media
+  shortDescZh: 媒体管理工具
+  shortDescEn: Media Management Tools
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://stashapp.cc
+  github: https://github.com/stashapp/stash
+  document: https://docs.stashapp.cc

@@ -1,0 +1,87 @@
+additionalProperties:
+  formFields:
+    - default: "40299"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/config"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "./data/data"
+      edit: true
+      envKey: STASH_DATA
+      labelEn: Media Data Path
+      labelZh: 媒体数据路径
+      required: true
+      type: text
+    - default: "./data/metadata"
+      edit: true
+      envKey: STASH_METADATA
+      labelEn: Metadata Path
+      labelZh: 元数据路径
+      required: true
+      type: text
+    - default: "./data/cache"
+      edit: true
+      envKey: STASH_CACHE
+      labelEn: Cache Path
+      labelZh: 缓存路径
+      required: true
+      type: text
+    - default: "./data/blobs"
+      edit: true
+      envKey: STASH_BLOBS
+      labelEn: Blobs Path (scene covers, images)
+      labelZh: 二进制数据路径 (场景封面、图像）
+      required: true
+      type: text
+    - default: "./data/generated"
+      edit: true
+      envKey: STASH_GENERATED
+      labelEn: Generated Path
+      labelZh: 生成内容路径
+      required: true
+      type: text
+    - default: "/data"
+      disabled: true
+      envKey: STASH_DATA_INTERNAL
+      labelEn: Internal Media Data Path
+      labelZh: 容器内部媒体数据路径
+      required: true
+      type: text
+    - default: "/metadata"
+      disabled: true
+      envKey: STASH_METADATA_INTERNAL
+      labelEn: Internal Metadata Path
+      labelZh: 容器内部元数据路径
+      required: true
+      type: text
+    - default: "/cache"
+      disabled: true
+      envKey: STASH_CACHE_INTERNAL
+      labelEn: Internal Cache Path
+      labelZh: 容器内部缓存路径
+      required: true
+      type: text
+    - default: "/blobs"
+      disabled: true
+      envKey: STASH_BLOBS_INTERNAL
+      labelEn: Internal Blobs Path (scene covers, images)
+      labelZh: 容器内部二进制数据路径 (场景封面、图像）
+      required: true
+      type: text
+    - default: "/generated"
+      disabled: true
+      envKey: STASH_GENERATED_INTERNAL
+      labelEn: Internal Generated Path
+      labelZh: 容器内部生成内容路径
+      required: true
+      type: text
