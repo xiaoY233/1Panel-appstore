@@ -1,0 +1,19 @@
+name: 花生壳
+tags:
+  - 实用工具
+title: 花生壳内网穿透服务
+description: 花生壳内网穿透服务
+additionalProperties:
+  key: phtunnel
+  name: 花生壳
+  tags:
+    - Tool
+  shortDescZh: 花生壳内网穿透服务
+  shortDescEn: Best Oray Intranet Penetration Service
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://hsk.oray.com
+  github: https://hub.docker.com/r/bestoray/phtunnel
+  document: https://service.oray.com/question/36626.html

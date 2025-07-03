@@ -1,0 +1,9 @@
+additionalProperties:
+  formFields:
+    - default: "注意查看说明文档/Attention to the documentation"
+      disabled: true
+      envKey: TIPS
+      labelEn: Here's a hint note
+      labelZh: 这是一个提示说明
+      required: true
+      type: text
