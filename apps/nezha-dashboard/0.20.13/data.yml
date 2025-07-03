@@ -1,0 +1,18 @@
+additionalProperties:
+  formFields:
+    - default: "40308"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "5555"
+      edit: true
+      envKey: PANEL_APP_PORT_GRPC
+      labelEn: GRPC Port
+      labelZh: GRPC 端口
+      required: true
+      rule: paramPort
+      type: number

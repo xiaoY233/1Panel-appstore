@@ -1,0 +1,14 @@
+debug: false
+httpport: 80  # HTTP 端口，请勿修改
+nz_language: zh-CN  # 语言，zh-CN/zh-TW/en-US/es-ES
+grpcport: 5555  # gRPC 端口，请勿修改
+oauth2: # Oauth2 登录接入，查看 https://nezha.wiki/guide/dashboard.html
+  type: "nz_oauth2_type" # Oauth2 登录接入类型，github/gitlab/jihulab/gitee/gitea
+  admin: "nz_admin_logins" # 管理员列表，半角逗号隔开
+  clientid: "nz_github_oauth_client_id" # 在 https://github.com/settings/developers 创建，无需审核 Callback 填 http(s)://域名或IP/oauth2/callback
+  clientsecret: "nz_github_oauth_client_secret"
+  endpoint: "" # 如gitea自建需要设置
+site:
+  brand: "nz_site_title" # 网站标题
+  cookiename: "nezha-dashboard" # 浏览器 Cookie 字段名，可不改
+  theme: "default"  # 主题，default/daynight/mdui/hotaru/angel-kanade/server-status

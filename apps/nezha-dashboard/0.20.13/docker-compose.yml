@@ -1,0 +1,19 @@
+services:
+  nezha-dashboard:
+    image: "ghcr.io/naiba/nezha-dashboard:v0.20.13"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    volumes:
+      - ./data:/dashboard/data
+      - ./config.yaml:/dashboard/data/config.yaml
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:80
+      - ${PANEL_APP_PORT_GRPC}:5555
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
