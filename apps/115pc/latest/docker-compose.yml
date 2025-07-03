@@ -1,0 +1,25 @@
+services:
+  115pc:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    environment:
+      - "TZ=Asia/Shanghai"
+      - "VNC_PASSWORD=${VNC_PASSWORD}"
+      - "DISPLAY_WIDTH=${VNC_DISPLAY_WIDTH}"
+      - "DISPLAY_HEIGHT=${VNC_DISPLAY_HEIGHT}"
+      - "ENABLE_CJK_FONT=1"
+      - "APT_SOURCE_HOST=${APT_SOURCE}"
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5800"
+    volumes:
+      - "${CONFIG_PATH}:/config"
+      - "${DOWNLOAD_PATH}:/Downloads/115download"
+    image: funcman/115pc:latest
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

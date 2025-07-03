@@ -1,0 +1,54 @@
+additionalProperties:
+  formFields:
+    - default: 40088
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: VNCPassword
+      edit: true
+      envKey: VNC_PASSWORD
+      labelEn: Access Password
+      labelZh: 访问密码
+      random: false
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: ./data/config
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config file path
+      labelZh: 配置文件所在路径
+      required: true
+      type: text
+    - default: ./data/downloads
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download folder path
+      labelZh: 下载文件夹路径
+      required: true
+      type: text
+    - default: mirrors.ustc.edu.cn
+      edit: true
+      envKey: APT_SOURCE
+      labelEn: apt source
+      labelZh: apt 源
+      required: true
+      type: text
+    - default: 1920
+      edit: true
+      envKey: VNC_DISPLAY_WIDTH
+      labelEn: VNC display width
+      labelZh: VNC显示宽度
+      required: true
+      type: number
+    - default: 1080
+      edit: true
+      envKey: VNC_DISPLAY_HEIGHT
+      labelEn: VNC display height
+      labelZh: VNC显示高度
+      required: true
+      type: number
