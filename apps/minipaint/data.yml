@@ -1,0 +1,19 @@
+name: miniPaint
+tags:
+  - 工具
+title: 在线图像编辑器，可让您使用HTML5技术创建，编辑图像
+description: 在线图像编辑器，可让您使用HTML5技术创建，编辑图像
+additionalProperties:
+  key: minipaint
+  name: miniPaint
+  tags:
+    - Tool
+  shortDescZh: 在线图像编辑器，可让您使用HTML5技术创建，编辑图像
+  shortDescEn: Online image editor lets you create, edit images using HTML5 technologies
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/pfav/minipaint
+  github: https://github.com/viliusle/miniPaint
+  document: https://github.com/viliusle/miniPaint/wiki
