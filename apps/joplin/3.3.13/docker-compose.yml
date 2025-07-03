@@ -1,0 +1,24 @@
+services:
+  joplin:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:22300"
+    environment:
+      - APP_BASE_URL=${JOPLIN_EXTERNAL_URL}
+      - APP_PORT=22300
+      - POSTGRES_PASSWORD=${POSTGRES_PWD}
+      - POSTGRES_DATABASE=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - DB_CLIENT=pg
+    image: joplin/server:3.3.13
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

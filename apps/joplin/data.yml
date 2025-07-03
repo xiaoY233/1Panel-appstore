@@ -1,0 +1,19 @@
+name: Joplin Server
+tags:
+  - 工具
+title: 一个开源的记事本应用程序
+description: 一个开源的记事本应用程序
+additionalProperties:
+  key: joplin-server
+  name: Joplin Server
+  tags:
+    - Tool
+  shortDescZh: 一个开源的记事本应用程序
+  shortDescEn: An open source note-taking app
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://joplinapp.org/
+  github: https://github.com/laurent22/joplin
+  document: https://joplinapp.org/help/
