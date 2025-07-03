@@ -1,0 +1,19 @@
+name: Puter
+tags:
+  - 实用工具
+title: 先进的开源互联网操作系统
+description: 先进的开源互联网操作系统
+additionalProperties:
+  key: puter
+  name: Puter
+  tags:
+    - Tool
+  shortDescZh: 先进的开源互联网操作系统
+  shortDescEn: An advanced, open-source internet operating system
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://puter.com
+  github: https://github.com/HeyPuter/puter
+  document: https://github.com/HeyPuter/puter

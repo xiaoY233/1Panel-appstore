@@ -1,0 +1,53 @@
+additionalProperties:
+  formFields:
+    - default: 40263
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 4100
+      edit: true
+      envKey: PANEL_APP_PORT_INTERNAL
+      labelEn: Internal Container Ports
+      labelZh: 容器内部端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: 1000
+      disabled: true
+      envKey: PUID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: 1000
+      disabled: true
+      envKey: PGID
+      labelEn: Group ID
+      labelZh: 组 ID
+      required: true
+      type: number
+    - default: "/etc/puter"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config Path (Inside the container)
+      labelZh: 配置路径 (容器内部)
+      required: true
+      type: text
+    - default: "./data"
+      disabled: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
