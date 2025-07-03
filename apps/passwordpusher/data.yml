@@ -1,0 +1,19 @@
+name: Password Pusher
+tags:
+  - 工具
+title: 一个通过网络传递密码的开源应用程序
+description: 一个通过网络传递密码的开源应用程序
+additionalProperties:
+  key: passwordpusher
+  name: Password Pusher
+  tags:
+    - Tool
+  shortDescZh: 一个通过网络传递密码的开源应用程序
+  shortDescEn: An opensource application to communicate passwords over the web
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://pwpush.com
+  github: https://github.com/pglombardo/PasswordPusher
+  document: https://github.com/pglombardo/PasswordPusher/wiki
