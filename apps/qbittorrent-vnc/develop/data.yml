@@ -1,0 +1,56 @@
+additionalProperties:
+  formFields:
+    - default: 40139
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port (Manual setup is required)
+      labelZh: 网页端口 (需要手动设置)
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40140
+      edit: true
+      envKey: PANEL_APP_PORT_HTTPS
+      labelEn: Web VNC Port
+      labelZh: Web VNC 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40141
+      edit: true
+      envKey: PANEL_APP_PORT_PEER
+      labelEn: Peer Port (Manual setup is required)
+      labelZh: BT端口 (需要手动设置)
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data/downloads
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download folder path
+      labelZh: 下载文件夹路径
+      required: true
+      type: text
+    - default: kasm_user
+      disabled: true
+      envKey: HTTP_USER
+      labelEn: http auth user
+      labelZh: HTTP 用户
+      required: true
+      type: text
+    - default: password
+      edit: true
+      envKey: HTTP_PWD
+      labelEn: Access Password
+      labelZh: 访问密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "512m"
+      edit: true
+      envKey: MEM_USE
+      labelEn: Shared memory footprint (1gb)
+      labelZh: 共享内存占用(1gb)
+      required: true
+      type: text
