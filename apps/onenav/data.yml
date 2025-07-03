@@ -1,0 +1,19 @@
+name: OneNav
+tags:
+  - 建站
+title: 一款开源免费的书签（导航）管理程序
+description: 一款开源免费的书签（导航）管理程序
+additionalProperties:
+  key: onenav
+  name: OneNav
+  tags:
+    - Website
+  shortDescZh: 一款开源免费的书签（导航）管理程序
+  shortDescEn: An open source free bookmark (navigation) management program
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/helloz/onenav
+  github: https://github.com/helloxz/onenav
+  document: https://doc.xiaoz.org/books/onenav
