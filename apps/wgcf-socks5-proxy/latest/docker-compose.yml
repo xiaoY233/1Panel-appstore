@@ -1,0 +1,29 @@
+services:
+  wgcfd:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${SOCKS_PORT}"
+    volumes:
+      - "${DATA_PATH}:/wgcf"
+      - /lib/modules:/lib/modules
+    environment:
+      - USER=${SOCKS_USER}
+      - PASSWORD=${SOCKS_PWD}
+      - PORT=${SOCKS_PORT}
+      - HOST=${SOCKS_HOST}
+    privileged: true
+    cap_add:
+      - net_admin
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=0
+    command: ${IP_COMMAND}
+    image: activeliang/wgcf-socks5-proxy:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

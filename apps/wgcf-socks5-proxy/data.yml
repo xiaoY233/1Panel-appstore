@@ -1,0 +1,19 @@
+name: wgcf-socks5-proxy
+tags:
+  - 工具
+title: docker 里的 CloudFlare warp socks5
+description: docker 里的 CloudFlare warp socks5
+additionalProperties:
+  key: wgcf-socks5-proxy
+  name: wgcf-socks5-proxy
+  tags:
+    - Tool
+  shortDescZh: docker 里的 CloudFlare warp socks5
+  shortDescEn: CloudFlare warp socks5 in docker
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://github.com/activeliang/wgcf-socks5-proxy
+  github: https://github.com/activeliang/wgcf-socks5-proxy
+  document: https://github.com/activeliang/wgcf-socks5-proxy
