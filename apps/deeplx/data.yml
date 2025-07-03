@@ -1,0 +1,19 @@
+name: DeepLX
+tags:
+  - 工具
+title: DeepL 免费 API（无需 TOKEN）
+description: DeepL 免费 API（无需 TOKEN）
+additionalProperties:
+  key: deeplx
+  name: DeepLX
+  tags:
+    - Tool
+  shortDescZh: DeepL 免费 API（无需 TOKEN）
+  shortDescEn: DeepL Free API (No TOKEN required)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/OwO-Network/DeepLX
+  github: https://github.com/OwO-Network/DeepLX
+  document: https://github.com/OwO-Network/DeepLX
