@@ -1,0 +1,34 @@
+additionalProperties:
+  formFields:
+    - default: 40073
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 51820
+      edit: true
+      envKey: PANEL_APP_PORT_WIREGUARD
+      labelEn: Wireguard port
+      labelZh: Wireguard 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "admin"
+      edit: true
+      envKey: WEBUI_USER
+      labelEn: Webui user
+      labelZh: 网页用户
+      required: true
+      type: text
+    - default: "password"
+      edit: true
+      envKey: WEBUI_PWD
+      labelEn: Webui password
+      labelZh: 网页密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

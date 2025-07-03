@@ -1,0 +1,19 @@
+name: WireGuard-UI
+tags:
+  - 工具
+title: Wireguard 网络界面
+description: Wireguard 网络界面
+additionalProperties:
+  key: wireguard-ui
+  name: WireGuard-UI
+  tags:
+    - Tool
+  shortDescZh: Wireguard 网络界面
+  shortDescEn: Wireguard web interface
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://www.wireguard.com/
+  github: https://github.com/ngoduykhanh/wireguard-ui
+  document: https://www.wireguard.com/
