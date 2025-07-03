@@ -1,0 +1,27 @@
+services:
+  kali-linux:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    security_opt:
+      - seccomp:unconfined
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+      - "${PANEL_APP_PORT_HTTPS}:3001"
+    volumes:
+      - ./config:/config
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - SUBFOLDER=/
+      - TITLE=Kali Linux
+    shm_size: "1gb"
+    image: linuxserver/kali-linux:latest
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true 

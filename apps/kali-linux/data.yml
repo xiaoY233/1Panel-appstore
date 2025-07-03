@@ -1,0 +1,31 @@
+name: Kali Linux
+tags:
+    - 开发工具
+title: Kali Linux 渗透测试环境
+description: Kali Linux 是一个专为渗透测试和安全审计设计的 Linux 发行版
+additionalProperties:
+    key: kali-linux
+    name: Kali Linux
+    tags:
+        - DevTool
+    shortDescZh: Kali Linux 渗透测试环境
+    shortDescEn: Kali Linux Penetration Testing Environment
+    description:
+        en: Kali Linux is a Debian-based Linux distribution designed for penetration testing and security auditing
+        ja: Kali Linuxは、ペネトレーションテストとセキュリティ監査のために設計されたDebianベースのLinuxディストリビューションです
+        ms: Kali Linux adalah pengedaran Linux berasaskan Debian yang direka untuk ujian penembusan dan audit keselamatan
+        pt-br: Kali Linux é uma distribuição Linux baseada em Debian projetada para testes de penetração e auditoria de segurança
+        ru: Kali Linux - это дистрибутив Linux на основе Debian, разработанный для тестирования на проникновение и аудита безопасности
+        ko: Kali Linux는 침투 테스트 및 보안 감사를 위해 설계된 Debian 기반 Linux 배포판입니다
+        zh-Hant: Kali Linux 是一個專為滲透測試和安全審計設計的 Debian 基礎 Linux 發行版
+        zh: Kali Linux 是一个专为渗透测试和安全审计设计的 Debian 基础 Linux 发行版
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://www.kali.org/
+    github: https://github.com/linuxserver/docker-kali-linux
+    document: https://hub.docker.com/r/linuxserver/kali-linux
+    architectures:
+      - amd64
+      - arm64 

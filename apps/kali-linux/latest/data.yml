@@ -1,0 +1,36 @@
+additionalProperties:
+    formFields:
+        - default: 3000
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Web Port 1
+          labelZh: Web 端口 1
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: Web Port 1
+            ja: Web ポート 1
+            ms: Port Web 1
+            pt-br: Porta Web 1
+            ru: Веб Порт 1
+            ko: 웹 포트 1
+            zh-Hant: Web 埠 1
+            zh: Web 端口 1
+        - default: 3001
+          edit: true
+          envKey: PANEL_APP_PORT_HTTPS
+          labelEn: HTTPS Port
+          labelZh: HTTPS 端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: HTTPS Port
+            ja: HTTPS ポート
+            ms: Port HTTPS
+            pt-br: Porta HTTPS
+            ru: HTTPS Порт
+            ko: HTTPS 포트
+            zh-Hant: HTTPS 埠
+            zh: HTTPS 端口 
