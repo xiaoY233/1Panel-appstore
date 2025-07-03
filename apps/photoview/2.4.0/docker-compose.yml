@@ -1,0 +1,26 @@
+services:
+  photoview:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    volumes:
+      - ${CACHE_PATH}:/app/cache
+      - ${DATA_PATH}:/photos:ro
+    environment:
+      - PHOTOVIEW_DATABASE_DRIVER=mysql
+      - PHOTOVIEW_MYSQL_URL=${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@tcp(${PANEL_DB_HOST}:${PHOTOVIEW_DB_PORT})/${PANEL_DB_NAME}
+      - PHOTOVIEW_LISTEN_IP=photoview
+      - PHOTOVIEW_LISTEN_PORT=80
+      - PHOTOVIEW_MEDIA_CACHE=/app/cache
+      # - GODEBUG=asyncpreemptoff=1  # Optional: If you are using Samba/CIFS-Share and experience problems with "directory not found"
+      # - MAPBOX_TOKEN=<YOUR TOKEN HERE>  # A token can be generated for free here https://account.mapbox.com/access-tokens/
+    image: viktorstrate/photoview:2.4.0
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

@@ -1,0 +1,19 @@
+name: Photoview
+tags:
+  - 多媒体
+title: 自托管个人服务器的照片库
+description: 自托管个人服务器的照片库
+additionalProperties:
+  key: photoview
+  name: Photoview
+  tags:
+    - Media
+  shortDescZh: 自托管个人服务器的照片库
+  shortDescEn: Photo gallery for self-hosted personal servers
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/photoview/photoview
+  github: https://github.com/photoview/photoview
+  document: https://github.com/photoview/photoview
