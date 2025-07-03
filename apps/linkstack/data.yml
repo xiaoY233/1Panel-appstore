@@ -1,0 +1,19 @@
+name: LinkStack
+tags:
+  - 建站
+title: 高度可定制的链接共享平台，用户界面直观易用
+description: 高度可定制的链接共享平台，用户界面直观易用
+additionalProperties:
+  key: linkstack
+  name: LinkStack
+  tags:
+    - Website
+  shortDescZh: 高度可定制的链接共享平台，用户界面直观易用
+  shortDescEn: A highly customizable link sharing platform with an intuitive, easy to use user interface
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://linkstack.org
+  github: https://github.com/LinkStackOrg/LinkStack
+  document: https://docs.linkstack.org
