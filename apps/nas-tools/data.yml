@@ -1,0 +1,19 @@
+name: NAS-Tools
+tags:
+  - 多媒体
+title: NAS 媒体库管理工具
+description: NAS 媒体库管理工具
+additionalProperties:
+  key: nas-tools
+  name: NAS-Tools
+  tags:
+    - Media
+  shortDescZh: NAS 媒体库管理工具
+  shortDescEn: NAS Media Library Management Tools
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/hsuyelin/nas-tools
+  github: https://github.com/hsuyelin/nas-tools
+  document: https://github.com/hsuyelin/nas-tools

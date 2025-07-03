@@ -1,0 +1,25 @@
+services:
+  nas-tools:
+    image: "hsuyelin/nas-tools:3.4.1"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    volumes:
+      - "${CONFIG_PATH}:/config"
+      - "${MEDIA_PATH}:/media"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - UMASK=${UMASK}
+      - NASTOOL_AUTO_UPDATE=${NASTOOL_AUTO_UPDATE}
+      - NASTOOL_CN_UPDATE=${NASTOOL_CN_UPDATE}
+    hostname: ${HOSTNAME}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

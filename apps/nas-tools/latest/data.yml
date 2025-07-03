@@ -1,0 +1,76 @@
+additionalProperties:
+  formFields:
+    - default: "nas-tools"
+      edit: true
+      envKey: HOSTNAME
+      labelEn: Hostname
+      labelZh: 主机名
+      required: true
+      type: text
+    - default: "40296"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/config"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "./data/media"
+      edit: true
+      envKey: MEDIA_PATH
+      labelEn: Media Path
+      labelZh: 媒体路径
+      required: true
+      type: text
+    - default: "0"
+      edit: true
+      envKey: PUID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "0"
+      edit: true
+      envKey: PGID
+      labelEn: Group ID
+      labelZh: 组 ID
+      required: true
+      type: number
+    - default: "000"
+      edit: true
+      envKey: UMASK
+      labelEn: Umask
+      labelZh: 掩码权限
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: NASTOOL_AUTO_UPDATE
+      labelEn: Auto Update
+      labelZh: 自动更新
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NASTOOL_CN_UPDATE
+      labelEn: CN Update
+      labelZh: 国内更新
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
