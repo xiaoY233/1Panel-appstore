@@ -1,0 +1,19 @@
+name: TwoNav
+tags:
+  - 建站
+title: 一款开源免费的书签（导航）管理程序
+description: 一款开源免费的书签（导航）管理程序
+additionalProperties:
+  key: twonav
+  name: TwoNav
+  tags:
+    - Website
+  shortDescZh: 一款开源免费的书签（导航）管理程序
+  shortDescEn: An open source free bookmark (navigation) management program
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/tznb/twonav
+  github: https://github.com/tznb1/TwoNav
+  document: https://gitee.com/tznb/TwoNav/wikis
