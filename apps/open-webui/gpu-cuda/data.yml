@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: 40245
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: OLLAMA_BASE_URL
+      labelEn: Ollama Base URL (example：https://example.com)
+      labelZh: Ollama 基础 URL (例：https://example.com)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: OPENAI_API_KEY
+      labelEn: OpenAI API Key
+      labelZh: OpenAI API 密钥
+      required: false
+      type: password
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
