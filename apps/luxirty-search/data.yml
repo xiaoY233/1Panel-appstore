@@ -1,0 +1,19 @@
+name: Luxirty Search
+tags:
+  - 建站
+title: 一个搜索引擎，基于 Google
+description: 一个搜索引擎，基于 Google
+additionalProperties:
+  key: luxirty-search
+  name: Luxirty Search
+  tags:
+    - Website
+  shortDescZh: 一个搜索引擎，基于 Google
+  shortDescEn: A search engine, based on Google
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://search.luxirty.com
+  github: https://github.com/KoriIku/luxirty-search
+  document: https://github.com/KoriIku/luxirty-search
