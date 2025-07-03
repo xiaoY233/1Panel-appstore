@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: 40191
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ''
+      edit: true
+      envKey: BING_MAP_API_KEY
+      labelEn: Bing Map API Key
+      labelZh: Bing 地图 API Key
+      required: false
+      type: text
+    - default: ''
+      edit: true
+      envKey: IPINFO_API_TOKEN
+      labelEn: IPInfo.io API
+      labelZh: IPinfo.io 的 API
+      required: false
+      type: text
+    - default: "example.com"
+      edit: true
+      envKey: ALLOWED_DOMAINS
+      labelEn: Allowed domains
+      labelZh: 允许的域名
+      required: false
+      type: text

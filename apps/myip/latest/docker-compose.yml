@@ -1,0 +1,19 @@
+services:
+  myip:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:18966"
+    environment:
+      - BING_MAP_API_KEY=${BING_MAP_API_KEY}
+      - ALLOWED_DOMAINS=${ALLOWED_DOMAINS}
+      - IPINFO_API_TOKEN=${IPINFO_API_TOKEN}
+    image: jason5ng32/myip:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
