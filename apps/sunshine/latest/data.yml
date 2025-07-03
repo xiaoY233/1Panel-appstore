@@ -1,0 +1,60 @@
+additionalProperties:
+  formFields:
+    - default: "47990"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTPS
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "48010"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP2
+      labelEn: Port 2
+      labelZh: 端口 2
+      required: true
+      rule: paramPort
+      type: number
+    - default: "47984-47989"
+      edit: true
+      envKey: PANEL_APP_PORT_TCP
+      labelEn: TCP Port Range
+      labelZh: TCP 端口范围
+      required: true
+      type: text
+    - default: "47998-48000"
+      edit: true
+      envKey: PANEL_APP_PORT_UDP
+      labelEn: TUDP Port Range
+      labelZh: UDP 端口范围
+      required: true
+      type: text
+    - default: "1001"
+      disabled: true
+      envKey: PUID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1001"
+      disabled: true
+      envKey: PGID
+      labelEn: Group ID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TZ
+      labelEn: Timezone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "./data"
+      disabled: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text

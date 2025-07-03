@@ -1,0 +1,19 @@
+name: Sunshine
+tags:
+  - 多媒体
+title: 开源游戏串流服务
+description: 开源游戏串流服务
+additionalProperties:
+  key: sunshine
+  name: Sunshine
+  tags:
+    - Media
+  shortDescZh: 开源游戏串流服务
+  shortDescEn: Open-source game streaming service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: http://app.lizardbyte.dev/Sunshine
+  github: https://github.com/LizardByte/Sunshine
+  document: https://sunshinestream.readthedocs.io

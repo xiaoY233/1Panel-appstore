@@ -1,0 +1,26 @@
+services:
+  sunshine:
+    image: "lizardbyte/sunshine:latest-ubuntu-24.04"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    devices:
+      - /dev/dri/
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${DATA_PATH}:/config
+    ports:
+      - ${PANEL_APP_PORT_HTTPS}:47990
+      - "${PANEL_APP_PORT_TCP}:47984-47989/tcp"
+      - "${PANEL_APP_PORT_HTTP2}:48010"
+      - "${PANEL_APP_PORT_UDP}:47998-48000/udp"
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
