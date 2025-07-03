@@ -1,0 +1,28 @@
+additionalProperties:
+  formFields:
+    - default: 8899                # HTTP端口默认值
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      edit: true
+      rule: paramPort
+      type: number
+    - default: "libretv"            # 访问密码默认值
+      envKey: PANEL_APP_PASSWORD
+      labelEn: Access Password
+      labelZh: 访问密码
+      random: true
+      required: true
+      edit: true
+      rule: paramComplexity
+      type: password
+    - default: "libretv_admin"      # 管理密码默认值
+      envKey: PANEL_APP_ADMIN_PASSWORD
+      labelEn: Access Password
+      labelZh: 管理密码
+      random: true
+      required: true
+      edit: true
+      rule: paramComplexity
+      type: password
