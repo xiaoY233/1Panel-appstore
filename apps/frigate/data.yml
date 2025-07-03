@@ -1,0 +1,19 @@
+name: Frigate
+tags:
+  - 多媒体
+title: 一个开源的实时视频监控系统
+description: 一个开源的实时视频监控系统
+additionalProperties:
+  key: frigate
+  name: Frigate
+  tags:
+    - Media
+  shortDescZh: 一个开源的实时视频监控系统
+  shortDescEn: NVR With Realtime Object Detection for IP Cameras
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://frigate.video
+  github: https://github.com/blakeblackshear/frigate
+  document: https://frigate.video/docs/
