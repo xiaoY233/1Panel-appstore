@@ -1,0 +1,19 @@
+name: ServerStatus
+tags:
+  - 实用工具
+title: 多服务器状态监控
+description: 多服务器状态监控
+additionalProperties:
+  key: serverstatus
+  name: ServerStatus
+  tags:
+    - Tool
+  shortDescZh: 多服务器状态监控
+  shortDescEn: Multi-server status monitoring
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/cppla/ServerStatus
+  github: https://github.com/cppla/ServerStatus
+  document: https://github.com/cppla/ServerStatus

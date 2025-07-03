@@ -1,0 +1,25 @@
+services:
+  serverstatus:
+    image: "cppla/serverstatus:latest"
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:80 || bash -c 'kill -s 15 -1 && (sleep 10; kill -s 9 -1)'"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - ${SERVERSTATUS_CONFIG_PATH}:/ServerStatus/server/config.json 
+      - ${SERVERSTATUS_JSON_PATH}:/usr/share/nginx/html/json
+    ports:
+      - ${PANEL_APP_PORT_COMM}:35601
+      - ${PANEL_APP_PORT_HTTP}:80
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
+

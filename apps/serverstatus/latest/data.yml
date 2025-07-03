@@ -1,0 +1,32 @@
+additionalProperties:
+  formFields:
+    - default: "./data/server/config.json"
+      disabled: true
+      envKey: SERVERSTATUS_CONFIG_PATH
+      labelEn: Server Status Config Path
+      labelZh: 服务器状态配置路径
+      required: true
+      type: text
+    - default: "./data/web/json"
+      disabled: true
+      envKey: SERVERSTATUS_JSON_PATH
+      labelEn: Server Status Monthly Traffic State Path
+      labelZh: 探针月流量状态路径
+      required: true
+      type: text
+    - default: "35601"
+      edit: true
+      envKey: PANEL_APP_PORT_COMM
+      labelEn: Communication Port
+      labelZh: 通信端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "40269"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Port
+      labelZh: Web 端口
+      required: true
+      rule: paramPort
+      type: number
