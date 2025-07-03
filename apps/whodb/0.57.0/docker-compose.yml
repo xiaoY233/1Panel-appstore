@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  whodb:
+    image: clidey/whodb:0.57.0
+    container_name: ${CONTAINER_NAME}
+    environment:
+      - WHODB_OPENAI_COMPATIBLE_API_KEY=${PANEL_WHODB_OPENAI_API_KEY}
+      - WHODB_OPENAI_COMPATIBLE_ENDPOINT=${PANEL_WHODB_OPENAI_ENDPOINT}
+      - WHODB_CUSTOM_MODELS=${PANEL_WHODB_CUSTOM_MODELS}
+      - WHODB_ANTHROPIC_API_KEY=${PANEL_WHODB_ANTHROPIC_API_KEY}
+      - WHODB_ANTHROPIC_ENDPOINT=${PANEL_WHODB_ANTHROPIC_ENDPOINT}
+      - WHODB_OLLAMA_HOST=${PANEL_WHODB_OLLAMA_HOST}
+      - WHODB_OLLAMA_PORT=${PANEL_WHODB_OLLAMA_PORT}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
+    volumes:
+      - ./data:/db
+    labels:  
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+    restart: always
+networks:
+  1panel-network:
+    external: true
+    

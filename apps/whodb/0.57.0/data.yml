@@ -1,0 +1,77 @@
+additionalProperties:
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: "https://api.openai.com/v1"
+      envKey: PANEL_WHODB_OPENAI_ENDPOINT
+      labelEn: OpenAI Endpoint
+      labelZh: OpenAI 接口地址
+      required: false
+      type: text
+    
+    - default: ""
+      envKey: PANEL_WHODB_OPENAI_API_KEY
+      labelEn: OpenAI API Key
+      labelZh: OpenAI API 密钥
+      label:
+        en: OpenAI API Key
+        ja: OpenAI APIキー
+        ms: Kunci API OpenAI
+        pt-br: Chave da API OpenAI
+        ru: Ключ API OpenAI
+        ko: OpenAI API 키
+        zh: OpenAI API 密钥
+        zh-Hant: OpenAI API 密鑰
+      required: false
+      type: password
+      
+    - default: ""
+      envKey: PANEL_WHODB_CUSTOM_MODELS
+      labelEn: model list
+      labelZh: 模型列表
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_WHODB_ANTHROPIC_API_KEY
+      labelEn: Anthropic API Key
+      labelZh: Anthropic API 密钥
+      required: false
+      type: password
+
+    - default: ""
+      envKey: PANEL_WHODB_ANTHROPIC_ENDPOINT
+      labelEn: Anthropic Endpoint
+      labelZh: Anthropic 接口地址
+      required: false
+      type: text
+
+    - default: ""
+      envKey: PANEL_WHODB_OLLAMA_HOST
+      labelEn: Ollama Host
+      labelZh: Ollama 主机地址
+      required: false
+      type: text
+
+    - default: "11434"
+      envKey: PANEL_WHODB_OLLAMA_PORT
+      labelEn: Ollama Port
+      labelZh: Ollama 端口
+      required: false
+      rule: paramPort
+      type: number

@@ -1,0 +1,32 @@
+name: WhoDB
+tags:
+  - 数据库管理
+  - 工具
+  - 数据库
+title: 轻量、高效、支持自然语言的数据库管理平台
+description: 轻量、高效、支持自然语言对话的数据库管理工具，支持多种数据库与可视化操作
+additionalProperties:
+  key: whodb
+  name: whoDB
+  tags:
+    - Tool
+    - Database
+  shortDescZh: 支持自然语言查询的数据库管理工具
+  shortDescEn: Lightweight DB manager with natural language querying
+  type: Tool
+  crossVersionUpdate: true
+  limit: 0
+  website: https://whodb.com/
+  github: https://github.com/clidey/whodb
+  document: https://whodb.com/docs/
+  description:
+    en: A lightweight, fast, and privacy-conscious database manager with natural language support.
+    zh: 一个轻量、快速、支持自然语言对话的数据库管理平台
+    zh-Hant: 一個輕量、快速、支持自然語言查詢的資料庫管理工具
+    ja: 軽量で高速、自然言語で操作できるデータベース管理ツール
+    ms: Pengurus pangkalan data yang ringan, pantas dan menyokong pertanyaan bahasa semula jadi
+    pt-br: Um gerenciador de banco de dados leve, rápido e com suporte a linguagem natural
+    ru: Легковесный, быстрый менеджер баз данных с поддержкой запросов на естественном языке
+    ko: 자연어 쿼리를 지원하는 가볍고 빠른 데이터베이스 관리자
+  architectures:
+    - amd64
