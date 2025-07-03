@@ -1,0 +1,19 @@
+name: tldraw
+tags:
+  - 工具
+title: 一款协作式数字白板
+description: 一款协作式数字白板
+additionalProperties:
+  key: tldraw
+  name: tldraw
+  tags:
+    - Tool
+  shortDescZh: 一款协作式数字白板
+  shortDescEn: A collaborative digital whiteboard
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.tldraw.com
+  github: https://github.com/tldraw/tldraw
+  document: https://tldraw.dev
