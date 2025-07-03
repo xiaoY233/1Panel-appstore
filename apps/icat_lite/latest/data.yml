@@ -1,0 +1,65 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: PANEL_DB_HOST
+      key: postgresql
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: service
+    - default: 5432
+      envKey: PANEL_DB_PORT
+      labelEn: Database port
+      labelZh: 数据库端口
+      random: false
+      required: true
+      rule: paramPort
+      type: number
+    - default: icat_lite
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: icat_lite
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "icat_bbs"
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 8095
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "nevovltregopezeminatisejlbojudos"
+      edit: true
+      envKey: ICAT_PWDKEY
+      labelEn: Key for encrypted password (lost and can't log in)
+      labelZh: 用于加密的密码的密钥 (丢失无法登录)
+      random: true
+      required: true
+      type: text
+    - default: "fibowrlnidazotocrichechotechovad"
+      edit: true
+      envKey: ICAT_COOKIEPWD
+      labelEn: CookiePassword (at least 32 bits)
+      labelZh: 登录状态加密密码 (至少32位)
+      required: false
+      type: text

@@ -1,0 +1,19 @@
+name: icat_lite
+tags:
+  - 建站
+title: 喵空间社区程序 Lite 版
+description: 喵空间社区程序 Lite 版
+additionalProperties:
+  key: icat_lite
+  name: icat_lite
+  tags:
+    - Website
+  shortDescZh: 喵空间社区程序 Lite 版
+  shortDescEn: A mini bbs/forum/talk communicaty program
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://miao.o-o.zone
+  github: https://github.com/0ui0/icat_lite_public
+  document: https://github.com/0ui0/icat_lite_public
