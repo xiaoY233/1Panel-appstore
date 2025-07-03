@@ -1,0 +1,22 @@
+services:
+  mt-photos-deepface:
+    image: "mtphotos/mt-photos-deepface:cuda-latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8066"
+    environment:
+      - API_AUTH_KEY=${API_AUTH_KEY}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
