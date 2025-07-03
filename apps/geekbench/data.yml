@@ -1,0 +1,19 @@
+name: Geekbench
+tags:
+  - 实用工具
+title: 基准测试工具 Docker 版
+description: 基准测试工具 Docker 版
+additionalProperties:
+  key: geekbench
+  name: Geekbench
+  tags:
+    - Tool
+  shortDescZh: 基准测试工具 Docker 版
+  shortDescEn: Benchmarking tool Docker version
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/davidsarkany/geekbench
+  github: https://github.com/chrisdaish/docker-geekbench
+  document: https://github.com/chrisdaish/docker-geekbench

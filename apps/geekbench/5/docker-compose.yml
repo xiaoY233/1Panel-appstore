@@ -1,0 +1,15 @@
+services:
+  geekbench:
+    image: davidsarkany/geekbench:5
+    container_name: ${CONTAINER_NAME}
+    restart: "no"
+    stdin_open: true
+    tty: true
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

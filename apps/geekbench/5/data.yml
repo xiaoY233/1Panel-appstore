@@ -1,0 +1,9 @@
+additionalProperties:
+  formFields:
+    - default: "结果查看容器日志获取 / Results view container logs to get"
+      disabled: true
+      envKey: TIPS
+      labelEn: Tips
+      labelZh: 提示
+      required: true
+      type: text
