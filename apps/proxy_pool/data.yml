@@ -1,0 +1,19 @@
+name: ProxyPool
+tags:
+  - 开发工具
+title: 爬虫代理 IP 池
+description: 爬虫代理 IP 池
+additionalProperties:
+  key: proxy_pool
+  name: ProxyPool
+  tags:
+    - DevTool
+  shortDescZh: 爬虫代理 IP 池
+  shortDescEn: Python ProxyPool for web spider
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://proxy-pool.readthedocs.io
+  github: https://github.com/jhao104/proxy_pool
+  document: https://proxy-pool.readthedocs.io

@@ -1,0 +1,17 @@
+services:
+  proxy_pool:
+    image: "jhao104/proxy_pool:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5010"
+    environment:
+      - "DB_CONN=redis://:${PANEL_REDIS_ROOT_PASSWORD}@${REDIS_HOST}:${REDIS_PORT}/${REDIS_DB_NUMBER}"
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
