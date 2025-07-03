@@ -1,0 +1,15 @@
+services:
+  zerotier-one:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: host
+    devices:
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    volumes:
+      - ./data:/var/lib/zerotier-one
+    image: "zerotier/zerotier:1.14.2"
+    labels:  
+      createdBy: "Apps"
