@@ -1,0 +1,14 @@
+additionalProperties:
+  key: smokeping
+  name: SmokePing
+  tags:
+    - Tool
+  shortDescZh: 一个豪华的延迟测量工具
+  shortDescEn: A deluxe latency measurement tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://oss.oetiker.ch/smokeping/
+  github: https://github.com/linuxserver/docker-smokeping
+  document: https://oss.oetiker.ch/smokeping/doc/index.en.html

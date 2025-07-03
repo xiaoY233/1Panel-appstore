@@ -1,0 +1,39 @@
+additionalProperties:
+  formFields:
+    - default: 40213
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: http://<master-host-ip>:40213/smokeping/
+      edit: true
+      envKey: MASTER_URL
+      labelEn: Master url
+      labelZh: 外部访问地址
+      required: true
+      rule: paramHttp
+      type: text
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: ''
+      edit: true
+      envKey: SHARED_SECRET
+      labelEn: Master shared secret (slave mode)
+      labelZh: 主共享密钥 (从属模式)
+      required: false
+      type: text
