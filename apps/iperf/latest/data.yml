@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: "40267"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "-s"
+      edit: true
+      envKey: IPERF_COMMAND
+      labelEn: iPerf Command
+      labelZh: iPerf 命令
+      required: true
+      type: text

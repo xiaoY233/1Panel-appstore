@@ -1,0 +1,19 @@
+name: iPerf
+tags:
+  - 实用工具
+title: 网络性能测试工具
+description: 网络性能测试工具
+additionalProperties:
+  key: iperf
+  name: iPerf
+  tags:
+    - Tool
+  shortDescZh: 网络性能测试工具
+  shortDescEn: Network performance testing tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://software.es.net/iperf/
+  github: https://github.com/nerdalert/iperf3
+  document: https://software.es.net/iperf/
