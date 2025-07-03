@@ -1,0 +1,35 @@
+name: Diun
+tags:
+    - 实用工具
+title: Docker 镜像更新通知工具
+description: Diun 是一个用于监控 Docker 镜像更新并发送通知的命令行工具
+additionalProperties:
+    key: diun
+    name: Diun
+    tags:
+        - Tool
+    shortDescZh: Docker 镜像更新通知命令行工具
+    shortDescEn: Docker image update notification CLI tool
+    description:
+        en: Diun is a CLI tool to monitor Docker image updates and send notifications
+        ja: DiunはDockerイメージの更新を監視し、通知を送信するCLIツールです
+        ms: Diun ialah alat CLI untuk memantau kemas kini imej Docker dan menghantar notifikasi
+        pt-br: Diun é uma ferramenta CLI para monitorar atualizações de imagens Docker e enviar notificações
+        ru: Diun — это CLI-инструмент для мониторинга обновлений Docker-образов и отправки уведомлений
+        ko: Diun은 Docker 이미지 업데이트를 모니터링하고 알림을 보내는 CLI 도구입니다
+        zh-Hant: Diun 是一個用於監控 Docker 映像更新並發送通知的命令列工具
+        zh: Diun 是一个用于监控 Docker 镜像更新并发送通知的命令行工具
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://crazymax.dev/diun/
+    github: https://github.com/crazy-max/diun
+    document: https://crazymax.dev/diun/usage/basic-example/
+    architectures:
+      - amd64
+      - arm/v6
+      - arm/v7
+      - arm64
+      - 386
+      - ppc64le 
