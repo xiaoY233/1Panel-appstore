@@ -1,0 +1,27 @@
+services:
+  sub2clash:
+    image: nite07/sub2clash:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    volumes:
+      - ./data/logs:/app/logs
+      - ./data/templates:/app/templates
+      - ./data/data:/app/data
+    environment:
+      - PORT=${PANEL_APP_PORT_HTTP}
+      - META_TEMPLATE=${META_TEMPLATE}
+      - PROXY_TEMPLATE=${PROXY_TEMPLATE}
+      - REQUEST_RETRY_TIMES=${REQUEST_RETRY_TIMES}
+      - REQUEST_MAX_FILE_SIZE=${REQUEST_MAX_FILE_SIZE}
+      - CACHE_EXPIRE=${CACHE_EXPIRE}
+      - LOG_LEVEL=${LOG_LEVEL}
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

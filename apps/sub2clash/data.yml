@@ -1,0 +1,19 @@
+name: sub2clash
+tags:
+  - 工具
+title: 将节点和订阅转换为 clash(meta) 配置
+description: 将节点和订阅转换为 clash(meta) 配置
+additionalProperties:
+  key: sub2clash
+  name: sub2clash
+  tags:
+    - Tool
+  shortDescZh: 将节点和订阅转换为 clash(meta) 配置
+  shortDescEn: Converting nodes and subscriptions to clash(meta) configuration
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.nite07.com/sub
+  github: https://github.com/nitezs/sub2clash
+  document: https://github.com/nitezs/sub2clash

@@ -1,0 +1,75 @@
+additionalProperties:
+  formFields:
+    - default: 40223
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "template_meta.yaml"
+      edit: true
+      envKey: META_TEMPLATE
+      labelEn: Meta Template
+      labelZh: 默认 meta 模板文件名
+      required: true
+      type: text
+    - default: "template_clash.yaml"
+      edit: true
+      envKey: PROXY_TEMPLATE
+      labelEn: Clash Template
+      labelZh: 默认 clash 模板文件名
+      required: true
+      type: text
+    - default: "template_clash.yaml"
+      edit: true
+      envKey: CLASH_TEMPLATE
+      labelEn: Clash Template
+      labelZh: 默认 clash 模板文件名
+      required: true
+      type: text
+    - default: "3"
+      edit: true
+      envKey: REQUEST_RETRY_TIMES
+      labelEn: Request Retry Times
+      labelZh: Get 请求重试次数
+      required: true
+      type: number
+    - default: "1048576"
+      edit: true
+      envKey: REQUEST_MAX_FILE_SIZE
+      labelEn: Request Max File Size
+      labelZh: Get 请求订阅文件最大大小（byte）
+      required: true
+      type: number
+    - default: "300"
+      edit: true
+      envKey: CACHE_EXPIRE
+      labelEn: Cache Expire
+      labelZh: 订阅缓存时间（秒）
+      required: true
+      type: number
+    - default: "info"
+      edit: true
+      envKey: LOG_LEVEL
+      labelEn: Log Level
+      labelZh: 日志等级
+      required: true
+      type: select
+      values:
+        - label: Debug
+          value: "debug"
+        - label: Info
+          value: "info"
+        - label: Warn
+          value: "warn"
+        - label: Error
+          value: "error"
+    - default: "6"
+      edit: true
+      envKey: SHORT_LINK_LENGTH
+      labelEn: Short Link Length
+      labelZh: 短链长度
+      required: true
+      type: number
