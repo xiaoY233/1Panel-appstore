@@ -1,0 +1,27 @@
+services:
+  vanblog:
+    image: mereith/van-blog:v0.54.0
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+      - "${PANEL_APP_PORT_HTTPS}:443"
+    volumes:
+      - ${DATA_PATH}/data/static:/app/static
+      - ${DATA_PATH}/log:/var/log
+      - ${DATA_PATH}/caddy/config:/root/.config/caddy
+      - ${DATA_PATH}/caddy/data:/root/.local/share/caddy
+    environment:
+      - TZ=${TIME_ZONE}
+      - EMAIL=${EMAIL}
+      - VAN_BLOG_CDN_URL=${VAN_BLOG_CDN_URL}
+      - VAN_BLOG_WALINE_DB=${VAN_BLOG_WALINE_DB}
+      - VAN_BLOG_DATABASE_URL=mongodb://${PANEL_DB_ROOT_USER}:${PANEL_DB_ROOT_PASSWORD}@${MONGO_HOST}:27017/${MONGO_DB}?authSource=admin
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

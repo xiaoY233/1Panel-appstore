@@ -1,0 +1,86 @@
+additionalProperties:
+  formFields:
+    - default: 40233
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40234
+      edit: true
+      envKey: PANEL_APP_PORT_HTTPS
+      labelEn: Port
+      labelZh: HTTPS 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: EMAIL
+      labelEn: Mailbox for automatic https certificate application
+      labelZh: 用于自动申请 https 证书的邮箱
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: VAN_BLOG_CDN_URL
+      labelEn: CDN URL
+      labelZh: CDN 地址
+      required: false
+      type: text
+    - default: "waline"
+      envKey: VAN_BLOG_WALINE_DB
+      labelEn: Database name of the embedded commenting system
+      labelZh: 内嵌评论系统的数据库名
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      edit: true
+      envKey: MONGO_HOST
+      key: mongodb
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: service
+    - default: "vanblog"
+      edit: true
+      envKey: MONGO_DB
+      labelEn: Database Name
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: ""
+      edit: true
+      envKey: PANEL_DB_ROOT_USER
+      labelEn: Database User Name
+      labelZh: 数据库用户名
+      required: true
+      rule: paramCommon
+      type: text
+    - default: ""
+      edit: true
+      envKey: PANEL_DB_ROOT_PASSWORD
+      labelEn: Database User Password
+      labelZh: 数据库密码
+      required: true
+      rule: paramCommon
+      type: password

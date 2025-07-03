@@ -1,0 +1,19 @@
+name: VanBlog
+tags:
+  - 建站
+title: 一款简洁实用优雅的个人博客系统
+description: 一款简洁实用优雅的个人博客系统
+additionalProperties:
+  key: vanblog
+  name: VanBlog
+  tags:
+    - Website
+  shortDescZh: 一款简洁实用优雅的个人博客系统
+  shortDescEn: A simple, practical and elegant personal blog system
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://vanblog.mereith.com
+  github: https://github.com/Mereithhh/vanblog
+  document: https://vanblog.mereith.com
