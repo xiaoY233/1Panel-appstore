@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  allinssl:
+    image: allinssl/allinssl:v1.0.6
+    container_name: ${CONTAINER_NAME}
+    environment:
+      - ALLINSSL_USER=${PANEL_ALLINSSL_USER}
+      - ALLINSSL_PWD=${PANEL_ALLINSSL_PWD}
+      - ALLINSSL_URL=${PANEL_ALLINSSL_URL}
+      - TZ=Asia/Shanghai
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8888"
+    volumes:
+      - ./data:/www/allinssl/data
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+    restart: always
+
+networks:
+  1panel-network:
+    external: true

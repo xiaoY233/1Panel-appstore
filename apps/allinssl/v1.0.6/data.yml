@@ -1,0 +1,66 @@
+additionalProperties:
+  formFields:
+    - default: 7979
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: "allinssl"
+      envKey: PANEL_ALLINSSL_USER
+      labelEn: Admin Username
+      labelZh: 管理员用户名
+      label:
+        en: Admin Username
+        ja: 管理者ユーザー名
+        ms: Nama pengguna pentadbir
+        pt-br: Nome de usuário administrador
+        ru: Имя администратора
+        ko: 관리자 사용자 이름
+        zh: 管理员用户名
+        zh-Hant: 管理員使用者名稱
+      required: true
+      type: text
+
+    - default: "allinssldocker"
+      envKey: PANEL_ALLINSSL_PWD
+      labelEn: Admin Password
+      labelZh: 管理员密码
+      label:
+        en: Admin Password
+        ja: 管理者パスワード
+        ms: Kata laluan pentadbir
+        pt-br: Senha do administrador
+        ru: Пароль администратора
+        ko: 관리자 비밀번호
+        zh: 管理员密码
+        zh-Hant: 管理員密碼
+      required: true
+      type: password
+
+    - default: "allinssl"
+      envKey: PANEL_ALLINSSL_URL
+      labelEn: Web Entry Path
+      labelZh: Web 安全入口路径
+      label:
+        en: Web Entry Path
+        ja: Web エントリーパス
+        ms: Laluan masuk web
+        pt-br: Caminho de entrada da web
+        ru: Входной путь к веб-панели
+        ko: 웹 진입 경로
+        zh: Web 安全入口路径
+        zh-Hant: Web 安全入口路徑
+      required: true
+      type: text
