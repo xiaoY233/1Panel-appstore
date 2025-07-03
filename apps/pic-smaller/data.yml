@@ -1,0 +1,21 @@
+name: Pic Smaller
+tags:
+  - 实用工具
+  - 多媒体
+title: 智能图片压缩工具
+description: 智能压缩 JPEG、PNG、WEBP、AVIF、SVG 和 GIF 图片
+additionalProperties:
+  key: pic-smaller
+  name: Pic Smaller
+  tags:
+    - Tool
+    - Media
+  shortDescZh: 智能压缩 JPEG、PNG、WEBP、AVIF、SVG 和 GIF 图片
+  shortDescEn: Compress JPEG, PNG, WEBP, AVIF, SVG and GIF images intelligently
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://picsmaller.com
+  github: https://github.com/joye61/pic-smaller
+  document: https://github.com/joye61/pic-smaller
