@@ -1,0 +1,17 @@
+additionalProperties:
+  formFields:
+    - default: 40208
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: nvidia
+      edit: true
+      envKey: GPU_DRIVER_TYPE
+      labelEn: GPU Driver type
+      labelZh: GPU 驱动的类型
+      required: true
+      type: text

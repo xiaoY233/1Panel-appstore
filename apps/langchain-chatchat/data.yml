@@ -1,0 +1,19 @@
+name: LangChain-Chatchat
+tags:
+  - AI / 大模型
+title: 基于 Langchain 与 ChatGLM 等语言模型的本地知识库问答
+description: 基于 Langchain 与 ChatGLM 等语言模型的本地知识库问答
+additionalProperties:
+  key: langchain-chatchat
+  name: LangChain-Chatchat
+  tags:
+    - AI
+  shortDescZh: 基于 Langchain 与 ChatGLM 等语言模型的本地知识库问答
+  shortDescEn: A LLM application aims to implement knowledge and search engine based QA based on Langchain and open-source or remote LLM API
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/chatchat-space/Langchain-Chatchat
+  github: https://github.com/chatchat-space/Langchain-Chatchat
+  document: https://github.com/chatchat-space/Langchain-Chatchat/wiki
