@@ -1,0 +1,19 @@
+name: Obsidian (中文适配)
+tags:
+  - 工具
+title: 一个使用Markdown语法的闭源笔记软件
+description: 一个使用Markdown语法的闭源笔记软件
+additionalProperties:
+  key: obsidian-zh
+  name: Obsidian (中文适配)
+  tags:
+    - Tool
+  shortDescZh: 一个使用Markdown语法的闭源笔记软件
+  shortDescEn: A private and flexible writing app
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://obsidian.md
+  github: https://github.com/WHG555/obsidian-docker
+  document: https://help.obsidian.md

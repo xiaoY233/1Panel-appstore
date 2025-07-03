@@ -1,0 +1,56 @@
+additionalProperties:
+  formFields:
+    - default: 40166
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40167
+      edit: true
+      envKey: PANEL_APP_PORT_VNC
+      labelEn: VNC Port
+      labelZh: VNC 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40168
+      edit: true
+      envKey: PANEL_APP_PORT_SSH
+      labelEn: SSH Port
+      labelZh: SSH 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: password
+      edit: true
+      envKey: HTTP_PWD
+      labelEn: Auth password
+      labelZh: 密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 1024x768
+      edit: true
+      envKey: DISPLAY_SIZE
+      labelEn: Display size
+      labelZh: 画面尺寸
+      required: true
+      type: text
+    - default: "true"
+      disabled: true
+      envKey: PRIVILEGED_MODE
+      labelEn: Privilege mode switch
+      labelZh: 特权模式开关
+      required: true
+      type: text
