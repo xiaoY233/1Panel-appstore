@@ -1,0 +1,19 @@
+name: WPS Office
+tags:
+  - 工具
+title: 多功能免费办公套件
+description: 多功能免费办公套件
+additionalProperties:
+  key: wps-office
+  name: WPS Office
+  tags:
+    - Tool
+  shortDescZh: 多功能免费办公套件
+  shortDescEn: A lightweight, feature-rich comprehensive office suite with high compatibility
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.wps.com
+  github: https://hub.docker.com/r/linuxserver/wps-office
+  document: https://www.wps.com
