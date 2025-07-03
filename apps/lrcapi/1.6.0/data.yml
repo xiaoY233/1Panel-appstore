@@ -1,0 +1,26 @@
+additionalProperties:
+  formFields:
+    - default: "28883"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: MUSIC_PATH
+      labelEn: Music Path
+      labelZh: 音乐路径
+      required: true
+      type: text
+    - default: "authkey"
+      edit: true
+      envKey: API_AUTH
+      labelEn: API Auth Key
+      labelZh: API 鉴权 Key
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

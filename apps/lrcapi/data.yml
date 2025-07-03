@@ -1,0 +1,19 @@
+name: LrcApi
+tags:
+  - 多媒体
+title: StreamMusic 的 Flask 应用程序接口
+description: StreamMusic 的 Flask 应用程序接口
+additionalProperties:
+  key: lrcapi
+  name: LrcApi
+  tags:
+    - Media
+  shortDescZh: StreamMusic 的 Flask 应用程序接口
+  shortDescEn: A Flask API For StreamMusic
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://docs.lrc.cx
+  github: https://github.com/HisAtri/LrcApi
+  document: https://docs.lrc.cx
