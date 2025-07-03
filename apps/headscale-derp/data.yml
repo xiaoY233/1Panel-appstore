@@ -1,0 +1,19 @@
+name: Headscale-DERP
+tags:
+  - 工具
+title: Headscale 的中继服务
+description: Headscale 的中继服务
+additionalProperties:
+  key: headscale-derp
+  name: Headscale-DERP
+  tags:
+    - Tool
+  shortDescZh: Headscale 的中继服务
+  shortDescEn: Headscale relay service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/fredliang/derper
+  github: https://github.com/fredliang44/derper-docker
+  document: https://headscale.net
