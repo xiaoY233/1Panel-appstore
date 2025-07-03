@@ -1,0 +1,23 @@
+name: PairDrop
+tags:
+  - 实用工具
+title: 跨平台传输文件
+description: 跨平台传输文件，无需设置，无需注册
+additionalProperties:
+  key: pairdrop
+  name: pairdrop
+  tags:
+    - Tool
+    - local
+  shortDescZh: 跨平台传输文件
+  shortDescEn: Transfer Files Cross-Platform
+  description:
+    zh: PairDrop：跨平台传输文件，无需设置，无需注册
+    en: Transfer Files Cross-Platform. No Setup, No Signup.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://pairdrop.net/
+  github: https://github.com/schlagmichdoch/PairDrop
+  document: https://github.com/schlagmichdoch/PairDrop
