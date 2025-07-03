@@ -1,0 +1,238 @@
+additionalProperties:
+  formFields:
+    - default: "nitter.net"
+      edit: true
+      envKey: HOSTNAME
+      labelEn: Hostname
+      labelZh: 主机名
+      required: true
+      type: text
+    - default: "nitter"
+      edit: true
+      envKey: TITLE
+      labelEn: Title
+      labelZh: 标题
+      required: true
+      type: text
+    - default: "0.0.0.0"
+      edit: true
+      envKey: ADDRESS
+      labelEn: Listening Address (in container)
+      labelZh: 监听地址 (容器内)
+      required: true
+      type: text
+    - default: "40238"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      disabled: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: HTTPS
+      labelEn: HTTPS Enabled
+      labelZh: 启用 HTTPS
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "100"
+      edit: true
+      envKey: HTTP_MAX_CONNECTIONS
+      labelEn: Max HTTP Connections
+      labelZh: 最大 HTTP 连接数
+      required: true
+      type: number
+    - default: "./public"
+      edit: true
+      envKey: STATIC_DIR
+      labelEn: Static Directory
+      labelZh: 静态文件目录
+      required: true
+      type: text
+    - default: "240"
+      edit: true
+      envKey: LIST_MINUTES
+      labelEn: List Cache Minutes
+      labelZh: 列表缓存分钟数
+      required: true
+      type: number
+    - default: "10"
+      edit: true
+      envKey: RSS_MINUTES
+      labelEn: RSS Cache Minutes
+      labelZh: RSS 缓存分钟数
+      required: true
+      type: number
+    - default: ""
+      edit: true
+      envKey: REDIS_HOST
+      key: redis
+      labelEn: Redis Service
+      labelZh: Redis服务
+      required: true
+      type: service
+    - default: "6379"
+      edit: true
+      envKey: REDIS_PORT
+      labelEn: Redis Service Port
+      labelZh: Redis服务端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: PANEL_REDIS_ROOT_PASSWORD
+      labelEn: Redis Password
+      labelZh: Redis 密码
+      required: true
+      type: password
+    - default: "20"
+      edit: true
+      envKey: REDIS_CONNECTIONS
+      labelEn: Redis Connections
+      labelZh: Redis 连接数
+      required: true
+      type: number
+    - default: "30"
+      edit: true
+      envKey: REDIS_MAX_CONNECTIONS
+      labelEn: Redis Max Connections
+      labelZh: Redis 最大连接数
+      required: true
+      type: number
+    - default: "C7PPBcaNCL5B5Zkt6uHU"
+      edit: true
+      envKey: HMAC_KEY
+      labelEn: Random key for cryptographic signing of video urls
+      labelZh: 用于视频网址加密签名的随机密钥
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: BASE64_MEDIA
+      labelEn: Base64 Media
+      labelZh: Base64 媒体
+      required: true
+      type: text
+    - default: "true"
+      edit: true
+      envKey: ENABLE_RSS
+      labelEn: Enable RSS
+      labelZh: 启用 RSS
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: ENABLE_DEBUG
+      labelEn: Enable Debug
+      labelZh: 启用调试
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: PROXY
+      labelEn: Proxy
+      labelZh: 代理
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PROXY_AUTH
+      labelEn: Proxy Auth
+      labelZh: 代理认证
+      required: false
+      type: text
+    - default: "10"
+      edit: true
+      envKey: TOKEN_COUNT
+      labelEn: Token Count
+      labelZh: Token 数量
+      required: true
+      type: number
+    - default: "Nitter"
+      edit: true
+      envKey: THEME
+      labelEn: Theme
+      labelZh: 主题
+      required: true
+      type: text
+    - default: "nitter.net"
+      edit: true
+      envKey: REPLACE_TWITTER
+      labelEn: Replace Twitter
+      labelZh: 替换 Twitter
+      required: true
+      type: text
+    - default: "piped.video"
+      edit: true
+      envKey: REPLACE_YOUTUBE
+      labelEn: Replace YouTube
+      labelZh: 替换 YouTube
+      required: true
+      type: text
+    - default: "teddit.net"
+      edit: true
+      envKey: REPLACE_REDDIT
+      labelEn: Replace Reddit
+      labelZh: 替换 Reddit
+      required: true
+      type: text
+    - default: "true"
+      edit: true
+      envKey: PROXY_VIDEOS
+      labelEn: Proxy Videos
+      labelZh: 代理视频
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: HLS_PLAYBACK
+      labelEn: HLS Playback
+      labelZh: HLS 播放
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: INFINITE_SCROLL
+      labelEn: Infinite Scroll
+      labelZh: 无限滚动
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"

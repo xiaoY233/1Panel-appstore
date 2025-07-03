@@ -1,0 +1,19 @@
+name: Nitter
+tags:
+  - 实用工具
+title: 匿名浏览 Twitter
+description: 匿名浏览 Twitter 的开源工具
+additionalProperties:
+  key: nitter
+  name: Nitter
+  tags:
+    - Tool
+  shortDescZh: 匿名浏览 Twitter 的开源工具
+  shortDescEn: Alternative Twitter front-end
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://nitter.net
+  github: https://github.com/zedeus/nitter
+  document: https://github.com/zedeus/nitter

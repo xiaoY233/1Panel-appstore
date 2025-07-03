@@ -1,0 +1,28 @@
+services:
+  nitter:
+    image: zedeus/nitter:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    volumes:
+      - ${DATA_PATH}/nitter.conf:/src/nitter.conf:Z,ro
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:${PANEL_APP_PORT_HTTP}/Jack/status/20 || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 2
+    user: "998:998"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
