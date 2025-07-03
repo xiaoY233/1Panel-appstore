@@ -1,0 +1,86 @@
+additionalProperties:
+  formFields:
+    - child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        labelEn: Database Service
+        labelZh: 数据库服务
+        required: true
+        type: service
+      default: mysql
+      labelEn: Database Service
+      labelZh: 数据库服务
+      params:
+        - envKey: CHEMEX_DB_PORT
+          key: mysql
+          type: param
+          value: "3306"
+        - envKey: CHEMEX_DB_PORT
+          key: postgresql
+          type: param
+          value: "5432"
+      required: true
+      type: apps
+      values:
+        - label: MySQL
+          value: mysql
+    - default: chemex
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: chemex
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: chemex
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 40028
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data/.env
+      edit: true
+      envKey: ENV_PATH
+      labelEn: Environment configuration file path
+      labelZh: 环境配置文件路径
+      required: true
+      type: text
+    - default: ""
+      envKey: PANEL_REDIS_DB_HOST
+      key: redis
+      labelEn: Redis Service
+      labelZh: Redis 服务
+      required: true
+      type: service
+    - default: ""
+      envKey: PANEL_DB_ROOT_PASSWORD
+      labelEn: Redis Password
+      labelZh: Redis 密码
+      required: true
+      type: password
+    - default: 6379
+      edit: true
+      envKey: REDIS_DB_PORT
+      labelEn: Redis Port
+      labelZh: Redis端口
+      required: true
+      rule: paramPort
+      type: number

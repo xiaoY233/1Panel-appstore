@@ -1,0 +1,19 @@
+name: Chemex
+tags:
+  - 工具
+title: 一个免费、开源、高效且漂亮的运维资产管理平台
+description: 一个免费、开源、高效且漂亮的运维资产管理平台
+additionalProperties:
+  key: chemex
+  name: Chemex
+  tags:
+    - Tool
+  shortDescZh: 一个免费、开源、高效且漂亮的运维资产管理平台
+  shortDescEn: A free, open-source, efficient and beautiful O&M asset management platform
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/celaraze/chemex
+  github: https://github.com/celaraze/chemex
+  document: https://github.com/celaraze/chemex
