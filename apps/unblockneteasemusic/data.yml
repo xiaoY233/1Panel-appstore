@@ -1,0 +1,19 @@
+name: UnblockNeteaseMusic
+tags:
+  - 工具
+title: 解锁网易云音乐客户端变灰歌曲
+description: 解锁网易云音乐客户端变灰歌曲
+additionalProperties:
+  key: unblockneteasemusic
+  name: UnblockNeteaseMusic
+  tags:
+    - Tool
+  shortDescZh: 解锁网易云音乐客户端变灰歌曲
+  shortDescEn: Revive unavailable songs for Netease Cloud Music
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/UnblockNeteaseMusic/server
+  github: https://github.com/UnblockNeteaseMusic/server
+  document: https://github.com/UnblockNeteaseMusic/server
