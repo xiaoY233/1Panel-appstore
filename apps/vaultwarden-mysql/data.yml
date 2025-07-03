@@ -1,0 +1,33 @@
+name: Vaultwarden-mysql
+tags:
+  - 密码管理
+  - 自托管
+  - 安全
+title: 轻量、安全、兼容 Bitwarden 的密码管理服务
+description: 一个轻量级、自托管的密码管理服务，兼容 Bitwarden 客户端，适合个人或小团队使用，该版本为mysql版本应用
+additionalProperties:
+  key: vaultwarden-mysql
+  name: Vaultwarden-mysql
+  tags:
+    - Tool
+    - Security
+  shortDescZh: Bitwarden 的轻量开源替代方案
+  shortDescEn: Lightweight, self-hosted alternative to Bitwarden
+  type: Tool
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/dani-garcia/vaultwarden
+  github: https://github.com/dani-garcia/vaultwarden
+  document: https://github.com/dani-garcia/vaultwarden/wiki
+  description:
+    en: A lightweight, secure, and self-hosted password manager compatible with Bitwarden clients.
+    zh: 一个轻量、安全、可自托管的密码管理服务，兼容 Bitwarden 客户端。
+    zh-Hant: 一個輕量、安全、自託管的密碼管理工具，兼容 Bitwarden。
+    ja: Bitwarden クライアントと互換性のある軽量なセルフホスティング型パスワードマネージャー。
+    ms: Pengurus kata laluan yang ringan dan selamat serta boleh dihoskan sendiri, serasi dengan Bitwarden.
+    pt-br: Um gerenciador de senhas leve, seguro e auto-hospedado compatível com clientes Bitwarden.
+    ru: Лёгкий, безопасный и самодостаточный менеджер паролей, совместимый с клиентами Bitwarden.
+    ko: Bitwarden 클라이언트와 호환되는 가볍고 안전한 셀프 호스팅 비밀번호 관리자입니다.
+  architectures:
+    - amd64
+    - arm64
