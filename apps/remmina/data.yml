@@ -1,0 +1,19 @@
+name: Remmina
+tags:
+  - 工具
+title: 远程桌面客户端
+description: 远程桌面客户端
+additionalProperties:
+  key: remmina
+  name: Remmina
+  tags:
+    - Tool
+  shortDescZh: 远程桌面客户端
+  shortDescEn: Remote desktop client
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://remmina.org
+  github: https://gitlab.com/Remmina/Remmina
+  document: https://gitlab.com/Remmina/Remmina/-/wikis/home
