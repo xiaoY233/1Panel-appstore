@@ -1,0 +1,38 @@
+name: KSpeeder
+tags:
+    - 镜像加速
+    - 镜像服务
+    - 实用工具
+    - 网络加速
+    - 私有部署
+title: Docker 镜像加速与私有部署服务
+description: KSpeeder 是一款现代化、支持多平台的 Docker 镜像加速与私有部署服务，适用于无法访问 DockerHub 或需要本地镜像仓库加速的场景。
+additionalProperties:
+    key: kspeeder
+    name: KSpeeder
+    tags:
+        - Accelerator
+        - Registry
+        - Tool
+        - DevOps
+    shortDescZh: 现代化的 Docker 镜像加速与私有部署服务，支持多平台和多架构。
+    shortDescEn: Modern Docker image acceleration and private registry service, supporting multiple platforms and architectures.
+    description:
+        en: Modern Docker image acceleration and private registry service, supporting multiple platforms and architectures. Ideal for environments with limited access to DockerHub or requiring local image acceleration.
+        zh: KSpeeder 是一款现代化、支持多平台的 Docker 镜像加速与私有部署服务，适用于无法访问 DockerHub 或需要本地镜像仓库加速的场景。
+        zh-Hant: KSpeeder 是一款現代化、支援多平台的 Docker 鏡像加速與私有部署服務，適用於無法訪問 DockerHub 或需要本地鏡像倉庫加速的場景。
+        ja: KSpeeder は、複数プラットフォーム対応の Docker イメージ加速・プライベートレジストリサービスです。
+        ko: KSpeeder는 다양한 플랫폼을 지원하는 Docker 이미지 가속 및 프라이빗 레지스트리 서비스입니다.
+        ru: KSpeeder — современный сервис ускорения Docker-образов и частного реестра, поддерживающий различные платформы.
+        pt-br: KSpeeder é um serviço moderno de aceleração de imagens Docker e registro privado, com suporte a múltiplas plataformas.
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://kspeeder.istoreos.com/
+    github: https://github.com/linkease/kspeeder
+    document: https://kspeeder.istoreos.com/guide/getting-started.html
+    architectures:
+        - amd64
+        - arm64
+        - arm/v7 

@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: 5003
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Management Port
+      labelZh: 管理监控端口
+      label:
+        en: Management Port
+        zh: 管理监控端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 5443
+      edit: true
+      envKey: PANEL_APP_PORT_PROXY
+      labelEn: Proxy Port
+      labelZh: 代理端口
+      label:
+        en: Proxy Port
+        zh: 代理端口
+      required: true
+      rule: paramPort
+      type: number 
