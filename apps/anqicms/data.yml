@@ -1,0 +1,18 @@
+name: AnQiCMS
+tags:
+  - 建站
+title: 专注高安全性、多站点、多语言支持的内容管理系统
+description: 专注高安全性、多站点、多语言支持的内容管理系统
+additionalProperties:
+  key: anqicms
+  name: AnQiCMS
+  tags:
+    - Website
+  shortDescZh: 专注高安全性、多站点、多语言支持的内容管理系统
+  shortDescEn: Focused on high security, multi-site, and multilingual support
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://www.anqicms.com/
+  github: https://github.com/fesiong/anqicms
+  document: https://www.anqicms.com/help
