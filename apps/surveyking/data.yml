@@ -1,0 +1,19 @@
+name: 卷王 SurveyKing
+tags:
+  - 工具
+title: 更好的问卷考试系统
+description: 更好的问卷考试系统
+additionalProperties:
+  key: surveyking
+  name: 卷王 SurveyKing
+  tags:
+    - Tool
+  shortDescZh: 更好的问卷考试系统
+  shortDescEn: Better Questionnaire Exam System
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://surveyking.cn
+  github: https://github.com/javahuang/surveyking
+  document: https://surveyking.cn/help/quickstart
