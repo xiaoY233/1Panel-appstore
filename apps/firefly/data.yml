@@ -1,0 +1,19 @@
+name: 萤火虫
+tags:
+  - 实用工具
+title: 一款简单、易架设的 WireGuard 服务端软件
+description: 一款简单、易架设的 WireGuard 服务端软件
+additionalProperties:
+  key: firefly
+  name: 萤火虫
+  tags:
+    - Tool
+  shortDescZh: 一款简单、易架设的 WireGuard 服务端软件
+  shortDescEn: A simple and easy to install WireGuard server software
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://fahi.uusec.com
+  github: https://github.com/Safe3/firefly
+  document: https://github.com/Safe3/firefly/blob/main/README.md
