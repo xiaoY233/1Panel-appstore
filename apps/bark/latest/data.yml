@@ -1,0 +1,156 @@
+additionalProperties:
+  formFields:
+    - default: "40280"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      disabled: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "0.0.0.0"
+      disabled: true
+      envKey: BARK_SERVER_ADDRESS
+      labelEn: Bark Server Address
+      labelZh: Bark 服务器地址
+      required: true
+      type: text
+    - default: "/"
+      edit: true
+      envKey: BARK_SERVER_URL_PREFIX
+      labelEn: Bark Server URL Prefix
+      labelZh: Bark 服务器 URL 前缀
+      required: true
+      type: text
+    - default: "/data"
+      disabled: true
+      envKey: BARK_SERVER_DATA_DIR
+      labelEn: Bark Server Data Directory
+      labelZh: Bark 服务器数据目录
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: BARK_SERVER_DSN
+      labelEn: Bark Server DSN
+      labelZh: Bark 服务器 DSN
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: BARK_SERVER_SERVERLESS
+      labelEn: Bark Server Serverless
+      labelZh: Bark 服务器无服务器
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: BARK_SERVER_CERT
+      labelEn: Bark Server Certificate
+      labelZh: Bark 服务器证书
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: BARK_SERVER_KEY
+      labelEn: Bark Server Key
+      labelZh: Bark 服务器密钥
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: BARK_SERVER_CASE_SENSITIVE
+      labelEn: Bark Server Case Sensitive
+      labelZh: Bark 服务器区分大小写
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: BARK_SERVER_STRICT_ROUTING
+      labelEn: Bark Server Strict Routing
+      labelZh: Bark 服务器严格路由
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: BARK_SERVER_REDUCE_MEMORY_USAGE
+      labelEn: Bark Server Reduce Memory Usage
+      labelZh: Bark 服务器减少内存使用
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: BARK_SERVER_BASIC_AUTH_USER
+      labelEn: Bark Server Basic Auth User
+      labelZh: Bark 服务器基本身份验证用户
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: BARK_SERVER_BASIC_AUTH_PASSWORD
+      labelEn: Bark Server Basic Auth Password
+      labelZh: Bark 服务器基本身份验证密码
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: BARK_SERVER_PROXY_HEADER
+      labelEn: Bark Server Proxy Header
+      labelZh: Bark 服务器代理头
+      required: false
+      type: text
+    - default: "262144"
+      edit: true
+      envKey: BARK_SERVER_CONCURRENCY
+      labelEn: Bark Server Concurrency
+      labelZh: Bark 服务器并发
+      required: true
+      type: number
+    - default: "3s"
+      edit: true
+      envKey: BARK_SERVER_READ_TIMEOUT
+      labelEn: Bark Server Read Timeout
+      labelZh: Bark 服务器读取超时
+      required: true
+      type: text
+    - default: "3s"
+      edit: true
+      envKey: BARK_SERVER_WRITE_TIMEOUT
+      labelEn: Bark Server Write Timeout
+      labelZh: Bark 服务器写入超时
+      required: true
+      type: text
+    - default: "10s"
+      edit: true
+      envKey: BARK_SERVER_IDLE_TIMEOUT
+      labelEn: Bark Server Idle Timeout
+      labelZh: Bark 服务器空闲超时
+      required: true
+      type: text

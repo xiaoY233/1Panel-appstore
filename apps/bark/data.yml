@@ -1,0 +1,19 @@
+name: Bark
+tags:
+  - 开发工具
+title: iOS 消息推送工具
+description: iOS 消息推送工具
+additionalProperties:
+  key: bark
+  name: Bark
+  tags:
+    - DevTool
+  shortDescZh: iOS 消息推送工具
+  shortDescEn: iOS message push tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://bark.day.app
+  github: https://github.com/Finb/Bark
+  document: https://bark.day.app
