@@ -1,0 +1,19 @@
+name: Docker-OSX
+tags:
+  - 实用工具
+title: 在 Docker 中运行 macOS
+description: 在 Docker 中运行 macOS
+additionalProperties:
+  key: docker-osx
+  name: Docker-OSX
+  tags:
+    - Tool
+  shortDescZh: 在 Docker 中运行 macOS
+  shortDescEn: Run macOS in Docker
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/sickcodes/Docker-OSX
+  github: https://github.com/sickcodes/Docker-OSX
+  document: https://github.com/sickcodes/Docker-OSX

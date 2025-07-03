@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: ":0.0"
+      edit: true
+      envKey: DISPLAY
+      labelEn: Display
+      labelZh: 显示
+      required: true
+      type: text
+    - default: "40287"
+      edit: true
+      envKey: PANEL_APP_PORT_SSH
+      labelEn: SSH Port
+      labelZh: SSH 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "unless-stopped"
+      edit: true
+      envKey: RESTART_POLICY
+      labelEn: Restart Policy
+      labelZh: 重启策略
+      required: true
+      type: select
+      values:
+        - label: "Always"
+          value: "always"
+        - label: "Unless-stopped"
+          value: "unless-stopped"
+        - label: "No"
+          value: "no"

@@ -1,0 +1,31 @@
+services:
+  docker_osx:
+    image: "sickcodes/docker-osx:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: ${RESTART_POLICY}
+    networks:
+      - 1panel-network
+    devices:
+      - /dev/kvm
+    environment:
+      - INTERNAL_SSH_PORT=10022
+      - DISPLAY:=${DISPLAY:-:0.0}
+    ports:
+      - ${PANEL_APP_PORT_SSH}:10022
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev:/dev
+      - /lib/modules:/lib/modules
+      - docker-osx_data:/home
+    cap_add:
+      - ALL
+    labels:
+      createdBy: "Apps"
+
+volumes:
+  docker-osx_data:
+    name: docker-osx_data
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,75 @@
+additionalProperties:
+  formFields:
+    - default: ":0.0"
+      edit: true
+      envKey: DISPLAY
+      labelEn: Display
+      labelZh: 显示
+      required: true
+      type: text
+    - default: "40287"
+      edit: true
+      envKey: PANEL_APP_PORT_SSH
+      labelEn: SSH Port
+      labelZh: SSH 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "unless-stopped"
+      edit: true
+      envKey: RESTART_POLICY
+      labelEn: Restart Policy
+      labelZh: 重启策略
+      required: true
+      type: select
+      values:
+        - label: "Always"
+          value: "always"
+        - label: "Unless-stopped"
+          value: "unless-stopped"
+        - label: "No"
+          value: "no"
+    - default: ""
+      edit: true
+      envKey: IMAGE_FILE
+      labelEn: System Image File
+      labelZh: 系统镜像文件路径
+      required: true
+      type: text
+    - default: "50G"
+      edit: true
+      envKey: DISK_SIZE
+      labelEn: Disk Size
+      labelZh: 磁盘大小
+      required: true
+      type: text
+    - default: "4"
+      edit: true
+      envKey: RAM_SIZE
+      labelEn: RAM Size
+      labelZh: 内存大小
+      required: true
+      type: number
+    - default: "2"
+      edit: true
+      envKey: CPU_CORES
+      labelEn: CPU Cores
+      labelZh: CPU 核心数
+      required: true
+      type: number
+    - default: "docker"
+      edit: true
+      envKey: USERNAME
+      labelEn: Login Username
+      labelZh: 登录用户名
+      required: true
+      type: text
+    - default: "password"
+      edit: true
+      envKey: PASSWORD
+      labelEn: Login Password
+      labelZh: 登录密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
