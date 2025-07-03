@@ -1,0 +1,19 @@
+name: Typesense
+tags:
+  - 建站
+title: 快速、容错率高的搜索引擎，用于构建令人愉悦的搜索体验
+description: 快速、容错率高的搜索引擎，用于构建令人愉悦的搜索体验
+additionalProperties:
+  key: typesense
+  name: Typesense
+  tags:
+    - Website
+  shortDescZh: 快速、容错率高的搜索引擎，用于构建令人愉悦的搜索体验
+  shortDescEn: Fast, typo tolerant, fuzzy search engine for building delightful search experiences
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://typesense.org/
+  github: https://github.com/typesense/typesense
+  document: https://typesense.org/docs/
