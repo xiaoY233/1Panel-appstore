@@ -1,0 +1,26 @@
+services:
+  librespeed:
+    image: "ghcr.io/librespeed/speedtest:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    environment:
+      - MODE=${MODE}
+      - TITLE=${TITLE}
+      - TELEMETRY=${TELEMETRY}
+      - ENABLE_ID_OBFUSCATION=${ENABLE_ID_OBFUSCATION}
+      - REDACT_IP_ADDRESSES=${REDACT_IP_ADDRESSES}
+      - PASSWORD=${PASSWORD}
+      - EMAIL=${EMAIL}
+      - DISABLE_IPINFO=${DISABLE_IPINFO}
+      - DISTANCE=${DISTANCE}
+      - WEBPORT=${PANEL_APP_PORT_HTTP}
+    labels:  
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

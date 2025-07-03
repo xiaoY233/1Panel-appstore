@@ -1,0 +1,102 @@
+additionalProperties:
+  formFields:
+    - default: 40262
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "standalone"
+      edit: true
+      envKey: MODE
+      labelEn: Mode
+      labelZh: 模式
+      required: true
+      type: text
+    - default: "LibreSpeed"
+      edit: true
+      envKey: TITLE
+      labelEn: Title
+      labelZh: 标题
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: TELEMETRY
+      labelEn: Telemetry
+      labelZh: 遥测
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "true"
+      edit: true
+      envKey: ENABLE_ID_OBFUSCATION
+      labelEn: Enable ID Obfuscation
+      labelZh: 启用 ID 混淆
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "false"
+      edit: true
+      envKey: REDACT_IP_ADDRESSES
+      labelEn: Redact IP Addresses
+      labelZh: 隐藏 IP 地址
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "password"
+      edit: true
+      envKey: PASSWORD
+      labelEn: Password
+      labelZh: 密码
+      random: true
+      required: false
+      rule: paramCommon
+      type: password
+    - default: ""
+      edit: true
+      envKey: EMAIL
+      labelEn: Email address for GDPR requests (must be specified when telemetry is enabled)
+      labelZh: GDPR 请求的电子邮件地址 (启用遥测时必须指定)
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: DISABLE_IPINFO
+      labelEn: Disable IPInfo
+      labelZh: 禁用 IPInfo
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "km"
+      edit: true
+      envKey: DISTANCE
+      labelEn: Distance
+      labelZh: 距离
+      required: false
+      type: select
+      values:
+        - label: "km"
+          value: "km"
+        - label: "mi"
+          value: "mi"
+        - label: ""
+          value: ""
