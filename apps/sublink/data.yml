@@ -1,0 +1,19 @@
+name: SubLink
+tags:
+  - 工具
+title: 节点转换成订阅
+description: 节点转换成订阅
+additionalProperties:
+  key: sublink
+  name: SubLink
+  tags:
+    - Tool
+  shortDescZh: 节点转换成订阅
+  shortDescEn: Convert node links into subscription
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/jaaksii/sublink
+  github: https://github.com/jaaksii/sublink
+  document: https://github.com/jaaksii/sublink
