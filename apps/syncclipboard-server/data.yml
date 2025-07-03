@@ -1,0 +1,19 @@
+name: SyncClipboard-Server
+tags:
+  - 实用工具
+title: 跨平台剪贴板同步方案 (服务端)
+description: 跨平台剪贴板同步方案 (服务端)
+additionalProperties:
+  key: syncclipboard-server
+  name: SyncClipboard-Server
+  tags:
+    - Tool
+  shortDescZh: 跨平台剪贴板同步方案 (服务端)
+  shortDescEn: Cross-Platform Cipboard Syncing Solution (Server)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Jeric-X/SyncClipboard
+  github: https://github.com/Jeric-X/SyncClipboard
+  document: https://github.com/Jeric-X/SyncClipboard
