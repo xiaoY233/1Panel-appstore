@@ -1,0 +1,19 @@
+name: PicX
+tags:
+  - 工具
+title: 一款基于 GitHub API 开发的图床工具
+description: 一款基于 GitHub API 开发的图床工具
+additionalProperties:
+  key: picx
+  name: PicX
+  tags:
+    - Tool
+  shortDescZh: 一款基于 GitHub API 开发的图床工具
+  shortDescEn: A picture bed tool based on GitHub API
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://picx.xpoet.cn
+  github: https://github.com/XPoet/picx
+  document: https://picx-docs.xpoet.cn
