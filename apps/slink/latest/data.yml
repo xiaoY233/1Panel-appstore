@@ -1,0 +1,121 @@
+additionalProperties:
+  formFields:
+    - default: 40236
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: "https://your-domain.com"
+      envKey: ORIGIN
+      labelEn: External URL (Only https environments can register and login, reverse proxy is required)
+      labelZh: 外部访问地址 (只有 https 环境才能注册登录，需要反向代理)
+      required: true
+      type: text
+      edit: true
+    - default: "true"
+      envKey: USER_APPROVAL_REQUIRED
+      labelEn: Whether to require user approval before they can upload images
+      labelZh: 是否需要用户批准才能上传图像
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+      edit: true
+    - default: "true"
+      envKey: USER_ALLOW_UNAUTHENTICATED_ACCESS
+      labelEn: Allow Unauthenticated Access
+      labelZh: 允许未认证访问
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+      edit: true
+    - default: "6"
+      envKey: USER_PASSWORD_MIN_LENGTH
+      labelEn: User Password Minimum Length
+      labelZh: 用户密码最小长度
+      required: true
+      type: number
+      edit: true
+    - default: "15"
+      envKey: USER_PASSWORD_REQUIREMENTS
+      labelEn: User Password Requirements (Sum of the following options:1-numbers, 2-lowercase, 4-uppercase, 8-special characters)
+      labelZh: 用户密码要求 (以下选项的总和：1-数字、2-小写、4-大写、8-特殊字符)
+      required: true
+      type: number
+      edit: true
+    - default: "15M"
+      envKey: IMAGE_MAX_SIZE
+      labelEn: Image Maximum Size (no more than 50M)
+      labelZh: 图片最大尺寸(不超过50M)
+      required: true
+      type: text
+      edit: true
+    - default: "true"
+      envKey: IMAGE_STRIP_EXIF_METADATA
+      labelEn: Strip EXIF Metadata
+      labelZh: 剥离 EXIF 元数据
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+      edit: true
+    - default: "local"
+      envKey: STORAGE_PROVIDER
+      labelEn: Storage Provider
+      labelZh: 存储提供商
+      required: true
+      type: select
+      values:
+        - label: Local
+          value: "local"
+        - label: SMB
+          value: "smb"
+      edit: true
+    - default: ""
+      envKey: SMB_HOST
+      labelEn: SMB Host
+      labelZh: SMB 主机
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: SMB_USERNAME
+      labelEn: SMB Username
+      labelZh: SMB 用户名
+      required: false
+      type: text
+      edit: true
+    - default: ""
+      envKey: SMB_PASSWORD
+      labelEn: SMB Password
+      labelZh: SMB 密码
+      required: false
+      type: password
+      edit: true
+    - default: ""
+      envKey: SMB_SHARE
+      labelEn: SMB Share
+      labelZh: SMB 共享
+      required: false
+      type: text
+      edit: true
