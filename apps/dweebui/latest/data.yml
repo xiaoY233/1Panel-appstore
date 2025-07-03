@@ -1,0 +1,40 @@
+additionalProperties:
+  formFields:
+    - default: "40285"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/config"
+      disabled: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "./data/db.sqlite"
+      disabled: true
+      envKey: DB_PATH
+      labelEn: Database Path
+      labelZh: 数据库文件路径
+      required: true
+      type: text
+    - default: "MrWiskers"
+      edit: true
+      envKey: SECRET_KEY
+      labelEn: Secret Key
+      labelZh: 秘钥
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "/var/run/docker.sock"
+      edit: true
+      envKey: DOCKER_SOCK_PATH
+      labelEn: Docker Socket Path
+      labelZh: Docker 套接字路径
+      required: true
+      type: text

@@ -1,0 +1,22 @@
+services:
+  dweebui:
+    image: "lllllllillllllillll/dweebui:v0.60"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    volumes:
+      - ${DATA_PATH}:/app/config
+      - ${DB_PATH}:/app/database/db.sqlite
+      - ${DOCKER_SOCK_PATH}:/var/run/docker.sock
+    environment:
+      - PORT=${PANEL_APP_PORT_HTTP}
+      - SECRET=${SECRET_KEY}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

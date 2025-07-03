@@ -1,0 +1,19 @@
+name: DweebUI
+tags:
+  - 实用工具
+title: 一个用于管理容器的 WebUI
+description: 一个用于管理容器的 WebUI
+additionalProperties:
+  key: dweebui
+  name: DweebUI
+  tags:
+    - Tool
+  shortDescZh: 一个用于管理容器的 WebUI
+  shortDescEn: A WebUI for managing your containers
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.dweebui.com
+  github: https://github.com/lllllllillllllillll/DweebUI
+  document: https://github.com/lllllllillllllillll/DweebUI
