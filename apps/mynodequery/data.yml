@@ -1,0 +1,19 @@
+name: MyNodeQuery
+tags:
+  - 工具
+title: 一款简洁好用的探针
+description: 一款简洁好用的探针
+additionalProperties:
+  key: mynodequery
+  name: MyNodeQuery
+  tags:
+    - Tool
+  shortDescZh: 一款简洁好用的探针
+  shortDescEn: A simple and easy-to-use probe
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/jaydenlee2019/mynodequery
+  github: https://hub.docker.com/r/jaydenlee2019/mynodequery
+  document: https://hub.docker.com/r/jaydenlee2019/mynodequery
