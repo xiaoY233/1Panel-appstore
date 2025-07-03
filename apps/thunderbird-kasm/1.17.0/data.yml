@@ -1,0 +1,26 @@
+additionalProperties:
+  formFields:
+    - default: "40327"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTPS
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "password"
+      edit: true
+      envKey: HTTP_PWD
+      labelEn: Access Password
+      labelZh: 访问密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "1024m"
+      edit: true
+      envKey: MEM_USE
+      labelEn: Shared memory footprint (1gb)
+      labelZh: 共享内存占用(1gb)
+      required: true
+      type: text

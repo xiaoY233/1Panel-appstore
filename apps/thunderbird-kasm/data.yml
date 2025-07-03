@@ -1,0 +1,19 @@
+name: Thunderbird
+tags:
+  - 邮件服务
+title: 开源的电子邮件客户端 (Kasm)
+description: 开源的电子邮件客户端 (Kasm)
+additionalProperties:
+  key: thunderbird-kasm
+  name: Thunderbird
+  tags:
+    - Email
+  shortDescZh: 开源的电子邮件客户端 (Kasm)
+  shortDescEn: Open-source email client (Kasm)
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://www.thunderbird.net
+  github: https://github.com/thunderbird
+  document: https://support.mozilla.org/en-US/products/thunderbird
