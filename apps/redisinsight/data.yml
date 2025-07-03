@@ -1,0 +1,19 @@
+name: RedisInsight
+tags:
+  - 开发工具
+title: Redis 图形管理工具
+description: Redis 图形管理工具
+additionalProperties:
+  key: redisinsight
+  name: RedisInsight
+  tags:
+    - DevTool
+  shortDescZh: Redis 图形管理工具
+  shortDescEn: Redis graphical management tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://redis.com/redis-enterprise/redis-insight/
+  github: https://github.com/RedisInsight/RedisInsight
+  document: https://docs.redis.com/latest/ri/
