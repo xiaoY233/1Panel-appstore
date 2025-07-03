@@ -1,0 +1,19 @@
+name: Natter
+tags:
+  - 实用工具
+title: Fullcone NAT 端口打洞工具
+description: Fullcone NAT 端口打洞工具
+additionalProperties:
+  key: natter
+  name: Natter
+  tags:
+    - Tool
+  shortDescZh: Fullcone NAT 端口打洞工具
+  shortDescEn: Expose your port behind full-cone NAT to the Internet
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/MikeWang000000/Natter
+  github: https://github.com/MikeWang000000/Natter
+  document: https://github.com/MikeWang000000/Natter

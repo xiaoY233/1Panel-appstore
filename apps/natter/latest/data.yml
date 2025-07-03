@@ -1,0 +1,38 @@
+additionalProperties:
+  formFields:
+    - default: "natter-service"
+      edit: true
+      envKey: SERVICE_NAME
+      labelEn: Service Name
+      labelZh: 服务名称
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "-m test"
+      edit: true
+      envKey: COMMAND
+      labelEn: Command
+      labelZh: 命令
+      required: true
+      type: text
+    - default: "./data"
+      edit: true
+      envKey: EXTERNAL_DATA_PATH
+      labelEn: External Data Path
+      labelZh: 外部数据路径
+      required: true
+      type: text
+    - default: "/data"
+      edit: true
+      envKey: INTERNAL_DATA_PATH
+      labelEn: Internal container data paths
+      labelZh: 容器内部数据路径
+      required: true
+      type: text
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text

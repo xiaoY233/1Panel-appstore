@@ -1,0 +1,17 @@
+services:
+  ${SERVICE_NAME}:
+    image: "nattertool/natter:latest"
+    container_name: ${CONTAINER_NAME}
+    command: ${COMMAND}
+    volumes:
+      - ${EXTERNAL_DATA_PATH}:${INTERNAL_DATA_PATH}
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - TZ=${TIME_ZONE}
+    network_mode: host
+    restart: always
+    labels:
+      createdBy: "Apps"
+
