@@ -1,0 +1,19 @@
+name: WeekToDo
+tags:
+  - 工具
+title: 一款免费的极简主义每周计划应用程序，专注于隐私
+description: 一款免费的极简主义每周计划应用程序，专注于隐私
+additionalProperties:
+  key: weektodo
+  name: WeekToDo
+  tags:
+    - Tool
+  shortDescZh: 一款免费的极简主义每周计划应用程序，专注于隐私
+  shortDescEn: A free minimalist weekly planner app focused on privacy
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://weektodo.me
+  github: https://github.com/manuelernestog/weektodo
+  document: https://github.com/manuelernestog/weektodo
