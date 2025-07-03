@@ -1,0 +1,137 @@
+additionalProperties:
+  formFields:
+# Default config
+    - default: 3210
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Application Port
+      labelZh: 应用端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8000
+      edit: true
+      envKey: CASDOOR_PORT
+      labelEn: CASDOOR Port
+      labelZh: CASDOOR 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9000
+      edit: true
+      envKey: MINIO_PORT
+      labelEn: MinIO Port
+      labelZh: MinIO端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: http://Your-IP:3210
+      edit: true
+      envKey: APP_URL
+      labelEn: Application URL
+      labelZh: 应用地址
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: http://Your-IP:3210/api/auth
+      edit: true
+      envKey: AUTH_URL
+      labelEn: Auth Service URL
+      labelZh: 认证服务地址
+      required: true
+      rule: paramExtUrl
+      type: text
+# Postgres related
+    - default: lobechat
+      edit: true
+      envKey: LOBE_DB_NAME
+      labelEn: Database Name
+      labelZh: 数据库名称
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: uWNZugjBqixf8dxC
+      edit: true
+      envKey: POSTGRES_PASSWORD
+      labelEn: Database Password
+      labelZh: 数据库密码
+      required: true
+      rule: paramCommon
+      type: password
+    - default: http://Your-IP:8000
+      edit: true
+      envKey: AUTH_CASDOOR_ISSUER
+      labelEn: AUTH CASDOOR ISSUER
+      labelZh: AUTH CASDOOR ISSUER
+      required: true
+      rule: paramExtUrl
+      type: text
+# Casdoor secret
+    - default: a387a4892ee19b1a2249
+      edit: true
+      envKey: AUTH_CASDOOR_ID
+      labelEn: AUTH CASDOOR ID
+      labelZh: AUTH CASDOOR ID
+      required: true
+      rule: paramCommon
+      type: text
+    - default: dbf205949d704de81b0b5b3603174e23fbecc354
+      edit: true
+      envKey: AUTH_CASDOOR_SECRET
+      labelEn: AUTH CASDOOR SECRET
+      labelZh: AUTH CASDOOR SECRET
+      required: true
+      rule: paramCommon
+      type: password
+# MinIO S3 configuration
+    - default: admin
+      edit: true
+      envKey: MINIO_ROOT_USER
+      labelEn: MinIO ROOT User
+      labelZh: MinIO ROOT User
+      required: true
+      rule: paramCommon
+      type: text
+    - default: e07a87a0
+      edit: true
+      envKey: MINIO_ROOT_PASSWORD
+      labelEn: MinIO ROOT Password
+      labelZh: MinIO ROOT Password
+      required: true
+      rule: paramCommon
+      type: password
+# Configure the bucket information of MinIO
+    - default: http://Your-IP:9000
+      edit: true
+      envKey: S3_ENDPOINT
+      labelEn: S3 Endpoint
+      labelZh: S3 Endpoint
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: http://Your-IP:9000
+      edit: true
+      envKey: S3_PUBLIC_DOMAIN
+      labelEn: S3 PUBLIC DOMAIN
+      labelZh: S3 PUBLIC DOMAIN
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: lobe
+      edit: true
+      envKey: MINIO_LOBE_BUCKET
+      labelEn: MINIO LOBE BUCKET
+      labelZh: MINIO LOBE BUCKET
+      required: true
+      rule: paramCommon
+      type: text
+# Configure for casdoor
+    - default: http://Your-IP:8000
+      edit: true
+      envKey: origin
+      labelEn: origin
+      labelZh: origin
+      required: true
+      rule: paramExtUrl
+      type: text
