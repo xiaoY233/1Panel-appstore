@@ -1,0 +1,35 @@
+# additionalProperties 是固定写法
+additionalProperties:
+  # formFields 定义了安装时需要填写的表单字段
+  formFields:
+    # 字段1: 端口配置
+    - default: 25774
+      edit: true
+      # 修正：使用驼峰命名的 envKey
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 应用端口
+      required: true
+      rule: paramPort
+      type: number
+    # 字段2: 用户名配置
+    - default: admin
+      edit: true
+      # 修正：使用驼峰命名的 envKey
+      envKey: ADMIN_USERNAME
+      labelEn: Admin Username
+      labelZh: 管理员用户名
+      required: true
+      rule: paramCommon
+      type: text
+    # 字段3: 密码配置
+    - default: changeme
+      edit: true
+      # 修正：使用驼峰命名的 envKey
+      envKey: ADMIN_PASSWORD
+      labelEn: Admin Password
+      labelZh: 管理员密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

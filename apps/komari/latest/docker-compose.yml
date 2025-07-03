@@ -1,0 +1,22 @@
+version: "3"
+services:
+  komari:
+    image: ghcr.io/komari-monitor/komari:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:25774"
+    volumes:
+      - ./data:/app/data
+    # 使用更明确的 YAML 数组格式定义环境变量
+    environment:
+      - "ADMIN_USERNAME=${ADMIN_USERNAME}"
+      - "ADMIN_PASSWORD=${ADMIN_PASSWORD}"
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
