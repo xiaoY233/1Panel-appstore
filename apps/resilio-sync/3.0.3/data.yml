@@ -1,0 +1,72 @@
+additionalProperties:
+  formFields:
+    - default: "40237"
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      type: number
+      edit: true
+    - default: "55555"
+      envKey: PANEL_APP_PORT_SYNC
+      labelEn: Sync Port
+      labelZh: 同步端口
+      required: true
+      type: number
+      edit: true
+    - default: "./data/config"
+      envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: text
+      edit: true
+    - default: "./data/downloads"
+      envKey: DOWNLOADS_PATH
+      labelEn: Downloads Path
+      labelZh: 下载路径
+      required: true
+      type: text
+      edit: true
+    - default: "./data/sync"
+      envKey: SYNC_PATH
+      labelEn: Sync Path
+      labelZh: 同步路径
+      required: true
+      type: text
+      edit: true
+    - default: "./data/mnt"
+      envKey: EXTERNAL_MOUNT_PATH
+      labelEn: External mount path
+      labelZh: 外部挂载路径
+      required: true
+      type: text
+      edit: true
+    - default: "/mnt"
+      envKey: INTERNAL_MOUNT_PATH
+      labelEn: Internal mount path
+      labelZh: 内部挂载路径
+      required: true
+      type: text
+      edit: true
+    - default: "1000"
+      envKey: USER_ID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+      edit: true
+    - default: "1000"
+      envKey: GROUP_ID
+      labelEn: Group ID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+      edit: true
+    - default: "Asia/Shanghai"
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+      edit: true

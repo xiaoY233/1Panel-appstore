@@ -1,0 +1,19 @@
+name: Resilio Sync
+tags:
+  - 实用工具
+title: 文件同步工具
+description: 文件同步工具
+additionalProperties:
+  key: resilio-sync
+  name: Resilio Sync
+  tags:
+    - Tool
+  shortDescZh: 文件同步工具
+  shortDescEn: File Sync Tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.resilio.com
+  github: https://www.resilio.com
+  document: https://help.resilio.com
