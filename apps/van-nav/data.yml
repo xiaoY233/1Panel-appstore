@@ -1,0 +1,19 @@
+name: van-nav
+tags:
+  - 建站
+title: 一个轻量导航站，汇总你的所有服务
+description: 一个轻量导航站，汇总你的所有服务
+additionalProperties:
+  key: van-nav
+  name: van-nav
+  tags:
+    - Website
+  shortDescZh: 一个轻量导航站，汇总你的所有服务
+  shortDescEn: A lightweight navigation station that aggregates all your services
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Mereithhh/van-nav
+  github: https://github.com/Mereithhh/van-nav
+  document: https://github.com/Mereithhh/van-nav
