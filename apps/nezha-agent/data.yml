@@ -1,0 +1,19 @@
+name: 哪吒监控 - Agent
+tags:
+  - 实用工具
+title: 哪吒监控 - Agent
+description: 哪吒监控 - Agent
+additionalProperties:
+  key: nezha-agent
+  name: 哪吒监控 - Agent
+  tags:
+    - Tool
+  shortDescZh: 哪吒监控 - Agent
+  shortDescEn: Nezha Monitoring - Agent
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://nezha.wiki
+  github: https://github.com/naiba/nezha
+  document: https://nezha.wiki/guide/agent.html

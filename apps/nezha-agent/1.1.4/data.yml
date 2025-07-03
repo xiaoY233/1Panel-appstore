@@ -1,0 +1,16 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: NZ_GRPC_URL
+      labelEn: "Nezha gRPC URL"
+      labelZh: 哪吒 gRPC 地址
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: NZ_CLENT_SECRET
+      labelEn: "Nezha client secret"
+      labelZh: 哪吒客户端密钥
+      required: true
+      type: password
