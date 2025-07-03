@@ -1,0 +1,48 @@
+additionalProperties:
+  formFields:
+    - default: 40154
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40152
+      edit: true
+      envKey: PEER_PORT_VALUE
+      labelEn: Peer Port
+      labelZh: BT端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data/watch
+      edit: true
+      envKey: WATCH_PATH
+      labelEn: Watch folder for torrent files
+      labelZh: 监视种子文件的文件夹
+      required: true
+      type: text
+    - default: ./data/downloads
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download folder path
+      labelZh: 下载文件夹路径
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEBUI_USER
+      labelEn: Webui user
+      labelZh: 网页用户
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEBUI_PWD
+      labelEn: Webui password
+      labelZh: 网页密码
+      random: false
+      required: false
+      rule: paramComplexity
+      type: password

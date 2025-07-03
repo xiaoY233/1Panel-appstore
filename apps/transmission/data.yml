@@ -1,0 +1,19 @@
+name: Transmission
+tags:
+  - 工具
+title: 一个快速，简单，免费的BitTorrent客户端
+description: 一个快速，简单，免费的BitTorrent客户端
+additionalProperties:
+  key: transmission
+  name: Transmission
+  tags:
+    - Tool
+  shortDescZh: 一个快速，简单，免费的BitTorrent客户端
+  shortDescEn: A fast, easy, and free BitTorrent client
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://transmissionbt.com/
+  github: https://github.com/transmission/transmission
+  document: https://github.com/transmission/transmission
