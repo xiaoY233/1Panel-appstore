@@ -1,0 +1,19 @@
+name: PicImpact
+tags:
+  - 多媒体
+title: 摄影佬专用相片集
+description: 摄影佬专用相片集
+additionalProperties:
+  key: picimpact
+  name: PicImpact
+  tags:
+    - Media
+  shortDescZh: 摄影佬专用相片集
+  shortDescEn: Photo Album for Photographers
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://pic.besscroft.com
+  github: https://github.com/besscroft/PicImpact
+  document: https://github.com/besscroft/PicImpact
