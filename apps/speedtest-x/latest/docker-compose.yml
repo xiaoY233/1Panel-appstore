@@ -1,0 +1,20 @@
+services:
+  speedtest-x:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    environment:
+      - WEBPORT=${PANEL_APP_PORT_HTTP}
+      - MAX_LOG_COUNT=${MAX_LOG_COUNT}
+      - IP_SERVICE=${IP_SERVICE}
+      - SAME_IP_MULTI_LOGS=${SAME_IP_MULTI_LOGS}
+    image: badapple9/speedtest-x:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
