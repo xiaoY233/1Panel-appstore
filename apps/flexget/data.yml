@@ -1,0 +1,19 @@
+name: FlexGet
+tags:
+  - 工具
+title: 多用途自动化工具
+description: 多用途自动化工具
+additionalProperties:
+  key: flexget
+  name: FlexGet
+  tags:
+    - Tool
+  shortDescZh: 多用途自动化工具
+  shortDescEn: A multi-purpose automation tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://flexget.com
+  github: https://github.com/Flexget/Flexget
+  document: https://flexget.com
