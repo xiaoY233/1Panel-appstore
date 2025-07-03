@@ -1,0 +1,19 @@
+name: AliyunDrive WebDAV
+tags:
+  - 云存储
+title: 阿里云盘 WebDAV 服务
+description: 阿里云盘 WebDAV 服务
+additionalProperties:
+  key: aliyundrive-webdav
+  name: AliyunDrive WebDAV
+  tags:
+    - Storage
+  shortDescZh: 阿里云盘 WebDAV 服务
+  shortDescEn: AliyunDrive WebDAV Service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/messense/aliyundrive-webdav
+  github: https://github.com/messense/aliyundrive-webdav
+  document: https://github.com/messense/aliyundrive-webdav

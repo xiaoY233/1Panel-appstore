@@ -1,0 +1,42 @@
+additionalProperties:
+  formFields:
+    - default: 40257
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "your-refresh-token"
+      edit: true
+      envKey: REFRESH_TOKEN
+      labelEn: Refresh Token
+      labelZh: 刷新令牌
+      required: true
+      type: text
+    - default: "admin"
+      edit: true
+      envKey: WEBDAV_AUTH_USER
+      labelEn: WebDAV Username
+      labelZh: WebDAV 用户名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "password"
+      edit: true
+      envKey: WEBDAV_AUTH_PASSWORD
+      labelEn: WebDAV Password
+      labelZh: WebDAV 密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
