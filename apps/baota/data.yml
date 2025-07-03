@@ -1,0 +1,19 @@
+name: BT-Panel
+tags:
+  - 工具
+title: 宝塔面板，服务器运维管理面板
+description: 宝塔面板，服务器运维管理面板
+additionalProperties:
+  key: baota
+  name: BT-Panel
+  tags:
+    - Tool
+  shortDescZh: 宝塔面板，服务器运维管理面板
+  shortDescEn: BT-Panel , Server O&M management panel
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://www.bt.cn/
+  github: https://github.com/aaPanel/BaoTa
+  document: http://docs.bt.cn/
