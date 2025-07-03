@@ -1,0 +1,21 @@
+additionalProperties:
+    key: starvpn-client
+    name: 星空组网 (客户端)
+    tags:
+        - VPN
+        - Network
+        - Proxy
+        - Docker
+        - CrossPlatform
+    shortDescZh: 简单易用的自托管 VPN 服务，支持多平台。
+    shortDescEn: Easy-to-use self-hosted VPN service, cross-platform supported.
+    description:
+        en: Easy-to-use self-hosted VPN service, cross-platform supported.
+        zh: 简单易用的自托管 VPN 服务，支持多平台。
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://starvpn.cn/
+    github: https://github.com/starvpn/
+    document: https://doc.starvpn.cn/#/docker
