@@ -1,0 +1,19 @@
+name: Discussion
+tags:
+  - 建站
+title: 极简论坛
+description: 极简论坛
+additionalProperties:
+  key: discussion
+  name: Discussion
+  tags:
+    - Website
+  shortDescZh: 极简论坛
+  shortDescEn: Minimalist forum
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://discussion.mblog.club
+  github: https://github.com/kingwrcy/discussion
+  document: https://github.com/kingwrcy/discussion
