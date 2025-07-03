@@ -1,0 +1,19 @@
+name: moontv
+tags:
+  - 实用工具
+title: moontv - 免费在线视频搜索与观看平台
+description: 🎬 MoonTV 是一个开箱即用的、跨平台的影视聚合播放器。它基于 Next.js 14 + Tailwind CSS + TypeScript 构建，支持多资源搜索、在线播放、收藏同步、播放记录、本地/云端存储，让你可以随时随地畅享海量免费影视内容。
+additionalProperties:
+  key: moontv
+  name: moontv
+  tags:
+    - Tool
+  shortDescZh: moontv - 免费在线视频搜索与观看平台
+  shortDescEn: moontv - Free Online Video Search and Viewing Platform
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/senshinya/MoonTV
+  github: https://github.com/senshinya/MoonTV
+  document: https://github.com/senshinya/MoonTV/blob/main/README.md
