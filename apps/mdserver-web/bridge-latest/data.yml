@@ -1,0 +1,63 @@
+additionalProperties:
+  formFields:
+    - default: 7200
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Panel Port
+      labelZh: 面板端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 10080
+      edit: true
+      envKey: HTTP_PORT
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 10443
+      edit: true
+      envKey: HTTPS_PORT
+      labelEn: HTTPS Port
+      labelZh: HTTPS 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 10888
+      edit: true
+      envKey: PHPMYAYMIN_PORT
+      labelEn: phpMyAdmin Port
+      labelZh: phpMyAdmin 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "true"
+      edit: true
+      envKey: CLOSE_ADMIN_PATH
+      labelEn: Close Admin Path
+      labelZh: 关闭管理路径
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: "ddsrem"
+      edit: true
+      envKey: USERNAME
+      labelEn: Username
+      labelZh: 用户名
+      random: true
+      required: true
+      type: text
+    - default: "password"
+      edit: true
+      envKey: PASSWORD
+      labelEn: Password
+      labelZh: 密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

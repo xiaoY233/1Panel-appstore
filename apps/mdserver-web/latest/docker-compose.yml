@@ -1,0 +1,19 @@
+services:
+  mdserver-web:
+    image: "ddsderek/mdserver-web:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: "host"
+    volumes:
+        - mdserver-web-data:/www
+    environment:
+      - CLOSE_ADMIN_PATH=${CLOSE_ADMIN_PATH}
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - WEB_PORT=${PANEL_APP_PORT_HTTP}
+    labels:  
+      createdBy: "Apps"
+
+volumes:
+  mdserver-web-data:
+    name: mdserver-web-data

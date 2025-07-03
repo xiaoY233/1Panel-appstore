@@ -1,0 +1,19 @@
+name: mdserver-web
+tags:
+  - 实用工具
+title: 一款简单 Linux 面板服务
+description: 一款简单 Linux 面板服务
+additionalProperties:
+  key: mdserver-web
+  name: mdserver-web
+  tags:
+    - Tool
+  shortDescZh: 一款简单 Linux 面板服务
+  shortDescEn: A simple Linux panel service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/ddsderek/mdserver-web
+  github: https://github.com/midoks/mdserver-web
+  document: https://github.com/midoks/mdserver-web/wiki/
