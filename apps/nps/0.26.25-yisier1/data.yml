@@ -1,0 +1,127 @@
+additionalProperties:
+  formFields:
+    - default: 40209
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Management Port
+      labelZh: web 管理端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8024
+      edit: true
+      envKey: NPS_BRIDGE_PORT
+      labelEn: Server-Client Communication Port
+      labelZh: 服务端客户端通信端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8025
+      edit: true
+      envKey: NPS_BRIDGE_TLS_PORT
+      labelEn: Server-Client Communication TLS Port
+      labelZh: 服务端客户端 tls 通信端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "true"
+      envKey: TLS_ENABLE_SWITCH
+      labelEn: Whether TLS is enabled for server-client communication
+      labelZh: 服务端与客户端的通信是否启用 TLS
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: http://localhost:40209
+      edit: true
+      envKey: NPS_WEB_HOST
+      labelEn: External URL(If the default address, please replace localhost with the current service IP)
+      labelZh: 外部访问地址(若默认地址请替换 localhost 为当前服务 IP)
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: admin
+      edit: true
+      envKey: NPS_WEB_USERNAME
+      labelEn: Web Interface Management Account
+      labelZh: web 界面管理账号
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "123"
+      edit: true
+      envKey: NPS_WEB_PASSWORD
+      labelEn: Web Interface Management Password
+      labelZh: web 界面管理密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "false"
+      edit: true
+      envKey: NPS_WEB_OPEN_SSL
+      labelEn: Enable webui https access
+      labelZh: web 界面开启 https 访问
+      required: true
+      rule: paramCommon
+      type: text
+    - default: 20100
+      edit: true
+      envKey: NPS_RANDOM_PORT_START
+      labelEn: Dynamic Port Range Start
+      labelZh: 动态端口范围开始
+      required: true
+      rule: paramPort
+      type: number
+    - default: 20200
+      edit: true
+      envKey: NPS_RANDOM_PORT_END
+      labelEn: Dynamic Port Range End
+      labelZh: 动态端口范围结束
+      required: true
+      rule: paramPort
+      type: number
+    - default: "xly7traGe3r0t6UWltristuh1"
+      edit: true
+      envKey: NPS_PUBLIC_VKEY
+      labelEn: Key When the Client Starts in Configuration File Mode
+      labelZh: 客户端以配置文件模式启动时的密钥
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "gl8r0tujikih7br5"
+      edit: true
+      envKey: NPS_AUTH_CRYPT_KEY
+      labelEn: 16-bit AES Encryption Key
+      labelZh: 16 位 AES 加密密钥
+      required: true
+      rule: paramCommon
+      type: text
+    - default: 0.0.0.0
+      edit: true
+      envKey: NPS_HTTP_PROXY_IP
+      labelEn: Http Proxy IP
+      labelZh: 域名代理 http 代理监听地址
+      required: true
+      rule: paramCommon
+      type: text
+    - default: 50080
+      edit: true
+      envKey: NPS_HTTP_PROXY_PORT
+      labelEn: Http Proxy Port
+      labelZh: 域名代理 http 代理监听端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 50443
+      edit: true
+      envKey: NPS_HTTPS_PROXY_PORT
+      labelEn: Https Proxy Port
+      labelZh: 域名代理 https 代理监听端口
+      required: true
+      rule: paramPort
+      type: number
