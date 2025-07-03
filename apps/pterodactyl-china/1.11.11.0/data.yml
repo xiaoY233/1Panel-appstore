@@ -1,0 +1,207 @@
+additionalProperties:
+  formFields:
+    - default: 1000
+      envKey: USER_UID
+      labelEn: User UID
+      labelZh: 用户 UID
+      required: true
+      type: text
+    - default: 1000
+      envKey: USER_GID
+      labelEn: User GID
+      labelZh: 用户 GID
+      required: true
+      type: text
+    - default: mysql
+      envKey: PANEL_DB_TYPE
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: apps
+      child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        required: true
+        type: service
+      values:
+        - label: MySQL
+          value: mysql
+    - default: pterodactyl
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: pterodactyl
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: pterodactyl
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 40222
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: http://localhost:40222
+      edit: true
+      envKey: PANEL_APP_URL
+      labelEn: External URL
+      labelZh: 外部访问地址
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: ""
+      envKey: PANEL_REDIS_DB_HOST
+      key: redis
+      labelEn: Redis Service
+      labelZh: 缓存服务服务
+      required: true
+      type: service
+    - default: ""
+      envKey: PANEL_REDIS_ROOT_PASSWORD
+      labelEn: Redis Service Password
+      labelZh: 缓存服务服务密码
+      required: true
+      type: password
+    - default: noreply@example.com
+      edit: true
+      envKey: MAIL_FROM
+      labelEn: MAIL FROM
+      labelZh: 预设作者邮箱
+      required: true
+      type: text
+    - default: "true"
+      edit: true
+      envKey: PANEL_RECAPTCHA_ENABLED
+      labelEn: RECAPTCHA ENABLED
+      labelZh: 谷歌人机验证
+      required: true
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "noreply@example.com"
+      edit: true
+      envKey: APP_SERVICE_AUTHOR
+      labelEn: Application Service Author
+      labelZh: 应用服务作者
+      required: true
+      type: text
+    - default: smtp
+      edit: true
+      envKey: MAIL_DRIVER
+      labelEn: Mail Driver
+      labelZh: 邮件驱动
+      required: true
+      type: text
+    - default: mail
+      edit: true
+      envKey: MAIL_HOST
+      labelEn: Mail Host
+      labelZh: 邮件主机
+      required: true
+      type: text
+    - default: 1025
+      edit: true
+      envKey: MAIL_PORT
+      labelEn: Mail Port
+      labelZh: 邮件端口
+      required: true
+      type: text
+    - default: ''
+      edit: true
+      envKey: MAIL_USERNAME
+      labelEn: Mail Username
+      labelZh: 邮件用户名
+      required: false
+      type: text
+    - default: "true"
+      edit: true
+      envKey: MAIL_ENCRYPTION
+      labelEn: Mail Encryption
+      labelZh: 邮件加密
+      required: true
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+    - default: production
+      edit: true
+      envKey: APP_ENV
+      labelEn: Application Environment
+      labelZh: 应用环境
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: APP_ENVIRONMENT_ONLY
+      labelEn: Application Environment Only
+      labelZh: 仅应用环境
+      required: true
+      type: select
+      values:
+        - label: 启用
+          value: "true"
+        - label: 禁用
+          value: "false"
+    - default: redis
+      disabled: true
+      envKey: CACHE_DRIVER
+      labelEn: Cache Driver
+      labelZh: 缓存驱动
+      required: true
+      type: text
+    - default: redis
+      disabled: true
+      envKey: SESSION_DRIVER
+      labelEn: Session Driver
+      labelZh: 会话驱动
+      required: true
+      type: text
+    - default: redis
+      disabled: true
+      envKey: QUEUE_DRIVER
+      labelEn: Queue Driver
+      labelZh: 队列驱动
+      required: true
+      type: text
+    - default: ""
+      envKey: REDIS_HOST
+      key: redis
+      labelEn: Redis Service
+      labelZh: Redis 服务
+      required: true
+      type: service
+    - default: ""
+      envKey: PANEL_REDIS_ROOT_PASSWORD
+      labelEn: Redis Service Password
+      labelZh: Redis 服务密码
+      required: true
+      type: password
