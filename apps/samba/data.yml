@@ -1,0 +1,19 @@
+name: Samba
+tags:
+  - 云存储
+title: 多架构 Samba 镜像构建
+description: 多架构 Samba 镜像构建
+additionalProperties:
+  key: samba
+  name: Samba
+  tags:
+    - Storage
+  shortDescZh: 多架构 Samba 镜像构建
+  shortDescEn: Multi-architecture Samba image build
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://deft.work/samba
+  github: https://github.com/DeftWork/samba
+  document: https://github.com/DeftWork/samba
