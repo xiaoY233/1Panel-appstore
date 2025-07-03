@@ -1,0 +1,112 @@
+additionalProperties:
+  formFields:
+    - default: "40163"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "./data/downloads"
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download Path
+      labelZh: 下载路径
+      required: true
+      type: text
+    - default: "0.0.0.0"
+      edit: true
+      envKey: XL_DASHBOARD_IP
+      labelEn: Dashboard IP
+      labelZh: 控制台 IP
+      required: true
+      type: text
+    - default: "user"
+      edit: true
+      envKey: XL_DASHBOARD_USERNAME
+      labelEn: Dashboard Username
+      labelZh: 控制台用户名
+      required: false
+      type: text
+    - default: "xunlei"
+      edit: true
+      envKey: XL_DASHBOARD_PASSWORD
+      labelEn: Dashboard Password
+      labelZh: 控制台密码
+      required: false
+      rule: paramComplexity
+      type: password
+    - default: "/xunlei/downloads"
+      disabled: true
+      envKey: XL_DIR_DOWNLOAD
+      labelEn: Download Directory (in container)
+      labelZh: 下载目录 (容器内)
+      required: true
+      type: text
+    - default: "/xunlei/data"
+      disabled: true
+      envKey: XL_DIR_DATA
+      labelEn: Data Directory (in container)
+      labelZh: 数据目录 (容器内)
+      required: true
+      type: text
+    - default: "1000"
+      edit: true
+      envKey: XL_UID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: XL_GID
+      labelEn: Group ID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+    - default: "true"
+      edit: true
+      envKey: XL_PREVENT_UPDATE
+      labelEn: Prevent Update
+      labelZh: 阻止更新
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: XL_DEBUG
+      labelEn: Debug Mode
+      labelZh: 调试模式
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "mynas"
+      edit: true
+      envKey: HOSTNAME
+      labelEn: Hostname
+      labelZh: 主机名
+      required: false
+      type: text
+    - default: "true"
+      disabled: true
+      envKey: PRIVILEGED_MODE
+      labelEn: Privilege mode switch
+      labelZh: 特权模式开关
+      required: true
+      type: text

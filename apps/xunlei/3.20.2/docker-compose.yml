@@ -1,0 +1,31 @@
+services:
+  xunlei:
+    image: "cnk3x/xunlei:v3.20.2"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    volumes:
+      - "${DATA_PATH}:${XL_DIR_DATA}"
+      - "${DOWNLOAD_PATH}:${XL_DIR_DOWNLOAD}"
+    environment:
+      - XL_DASHBOARD_PORT=${PANEL_APP_PORT_HTTP}
+      - XL_DASHBOARD_IP=${XL_DASHBOARD_IP}
+      - XL_DASHBOARD_USERNAME=${XL_DASHBOARD_USERNAME}
+      - XL_DASHBOARD_PASSWORD=${XL_DASHBOARD_PASSWORD}
+      - XL_DIR_DOWNLOAD=${XL_DIR_DOWNLOAD}
+      - XL_DIR_DATA=${XL_DIR_DATA}
+      - XL_UID=${XL_UID}
+      - XL_GID=${XL_GID}
+      - XL_PREVENT_UPDATE=${XL_PREVENT_UPDATE}
+      - XL_DEBUG=${XL_DEBUG}
+    hostname: ${HOSTNAME}
+    privileged: ${PRIVILEGED_MODE}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
