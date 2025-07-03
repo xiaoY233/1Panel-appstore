@@ -1,0 +1,21 @@
+name: OpenVPN Access Server
+tags:
+  - 实用工具
+  - 安全
+title: 开源 VPN 解决方案
+description: 开源 VPN 解决方案
+additionalProperties:
+  key: openvpn-as
+  name: OpenVPN Access Server
+  tags:
+    - Tool
+    - Security
+  shortDescZh: 开源 VPN 解决方案
+  shortDescEn: Open-source VPN solution
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://openvpn.net/
+  github: https://github.com/OpenVPN/openvpn
+  document: https://openvpn.net/access-server-manual/introduction/
