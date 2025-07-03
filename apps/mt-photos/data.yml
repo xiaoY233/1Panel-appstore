@@ -1,0 +1,19 @@
+name: MT Photos
+tags:
+  - 多媒体
+title: 一款简单、好用的照片管理系统
+description: 一款简单、好用的照片管理系统
+additionalProperties:
+  key: mt-photos
+  name: MT Photos
+  tags:
+    - Media
+  shortDescZh: 一款简单、好用的照片管理系统
+  shortDescEn: A simple, easy-to-use photo management system
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://mtmt.tech
+  github: https://hub.docker.com/r/mtphotos/mt-photos
+  document: https://mtmt.tech
