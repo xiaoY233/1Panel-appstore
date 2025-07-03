@@ -1,0 +1,19 @@
+name: Moments
+tags:
+  - 建站
+title: 一个 C# 开发的博客朋友圈平台
+description: 一个 C# 开发的博客朋友圈平台
+additionalProperties:
+  key: moments
+  name: Moments
+  tags:
+    - Website
+  shortDescZh: 一个 C# 开发的博客朋友圈平台
+  shortDescEn: A C#-developed blogosphere platform
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://moments.shiyu.dev/
+  github: https://github.com/Drizzle365/Moments
+  document: https://shiyu.dev/archives/2069/
