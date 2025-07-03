@@ -1,0 +1,30 @@
+services:
+  mdcx:
+    image: "stainless403/mdcx-builtin-gui-base:d20241003"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5800"
+      - "${VNC_PORT}:5900"
+    environment:
+      - TZ=${TIME_ZONE}
+      - DISPLAY_WIDTH=${DISPLAY_WIDTH}
+      - DISPLAY_HEIGHT=${DISPLAY_HEIGHT}
+      - VNC_PASSWORD=${VNC_PASSWORD}
+      - USER_ID=${USER_ID}
+      - GROUP_ID=${GROUP_ID}
+    volumes:
+      - "${CONFIG_PATH}:/config"
+      - "${MDCX_CONFIG_PATH}:/mdcx-config"
+      - "${MDCX_CONFIG_FILE}:/app/MDCx.config"
+      - "${LOGS_PATH}:/app/Log"
+      - "${MEDIA_PATH}:${MEDIA_PATH_INTERNAL}"
+      - "${MEDIA_PATH_2}:${MEDIA_PATH_INTERNAL_2}"
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

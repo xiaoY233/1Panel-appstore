@@ -1,0 +1,19 @@
+name: MDCX
+tags:
+  - 多媒体
+title: 电影元数据搜刮器
+description: 电影元数据搜刮器
+additionalProperties:
+  key: mdcx
+  name: MDCX
+  tags:
+    - Media
+  shortDescZh: 电影元数据搜刮器
+  shortDescEn: Movie metadata scraper
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/stainless403/mdcx-builtin-gui-base
+  github: https://github.com/northsea4/mdcx-docker
+  document: https://github.com/northsea4/mdcx-docker

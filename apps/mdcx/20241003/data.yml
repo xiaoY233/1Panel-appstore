@@ -1,0 +1,118 @@
+additionalProperties:
+  formFields:
+    - default: "40301"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "40302"
+      edit: true
+      envKey: VNC_PORT
+      labelEn: VNC Port
+      labelZh: VNC 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "1200"
+      edit: true
+      envKey: DISPLAY_WIDTH
+      labelEn: Display Width
+      labelZh: 显示宽度
+      required: true
+      type: number
+    - default: "750"
+      edit: true
+      envKey: DISPLAY_HEIGHT
+      labelEn: Display Height
+      labelZh: 显示高度
+      required: true
+      type: number
+    - default: "password"
+      edit: true
+      envKey: VNC_PASSWORD
+      labelEn: VNC Password
+      labelZh: VNC 密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "./data/data"
+      disabled: true
+      envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "./data/mdcx-config"
+      disabled: true
+      envKey: MDCX_CONFIG_PATH
+      labelEn: MDCx Config Path
+      labelZh: MDCx 配置路径
+      required: true
+      type: text
+    - default: "./data/mdcx-config/MDCx.config"
+      disabled: true
+      envKey: MDCX_CONFIG_FILE
+      labelEn: MDCx Config File
+      labelZh: MDCx 配置文件
+      required: true
+      type: text
+    - default: "./data/logs"
+      disabled: true
+      envKey: LOGS_PATH
+      labelEn: Logs Path
+      labelZh: 日志路径
+      required: true
+      type: text
+    - default: "./data/media"
+      edit: true
+      envKey: MEDIA_PATH
+      labelEn: Media Path
+      labelZh: 媒体路径
+      required: true
+      type: text
+    - default: "/media"
+      disabled: true
+      envKey: MEDIA_PATH_INTERNAL
+      labelEn: Internal Media Path
+      labelZh: 容器内部媒体路径
+      required: true
+      type: text
+    - default: "./data/media2"
+      edit: true
+      envKey: MEDIA_PATH_2
+      labelEn: Media Path 2
+      labelZh: 媒体路径 2
+      required: true
+      type: text
+    - default: "/media2"
+      disabled: true
+      envKey: MEDIA_PATH_INTERNAL_2
+      labelEn: Internal Media Path 2
+      labelZh: 容器内部媒体路径 2
+      required: true
+      type: text
+    - default: "1000"
+      edit: true
+      envKey: USER_ID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: GROUP_ID
+      labelEn: Group ID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
