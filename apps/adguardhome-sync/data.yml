@@ -1,0 +1,32 @@
+name: AdGuardHome-Sync
+tags:
+    - 安全
+title: AdGuardHome 配置同步工具
+description: AdGuardHome 配置同步工具，支持多个 AdGuardHome 实例之间的配置同步
+additionalProperties:
+    key: adguardhome-sync
+    name: AdGuardHome-Sync
+    tags:
+        - Security
+    shortDescZh: AdGuardHome 配置同步工具
+    shortDescEn: AdGuardHome configuration synchronization tool
+    description:
+        en: AdGuardHome configuration synchronization tool for syncing configurations between multiple AdGuardHome instances
+        ja: 複数のAdGuardHomeインスタンス間で設定を同期するためのAdGuardHome設定同期ツール
+        ms: Alat penyegerakan konfigurasi AdGuardHome untuk menyegerakkan konfigurasi antara pelbagai instans AdGuardHome
+        pt-br: Ferramenta de sincronização de configuração do AdGuardHome para sincronizar configurações entre múltiplas instâncias do AdGuardHome
+        ru: Инструмент синхронизации конфигурации AdGuardHome для синхронизации конфигураций между несколькими экземплярами AdGuardHome
+        ko: 여러 AdGuardHome 인스턴스 간의 구성을 동기화하기 위한 AdGuardHome 구성 동기화 도구
+        zh-Hant: AdGuardHome 配置同步工具，支援多個 AdGuardHome 實例之間的配置同步
+        zh: AdGuardHome 配置同步工具，支持多个 AdGuardHome 实例之间的配置同步
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/bakito/adguardhome-sync
+    github: https://github.com/bakito/adguardhome-sync
+    document: https://docs.linuxserver.io/images/docker-adguardhome-sync/
+    architectures:
+      - amd64
+      - arm64
+      - arm/v7 
