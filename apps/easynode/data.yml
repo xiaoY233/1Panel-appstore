@@ -1,0 +1,19 @@
+name: EasyNode
+tags:
+  - 实用工具
+title: 一个 Linux 服务器 WEB SSH 面板
+description: 一个 Linux 服务器 WEB SSH 面板
+additionalProperties:
+  key: easynode
+  name: EasyNode
+  tags:
+    - Tool
+  shortDescZh: 一个 Linux 服务器 WEB SSH 面板
+  shortDescEn: A Linux server WEB SSH panel
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/chaos-zhu/easynode
+  github: https://github.com/chaos-zhu/easynode
+  document: https://github.com/chaos-zhu/easynode
