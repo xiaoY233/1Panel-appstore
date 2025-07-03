@@ -1,0 +1,47 @@
+additionalProperties:
+  formFields:
+    - default: "40291"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data storage folder
+      labelZh: 数据存放文件夹
+      required: true
+      type: text
+    - default: "spend-money-like-water"
+      edit: true
+      envKey: TOKEN_SALT
+      labelEn: Token Salt
+      labelZh: Token Salt
+      required: true
+      type: text
+    - default: "PRO"
+      edit: true
+      envKey: ENVIRONMENT
+      labelEn: Environment
+      labelZh: 环境
+      required: true
+      type: text
+    - default: "08cc0348-061d-4193-af05-b6cc02df28ea"
+      edit: true
+      envKey: SERVER_KEY
+      labelEn: Server Key
+      labelZh: 服务密钥
+      required: true
+      type: text
+    - default: "cashbook"
+      edit: true
+      envKey: DEFAULT_PASSWORD
+      labelEn: Default Password
+      labelZh: 默认密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password

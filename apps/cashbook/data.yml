@@ -1,0 +1,19 @@
+name: Cashbook
+tags:
+  - 实用工具
+title: 个人记账工具
+description: 个人记账工具
+additionalProperties:
+  key: cashbook
+  name: Cashbook
+  tags:
+    - Tool
+  shortDescZh: 个人记账工具
+  shortDescEn: Personal finance management tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://cashbook.oldmoon.top
+  github: https://github.com/dingdangdog/cashbook-web
+  document: https://github.com/dingdangdog/cashbook-web
