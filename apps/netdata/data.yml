@@ -1,0 +1,19 @@
+name: Netdata
+tags:
+  - 实用工具
+title: 一个实时监控工具
+description: 一个实时监控工具
+additionalProperties:
+  key: netdata
+  name: Netdata
+  tags:
+    - Tool
+  shortDescZh: 一个实时监控工具
+  shortDescEn: Real-time monitoring tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.netdata.cloud
+  github: https://github.com/netdata/netdata
+  document: https://learn.netdata.cloud/docs/
