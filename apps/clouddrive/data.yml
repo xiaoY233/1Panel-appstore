@@ -1,0 +1,19 @@
+name: CloudDrive
+tags:
+  - 云存储
+title: 一个强大的多云盘管理工具
+description: 一个强大的多云盘管理工具
+additionalProperties:
+  key: clouddrive
+  name: CloudDrive
+  tags:
+    - Storage
+  shortDescZh: 一个强大的多云盘管理工具
+  shortDescEn: A powerful multi-cloud drive management tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.clouddrive2.com
+  github: https://hub.docker.com/r/cloudnas/clouddrive2
+  document: https://www.clouddrive2.com
