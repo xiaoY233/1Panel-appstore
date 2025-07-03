@@ -1,0 +1,19 @@
+name: AllInOne
+tags:
+  - 多媒体
+title: 直播源代理程序
+description: 直播源代理程序
+additionalProperties:
+  key: allinone
+  name: AllInOne
+  tags:
+    - Media
+  shortDescZh: 直播源代理程序
+  shortDescEn: Live feed agent program
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/youshandefeiyang/allinone
+  github: https://hub.docker.com/r/youshandefeiyang/allinone
+  document: https://hub.docker.com/r/youshandefeiyang/allinone

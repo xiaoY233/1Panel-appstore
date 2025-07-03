@@ -1,0 +1,16 @@
+services:
+  allinone:
+    image: "youshandefeiyang/allinone:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    privileged: ${PRIVILEGED_MODE}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:35455"
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
