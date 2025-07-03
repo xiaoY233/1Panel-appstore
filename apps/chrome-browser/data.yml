@@ -1,0 +1,19 @@
+name: Chrome Browser
+tags:
+  - 实用工具
+title: Google Chrome 浏览器
+description: Google Chrome 浏览器
+additionalProperties:
+  key: chrome-browser
+  name: Chrome Browser
+  tags:
+    - Tool
+  shortDescZh: Google Chrome 浏览器
+  shortDescEn: Google Chrome
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.google.com/chrome/
+  github: https://www.google.com/chrome/
+  document: https://www.google.com/chrome/
