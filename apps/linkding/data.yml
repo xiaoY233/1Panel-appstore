@@ -1,0 +1,19 @@
+name: linkding
+tags:
+  - 工具
+title: 一个书签管理器，您可以自己托管
+description: 一个书签管理器，您可以自己托管
+additionalProperties:
+  key: linkding
+  name: linkding
+  tags:
+    - Tool
+  shortDescZh: 一个书签管理器，您可以自己托管
+  shortDescEn: A bookmark manager that you can host yourself
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://github.com/sissbruecker/linkding
+  github: https://github.com/sissbruecker/linkding
+  document: https://github.com/sissbruecker/linkding
