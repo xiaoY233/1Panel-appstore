@@ -1,0 +1,62 @@
+additionalProperties:
+  formFields:
+    - default: "40332"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "sqlite"
+      disabled: true
+      envKey: DATABASE_TYPE
+      labelEn: Database Type
+      labelZh: 数据库类型
+      required: true
+      type: text
+    - default: "password"
+      edit: true
+      envKey: AUTH_CODE
+      labelEn: Auth Code
+      labelZh: 授权码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "http://1.2.3.4:40332"
+      edit: true
+      envKey: SERVER_ORIGIN_URL
+      labelEn: External URL
+      labelZh: 外部访问地址
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: "fulltext"
+      edit: true
+      envKey: FEED_MODE
+      labelEn: Feed Mode
+      labelZh: 提取模式
+      required: false
+      type: text
+    - default: "35 5,17 * * *"
+      edit: true
+      envKey: CRON_EXPRESSION
+      labelEn: Cron Expression
+      labelZh: 定时更新表达式
+      required: false
+      type: text
+    - default: "60"
+      edit: true
+      envKey: MAX_REQUEST_PER_MINUTE
+      labelEn: Max Requests Per Minute
+      labelZh: 每分钟最大请求次数
+      required: false
+      type: number
