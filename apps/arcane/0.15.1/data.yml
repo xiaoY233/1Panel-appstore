@@ -1,0 +1,35 @@
+additionalProperties:
+    formFields:
+        - default: 3000
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Web UI Port
+          labelZh: Web界面端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: Web UI Port
+            ja: Web UI ポート
+            ms: Port UI Web
+            pt-br: Porta da interface web
+            ru: Веб-порт интерфейса
+            ko: 웹 UI 포트
+            zh-Hant: Web UI 埠
+            zh: Web界面端口
+        - default: "arcane-session-4e2b8c7f9d1a6e3b2c5d7f8a1b0c9e6d"
+          edit: true
+          envKey: PUBLIC_SESSION_SECRET
+          labelEn: Session Secret
+          labelZh: 会话密钥
+          required: true
+          type: text
+          label:
+            en: Session Secret
+            ja: セッションシークレット
+            ms: Rahsia Sesi
+            pt-br: Segredo da sessão
+            ru: Секрет сессии
+            ko: 세션 시크릿
+            zh-Hant: 會話密鑰
+            zh: 会话密钥 

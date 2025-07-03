@@ -1,0 +1,18 @@
+services:
+  arcane:
+    image: ghcr.io/ofkm/arcane:latest
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000" 
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/app/data
+    environment:
+      - APP_ENV=production
+      - PUID=2000
+      - PGID=2000
+      - PUBLIC_SESSION_SECRET=${PUBLIC_SESSION_SECRET}
+    restart: always
+networks:
+  1panel-network:
+    external: true 

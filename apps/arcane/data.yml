@@ -1,0 +1,31 @@
+name: Arcane
+tags:
+    - 实用工具
+title: 现代化Docker管理面板
+description: Arcane 是一款现代化、开源的Docker管理Web面板，支持容器、镜像、网络等一站式管理
+additionalProperties:
+    key: arcane
+    name: Arcane
+    tags:
+        - Tool
+    shortDescZh: 现代化Docker管理面板
+    shortDescEn: Modern Docker management panel
+    description:
+        en: Arcane is a modern, open-source Docker management web panel for containers, images, networks and more
+        ja: Arcaneはコンテナ、イメージ、ネットワークなどを一元管理できるモダンなオープンソースDocker管理Webパネルです
+        ms: Arcane ialah panel web pengurusan Docker moden sumber terbuka untuk kontena, imej, rangkaian dan banyak lagi
+        pt-br: Arcane é um painel web moderno e de código aberto para gerenciamento de Docker, incluindo containers, imagens, redes e mais
+        ru: Arcane — это современная, открытая веб-панель управления Docker для контейнеров, образов, сетей и др.
+        ko: Arcane는 컨테이너, 이미지, 네트워크 등을 위한 현대적이고 오픈 소스인 Docker 관리 웹 패널입니다
+        zh-Hant: Arcane 是一款現代化、開源的 Docker 管理 Web 面板，支援容器、映像、網路等一站式管理
+        zh: Arcane 是一款现代化、开源的Docker管理Web面板，支持容器、镜像、网络等一站式管理
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://arcane.ofkm.dev/
+    github: https://github.com/ofkm/arcane
+    document: https://arcane.ofkm.dev/docs/
+    architectures:
+      - amd64
+      - arm64 
