@@ -1,0 +1,19 @@
+name: Moments
+tags:
+  - 建站
+title: 极简朋友圈
+description: 极简朋友圈
+additionalProperties:
+  key: moments1
+  name: Moments
+  tags:
+    - Website
+  shortDescZh: 极简朋友圈
+  shortDescEn: Minimalist blogosphere platform
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://m.mblog.club
+  github: https://github.com/kingwrcy/moments
+  document: https://github.com/kingwrcy/moments
