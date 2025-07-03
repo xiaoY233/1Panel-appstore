@@ -1,0 +1,19 @@
+name: uni-api
+tags:
+    - AI / 大模型
+title: 统一管理大模型 API 的项目，可以通过一个统一的API 接口调用多种不同提供商的服务，统一转换为 OpenAI 格式。
+description: 如果个人使用的话，one/new-api 过于复杂，有很多个人不需要使用的商用功能，如果你不想要复杂的前端界面，又想要支持的模型多一点，可以试试 uni-api。这是一个统一管理大模型 API 的项目，可以通过一个统一的API 接口调用多种不同提供商的服务，统一转换为 OpenAI 格式，支持负载均衡。目前支持的后端服务有：OpenAI、Anthropic、Gemini、Vertex、Azure、xai、Cohere、Groq、Cloudflare、OpenRouter 等。
+additionalProperties:
+  key: uni-api
+  name: uni api
+  tags:
+    - AI
+  shortDescZh: 这是一个统一管理大模型 API 的项目，可以通过一个统一的API 接口调用多种不同提供商的服务，统一转换为 OpenAI 格式，支持负载均衡。目前支持的后端服务有：OpenAI、Anthropic、Gemini、Vertex、Azure、xai、Cohere、Groq、Cloudflare、OpenRouter 等。
+  shortDescEn: This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified API interface, convert them to the OpenAI format uniformly, and support load balancing.
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/yym68686/uni-api
+  github: https://github.com/yym68686/uni-api
+  document: https://github.com/yym68686/uni-api/blob/main/README_CN.md

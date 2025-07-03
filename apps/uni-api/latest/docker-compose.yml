@@ -1,0 +1,21 @@
+services:
+  uni-api:
+    image: yym68686/uni-api:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8000
+    volumes:
+      - "${DATA_PATH}:/home/data"
+      - "${LOCAL_CONFIG_PATH}:/home/api.yaml"
+    environment:
+      - CONFIG_URL=${CONFIG_URL}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+
+networks:
+  1panel-network:
+    external: true
