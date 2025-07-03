@@ -1,0 +1,19 @@
+name: MoviePilot
+tags:
+  - 多媒体
+title: NAS 媒体库自动化管理工具
+description: NAS 媒体库自动化管理工具
+additionalProperties:
+  key: moviepilot
+  name: MoviePilot
+  tags:
+    - Media
+  shortDescZh: NAS 媒体库自动化管理工具
+  shortDescEn: NAS Media Library Automation Management Tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/jxxghp/MoviePilot
+  github: https://github.com/jxxghp/MoviePilot
+  document: https://github.com/jxxghp/MoviePilot

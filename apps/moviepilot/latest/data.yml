@@ -1,0 +1,977 @@
+additionalProperties:
+  formFields:
+    - default: "./data/config"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "./data/core"
+      edit: true
+      envKey: CORE_PATH
+      labelEn: Core Path
+      labelZh: 核心路径
+      required: true
+      type: text
+    - default: "/var/run/docker.sock"
+      edit: true
+      envKey: DOCKER_SOCK_PATH
+      labelEn: Docker Socket Path
+      labelZh: Docker套接字路径
+      required: true
+      type: text
+    - default: "./data/media"
+      edit: true
+      envKey: MEDIA_PATH
+      labelEn: Media Path
+      labelZh: 媒体路径
+      required: true
+      type: text
+    - default: "moviepilot"
+      edit: true
+      envKey: HOSTNAME
+      labelEn: Hostname
+      labelZh: 主机名
+      required: true
+      type: text
+    - default: "022"
+      edit: true
+      envKey: UMASK
+      labelEn: File Umask
+      labelZh: 文件掩码
+      required: true
+      type: text
+    - default: "0"
+      envKey: USER_ID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+      edit: true
+    - default: "0"
+      envKey: GROUP_ID
+      labelEn: Group ID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+      edit: true
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TZ
+      labelEn: Timezone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "release"
+      edit: true
+      envKey: MOVIEPILOT_AUTO_UPDATE
+      labelEn: MoviePilot Auto Update
+      labelZh: MoviePilot 自动更新
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "release"
+          value: "release"
+        - label: "dev"
+          value: "dev"
+        - label: "false"
+          value: "false"
+    - default: "40241"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Panel HTTP Port
+      labelZh: 面板 HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "40242"
+      edit: true
+      envKey: PANEL_APP_PORT_API
+      labelEn: API Port
+      labelZh: API 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "admin"
+      edit: true
+      envKey: SUPERUSER
+      labelEn: Superuser Username
+      labelZh: 超级管理员用户名
+      required: true
+      type: text
+    - default: "password"
+      edit: true
+      envKey: SUPERUSER_PASSWORD
+      labelEn: Superuser Password
+      labelZh: 超级管理员密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "tmdb"
+      edit: true
+      envKey: WALLPAPER
+      labelEn: Wallpaper
+      labelZh: 登录首页电影海报
+      required: true
+      type: select
+      values:
+        - label: "tmdb"
+          value: "tmdb"
+        - label: "bing"
+          value: "bing"
+    - default: "roduqib1o8ldrl8uyax7"
+      edit: true
+      envKey: API_TOKEN
+      labelEn: API Token
+      labelZh: API 密钥
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: PROXY_HOST
+      labelEn: Proxy host
+      labelZh: 网络代理
+      required: false
+      type: text
+    - default: "api.themoviedb.org"
+      edit: true
+      envKey: TMDB_API_DOMAIN
+      labelEn: TMDB API Domain
+      labelZh: TMDB API 地址
+      required: true
+      type: text
+    - default: "/media/downloads"
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download Path (in container)
+      labelZh: 下载保存目录 (容器内)
+      required: true
+      type: text
+    - default: "/media/downloads/movies"
+      edit: true
+      envKey: DOWNLOAD_MOVIE_PATH
+      labelEn: Download Movie Path (in container)
+      labelZh: 电影下载目录 (容器内)
+      required: true
+      type: text
+    - default: "/media/downloads/tv"
+      edit: true
+      envKey: DOWNLOAD_TV_PATH
+      labelEn: Download TV Path (in container)
+      labelZh: 电视剧下载目录 (容器内)
+      required: true
+      type: text
+    - default: "/media/downloads/anime"
+      edit: true
+      envKey: DOWNLOAD_ANIME_PATH
+      labelEn: Download Anime Path (in container)
+      labelZh: 动漫下载目录 (容器内)
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: DOWNLOAD_SUBTITLE
+      labelEn: Download Subtitle
+      labelZh: 下载字幕
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "false"
+      edit: true
+      envKey: DOWNLOAD_CATEGORY
+      labelEn: Download Category
+      labelZh: 下载二级分类
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "true"
+      edit: true
+      envKey: DOWNLOADER_MONITOR
+      labelEn: Downloader Monitor
+      labelZh: 下载器监控
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "spider"
+      edit: true
+      envKey: SUBSCRIBE_MODE
+      labelEn: Subscribe Mode
+      labelZh: 订阅模式
+      required: true
+      type: text
+    - default: "30"
+      edit: true
+      envKey: SUBSCRIBE_RSS_INTERVAL
+      labelEn: Subscribe RSS Interval
+      labelZh: 订阅 RSS 间隔
+      required: true
+      type: number
+    - default: "true"
+      edit: true
+      envKey: SCRAP_METADATA
+      labelEn: Scrap Metadata
+      labelZh: 刮削入库
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "true"
+      edit: true
+      envKey: SCRAP_FOLLOW_TMDB
+      labelEn: Scrap Follow TMDB
+      labelZh: 刮削跟随 TMDB
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "MOVIEPILOT"
+      edit: true
+      envKey: TORRENT_TAG
+      labelEn: Torrent Tag
+      labelZh: 种子标签
+      required: true
+      type: text
+    - default: "/media"
+      edit: true
+      envKey: LIBRARY_PATH
+      labelEn: Library Path (in container)
+      labelZh: 媒体库路径 (容器内)
+      required: true
+      type: text
+    - default: "movies"
+      edit: true
+      envKey: LIBRARY_MOVIE_NAME
+      labelEn: Library Movie Name
+      labelZh: 电影媒体库名称
+      required: true
+      type: text
+    - default: "tv"
+      edit: true
+      envKey: LIBRARY_TV_NAME
+      labelEn: Library TV Name
+      labelZh: 电视剧媒体库名称
+      required: true
+      type: text
+    - default: "anime"
+      edit: true
+      envKey: LIBRARY_ANIME_NAME
+      labelEn: Library Anime Name
+      labelZh: 动漫媒体库名称
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: LIBRARY_CATEGORY
+      labelEn: Library Category
+      labelZh: 媒体库二级分类
+      required: false
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "link"
+      edit: true
+      envKey: TRANSFER_TYPE
+      labelEn: Transfer Type
+      labelZh: 转移方式
+      required: true
+      type: select
+      values:
+        - label: "link"
+          value: "link"
+        - label: "copy"
+          value: "copy"
+        - label: "move"
+          value: "move"
+        - label: "softlink"
+          value: "softlink"
+    - default: "size"
+      edit: true
+      envKey: OVERWRITE_MODE
+      labelEn: Overwrite Mode
+      labelZh: 转移覆盖模式
+      required: true
+      type: select
+      values:
+        - label: "nerver"
+          value: "nerver"
+        - label: "size"
+          value: "size"
+        - label: "always"
+          value: "always"
+    - default: ""
+      edit: true
+      envKey: COOKIECLOUD_HOST
+      labelEn: CookieCloud Host
+      labelZh: CookieCloud 服务器地址
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: COOKIECLOUD_KEY
+      labelEn: CookieCloud Key
+      labelZh: CookieCloud 用户 KEY
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: COOKIECLOUD_PASSWORD
+      labelEn: CookieCloud Password
+      labelZh: CookieCloud 密码
+      required: false
+      type: text
+    - default: "20"
+      edit: true
+      envKey: COOKIECLOUD_INTERVAL
+      labelEn: CookieCloud Interval
+      labelZh: CookieCloud 同步间隔（分钟）
+      required: false
+      type: number
+    - default: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+      edit: true
+      envKey: USER_AGENT
+      labelEn: User Agent
+      labelZh: 用户代理
+      required: true
+      type: text
+    - default: "false"
+      edit: true
+      envKey: SUBSCRIBE_SEARCH
+      labelEn: Subscribe Search
+      labelZh: 订阅搜索
+      required: false
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: ""
+      edit: true
+      envKey: AUTO_DOWNLOAD_USER
+      labelEn: Auto Download User
+      labelZh: 自动下载用户
+      required: false
+      type: text
+    - default: "https://raw.githubusercontent.com/jxxghp/MoviePilot-Plugins/main/"
+      edit: true
+      envKey: PLUGIN_MARKET
+      labelEn: Plugin Market
+      labelZh: 插件市场仓库地址
+      required: true
+      type: text
+    - default: "telegram"
+      edit: true
+      envKey: MESSAGER
+      labelEn: Messager
+      labelZh: 消息通知渠道
+      required: true
+      type: select
+      values:
+        - label: "telegram"
+          value: "telegram"
+        - label: "wechat"
+          value: "wechat"
+        - label: "slack"
+          value: "slack"
+        - label: "synologychat"
+          value: "synologychat"
+    - default: ""
+      edit: true
+      envKey: TELEGRAM_TOKEN
+      labelEn: Telegram Token
+      labelZh: Telegram Token
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAM_CHAT_ID
+      labelEn: Telegram Chat ID
+      labelZh: Telegram Chat ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAM_USERS
+      labelEn: Telegram Users
+      labelZh: 电报用户
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAM_ADMINS
+      labelEn: Telegram Admins
+      labelZh: 电报管理员
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_CORPID
+      labelEn: WeChat CorpID
+      labelZh: 微信企业ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_APP_SECRET
+      labelEn: WeChat App Secret
+      labelZh: 微信应用密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_APP_ID
+      labelEn: WeChat App ID
+      labelZh: 微信应用ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_TOKEN
+      labelEn: WeChat Token
+      labelZh: 微信令牌
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_ENCODING_AESKEY
+      labelEn: WeChat Encoding AES Key
+      labelZh: 微信编码 AES 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_ADMINS
+      labelEn: WeChat Admins
+      labelZh: 微信管理员
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WECHAT_PROXY
+      labelEn: WeChat Proxy
+      labelZh: 微信代理
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SLACK_OAUTH_TOKEN
+      labelEn: Slack OAuth Token
+      labelZh: Slack OAuth 令牌
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SLACK_APP_TOKEN
+      labelEn: Slack App Token
+      labelZh: Slack 应用令牌
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SLACK_CHANNEL
+      labelEn: Slack Channel
+      labelZh: Slack 频道
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SYNOLOGYCHAT_WEBHOOK
+      labelEn: Synology Chat Webhook
+      labelZh: 群晖聊天 Webhook
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SYNOLOGYCHAT_TOKEN
+      labelEn: Synology Chat Token
+      labelZh: 群晖聊天令牌
+      required: false
+      type: text
+    - default: "qbittorrent"
+      edit: true
+      envKey: DOWNLOADER
+      labelEn: Downloader
+      labelZh: 下载器
+      required: true
+      type: select
+      values:
+        - label: qBittorrent
+          value: "qbittorrent"
+        - label: Transmission
+          value: "transmission"
+    - default: ""
+      edit: true
+      envKey: QB_HOST
+      labelEn: QB Host
+      labelZh: qBittorrent 主机地址
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: QB_USER
+      labelEn: QB User
+      labelZh: qBittorrent 用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: QB_PASSWORD
+      labelEn: QB Password
+      labelZh: qBittorrent 密码
+      required: false
+      type: text
+    - default: "true"
+      edit: true
+      envKey: QB_SEQUENTIAL
+      labelEn: QB Sequential
+      labelZh: qBittorrent 顺序下载
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "false"
+      edit: true
+      envKey: QB_FORCE_RESUME
+      labelEn: QB Force Resume
+      labelZh: qBittorrent 强制继续下载
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: ""
+      edit: true
+      envKey: TR_HOST
+      labelEn: Transmission Host
+      labelZh: Transmission 主机
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TR_USER
+      labelEn: Transmission Username
+      labelZh: Transmission 用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TR_PASSWORD
+      labelEn: Transmission Password
+      labelZh: Transmission 密码
+      required: false
+      type: password
+    - default: "emby"
+      edit: true
+      envKey: MEDIASERVER
+      labelEn: Media Server
+      labelZh: 媒体服务器
+      required: true
+      type: select
+      values:
+        - label: Emby
+          value: "emby"
+        - label: Jellyfin
+          value: "jellyfin"
+        - label: Plex
+          value: "plex"
+    - default: ""
+      edit: true
+      envKey: EMBY_HOST
+      labelEn: Emby Host
+      labelZh: Emby 主机地址
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: EMBY_API_KEY
+      labelEn: Emby API Key
+      labelZh: Emby API 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: JELLYFIN_HOST
+      labelEn: Jellyfin Host
+      labelZh: Jellyfin 主机
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: JELLYFIN_API_KEY
+      labelEn: Jellyfin API Key
+      labelZh: Jellyfin API 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PLEX_HOST
+      labelEn: Plex Host
+      labelZh: Plex 主机
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PLEX_TOKEN
+      labelEn: Plex Token
+      labelZh: Plex 令牌
+      required: false
+      type: text
+    - default: "6"
+      edit: true
+      envKey: MEDIASERVER_SYNC_INTERVAL
+      labelEn: Media Server Sync Interval
+      labelZh: 媒体服务器同步间隔（小时）
+      required: true
+      type: number
+    - default: ""
+      edit: true
+      envKey: MEDIASERVER_SYNC_BLACKLIST
+      labelEn: Media Server Sync Blacklist
+      labelZh: 媒体服务器同步黑名单
+      required: false
+      type: text
+    - default: "audiences"
+      edit: true
+      envKey: AUTH_SITE
+      labelEn: Authentication Site
+      labelZh: 认证站点
+      required: true
+      type: select
+      values:
+        - label: "iyuu"
+          value: "iyuu"
+        - label: "hhclub"
+          value: "hhclub"
+        - label: "audiences"
+          value: "audiences"
+        - label: "hddolby"
+          value: "hddolby"
+        - label: "zmpt"
+          value: "zmpt"
+        - label: "freefarm"
+          value: "freefarm"
+        - label: "hdfans"
+          value: "hdfans"
+        - label: "wintersakura"
+          value: "wintersakura"
+        - label: "leaves"
+          value: "leaves"
+        - label: "ptba"
+          value: "ptba"
+        - label: "icc2022"
+          value: "icc2022"
+        - label: "ptlsp"
+          value: "ptlsp"
+        - label: "xingtan"
+          value: "xingtan"
+        - label: "ptvicomo"
+          value: "ptvicomo"
+        - label: "agsvpt"
+          value: "agsvpt"
+        - label: "hdkyl"
+          value: "hdkyl"
+        - label: "qingwa"
+          value: "qingwa"
+        - label: "discfan"
+          value: "discfan"
+    - default: ""
+      edit: true
+      envKey: IYUU_SIGN
+      labelEn: IYUU Sign
+      labelZh: IYUU 登录令牌
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HHCLUB_USERNAME
+      labelEn: HHClub Username
+      labelZh: HHClub 用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HHCLUB_PASSKEY
+      labelEn: HHClub Passkey
+      labelZh: HHClub 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AUDIENCES_UID
+      labelEn: Audiences UID
+      labelZh: Audiences 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AUDIENCES_PASSKEY
+      labelEn: Audiences Passkey
+      labelZh: Audiences 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HDDOLBY_ID
+      labelEn: HDDolby ID
+      labelZh: HDDolby 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HDDOLBY_PASSKEY
+      labelEn: HDDolby Passkey
+      labelZh: HDDolby 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: ZMPT_UID
+      labelEn: ZMPT UID
+      labelZh: ZMPT 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: ZMPT_PASSKEY
+      labelEn: ZMPT Passkey
+      labelZh: ZMPT 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: FREEFARM_UID
+      labelEn: FreeFarm UID
+      labelZh: FreeFarm 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: FREEFARM_PASSKEY
+      labelEn: FreeFarm Passkey
+      labelZh: FreeFarm 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HDFANS_UID
+      labelEn: HDFans UID
+      labelZh: HDFans 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HDFANS_PASSKEY
+      labelEn: HDFans Passkey
+      labelZh: HDFans 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WINTERSAKURA_UID
+      labelEn: WinterSakura UID
+      labelZh: WinterSakura 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WINTERSAKURA_PASSKEY
+      labelEn: WinterSakura Passkey
+      labelZh: WinterSakura 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: LEAVES_UID
+      labelEn: Leaves UID
+      labelZh: Leaves 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: LEAVES_PASSKEY
+      labelEn: Leaves Passkey
+      labelZh: Leaves 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PTBA_UID
+      labelEn: PTBA UID
+      labelZh: PTBA 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PTBA_PASSKEY
+      labelEn: PTBA Passkey
+      labelZh: PTBA 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: ICC2022_UID
+      labelEn: ICC2022 UID
+      labelZh: ICC2022 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: ICC2022_PASSKEY
+      labelEn: ICC2022 Passkey
+      labelZh: ICC2022 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PTLSP_UID
+      labelEn: PTLSP UID
+      labelZh: PTLSP 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PTLSP_PASSKEY
+      labelEn: PTLSP Passkey
+      labelZh: PTLSP 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: XINGTAN_UID
+      labelEn: XINGTAN UID
+      labelZh: XINGTAN 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: XINGTAN_PASSKEY
+      labelEn: XINGTAN Passkey
+      labelZh: XINGTAN 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PTVICOMO_UID
+      labelEn: PTVICOMO UID
+      labelZh: PTVICOMO 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PTVICOMO_PASSKEY
+      labelEn: PTVICOMO Passkey
+      labelZh: PTVICOMO 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AGSVPT_UID
+      labelEn: AGSVPT UID
+      labelZh: AGSVPT 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AGSVPT_PASSKEY
+      labelEn: AGSVPT Passkey
+      labelZh: AGSVPT 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HDKYL_UID
+      labelEn: HDKYL UID
+      labelZh: HDKYL 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: HDKYL_PASSKEY
+      labelEn: HDKYL Passkey
+      labelZh: HDKYL 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: QINGWA_UID
+      labelEn: QINGWA UID
+      labelZh: QINGWA 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: QINGWA_PASSKEY
+      labelEn: QINGWA Passkey
+      labelZh: QINGWA 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: DISCFAN_UID
+      labelEn: DISCFAN UID
+      labelZh: DISCFAN 用户ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: DISCFAN_PASSKEY
+      labelEn: DISCFAN Passkey
+      labelZh: DISCFAN 密钥
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: BIG_MEMORY_MODE
+      labelEn: Big Memory Mode
+      labelZh: 大内存模式
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: '{{title}}{% if year %} ({{year}}){% endif %}/{{title}}{% if year %} ({{year}}){% endif %}{% if part %}-{{part}}{% endif %}{% if videoFormat %} - {{videoFormat}}{% endif %}{{fileExt}}'
+      edit: true
+      envKey: MOVIE_RENAME_FORMAT
+      labelEn: Movie Rename Format
+      labelZh: 电影重命名格式
+      required: true
+      type: text
+    - default: '{{title}}{% if year %} ({{year}}){% endif %}/Season {{season}}/{{title}} - {{season_episode}}{% if part %}-{{part}}{% endif %}{% if episode %} - 第 {{episode}} 集{% endif %}{{fileExt}}'
+      edit: true
+      envKey: TV_RENAME_FORMAT
+      labelEn: TV Rename Format
+      labelZh: 电视剧重命名格式
+      required: true
+      type: text
