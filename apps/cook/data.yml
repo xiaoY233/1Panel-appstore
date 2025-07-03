@@ -1,0 +1,19 @@
+name: Cook
+tags:
+  - 实用工具
+title: 好的，今天我们来做菜！
+description: 好的，今天我们来做菜！
+additionalProperties:
+  key: cook
+  name: Cook
+  tags:
+    - Tool
+  shortDescZh: 好的，今天我们来做菜！
+  shortDescEn: OK, Let's Cook!
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://cook.yunyoujun.cn
+  github: https://github.com/YunYouJun/cook
+  document: https://github.com/YunYouJun/cook
