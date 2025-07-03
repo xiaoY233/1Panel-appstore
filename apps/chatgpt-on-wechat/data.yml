@@ -1,0 +1,19 @@
+name: ChatGPT on WeChat
+tags:
+  - AI / 大模型
+title: 基于大模型的智能对话机器人
+description: 基于大模型的智能对话机器人
+additionalProperties:
+  key: chatgpt-on-wechat
+  name: ChatGPT on WeChat
+  tags:
+    - AI
+  shortDescZh: 基于大模型的智能对话机器人
+  shortDescEn: Intelligent Conversational Bots Based on Large Models
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/zhayujie/chatgpt-on-wechat
+  github: https://github.com/zhayujie/chatgpt-on-wechat
+  document: https://docs.link-ai.tech/cow
