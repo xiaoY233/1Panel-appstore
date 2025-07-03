@@ -1,0 +1,92 @@
+additionalProperties:
+  formFields:
+    - default: 40249
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: mysql
+      envKey: PANEL_DB_TYPE
+      labelEn: Database Service
+      labelZh: 数据库服务
+      required: true
+      type: apps
+      values:
+        - label: MySQL
+          value: mysql
+        - label: LocalMySQL
+          value: localmysql
+      child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        labelEn: Database Service
+        labelZh: 数据库服务
+        required: true
+        type: service
+    - default: chatnio
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: chatnio
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: chatnio
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: ""
+      edit: true
+      envKey: REDIS_HOST
+      key: redis
+      labelEn: Redis Service
+      labelZh: Redis服务
+      required: true
+      type: service
+    - default: "6379"
+      edit: true
+      envKey: REDIS_PORT
+      labelEn: Redis Service Port
+      labelZh: Redis服务端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      envKey: PANEL_REDIS_ROOT_PASSWORD
+      labelEn: Redis Password
+      labelZh: Redis 密码
+      required: true
+      type: password
+    - default: "5"
+      envKey: REDIS_DB
+      labelEn: Redis Database
+      labelZh: Redis 数据库
+      required: true
+      type: number
+    - default: "true"
+      edit: true
+      envKey: SERVE_STATIC
+      labelEn: Serve Static
+      labelZh: 是否启用静态文件服务
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"

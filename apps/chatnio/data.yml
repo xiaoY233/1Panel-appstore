@@ -1,0 +1,19 @@
+name: Chat Nio
+tags:
+  - AI / 大模型
+title: 下一代 AI 一站式解决方案
+description: 下一代 AI 一站式解决方案
+additionalProperties:
+  key: chatnio
+  name: Chat Nio
+  tags:
+    - AI
+  shortDescZh: 下一代 AI 一站式解决方案
+  shortDescEn: Next Generation AI One-Stop Internationalization Solution
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://chatnio.com
+  github: https://github.com/Deeptrain-Community/chatnio
+  document: https://chatnio.com/guide
