@@ -1,0 +1,19 @@
+name: Nginx UI
+tags:
+  - Web 服务器
+title: Nginx 网络管理界面
+description: Nginx 网络管理界面
+additionalProperties:
+  key: nginx-ui
+  name: Nginx UI
+  tags:
+    - Server
+  shortDescZh: Nginx 网络管理界面
+  shortDescEn: Yet another WebUI for Nginx
+  type: runtime
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://nginxui.com/
+  github: https://github.com/0xJacky/nginx-ui
+  document: https://nginxui.com/
