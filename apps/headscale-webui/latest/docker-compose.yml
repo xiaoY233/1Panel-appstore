@@ -1,0 +1,27 @@
+services:
+  headscale-webui:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5000"
+    volumes:
+      - ${DATA_PATH}:/data
+      - ${HEADSCALE_PATH}:/etc/headscale/:ro
+    environment:
+      - TZ=${TIME_ZONE}
+      - HS_SERVER=${HS_SERVER}
+      - DOMAIN_NAME=${External_URL}
+      - SCRIPT_NAME=${URL_PATH}
+      - AUTH_TYPE=${AUTH_TYPE}
+      - BASIC_AUTH_USER=${HTTP_USER}
+      - BASIC_AUTH_PASS=${HTTP_PWD}
+      - KEY=${SECRET_KEY}
+    image: ifargle/headscale-webui:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

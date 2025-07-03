@@ -1,0 +1,19 @@
+name: Headscale-WebUI
+tags:
+  - 工具
+title: 适用于小规模部署的简单 Headscale 网络用户界面
+description: 适用于小规模部署的简单 Headscale 网络用户界面
+additionalProperties:
+  key: headscale-webui
+  name: Headscale-WebUI
+  tags:
+    - Tool
+  shortDescZh: 适用于小规模部署的简单 Headscale 网络用户界面
+  shortDescEn: A simple Headscale web UI for small-scale deployments
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/iFargle/headscale-webui
+  github: https://github.com/iFargle/headscale-webui
+  document: https://github.com/iFargle/headscale-webui
