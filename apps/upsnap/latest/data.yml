@@ -1,0 +1,85 @@
+additionalProperties:
+  formFields:
+    - default: "40318"
+      disabled: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "0.0.0.0"
+      edit: true
+      envKey: LISTEN_ADDR
+      labelEn: Listening address
+      labelZh: 监听地址
+      required: true
+      type: text
+    - default: "./data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "@every 10s"
+      edit: true
+      envKey: UPSNAP_INTERVAL
+      labelEn: Scan Interval
+      labelZh: 扫描间隔
+      required: true
+      type: text
+    - default: "192.168.1.0/24"
+      edit: true
+      envKey: UPSNAP_SCAN_RANGE
+      labelEn: Scan Range
+      labelZh: 扫描网段范围
+      required: true
+      type: text
+    - default: "500ms"
+      edit: true
+      envKey: UPSNAP_SCAN_TIMEOUT
+      labelEn: Scan Timeout
+      labelZh: 扫描超时
+      required: true
+      type: text
+    - default: "true"
+      edit: true
+      envKey: UPSNAP_PING_PRIVILEGED
+      labelEn: Ping Privileged
+      labelZh: 使用特权权限进行 Ping
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "Upsnap Dashboard"
+      edit: true
+      envKey: UPSNAP_WEBSITE_TITLE
+      labelEn: Website Title
+      labelZh: 网站标题
+      required: true
+      type: text
+    - default: "119.29.29.29"
+      edit: true
+      envKey: DNS_SERVER_1
+      labelEn: DNS Server 1
+      labelZh: DNS 服务器 1
+      required: true
+      type: text
+    - default: "223.5.5.5"
+      edit: true
+      envKey: DNS_SERVER_2
+      labelEn: DNS Server 2
+      labelZh: DNS 服务器 2
+      required: true
+      type: text
