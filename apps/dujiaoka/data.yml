@@ -1,0 +1,19 @@
+name: 独角数卡
+tags:
+  - 建站
+title: 开源自动售货解决方案
+description: 开源站长自动化售货解决方案
+additionalProperties:
+  key: dujiaoka
+  name: 独角数卡
+  tags:
+    - Website
+  shortDescZh: 开源站长自动化售货解决方案
+  shortDescEn: Open-source automated sales solution for webmasters
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/assimon/dujiaoka
+  github: https://github.com/assimon/dujiaoka
+  document: https://github.com/assimon/dujiaoka

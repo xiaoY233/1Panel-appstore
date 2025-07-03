@@ -1,0 +1,22 @@
+services:
+  dujiaoka:
+    image: "stilleshan/dujiaoka:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    volumes:
+      - ./data/env.conf:/dujiaoka/.env
+      - ./data/uploads:/dujiaoka/public/uploads
+      - ./data/storage:/dujiaoka/storage
+    environment:
+      - INSTALL=${INSTALL}
+      - MODIFY=${MODIFY}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

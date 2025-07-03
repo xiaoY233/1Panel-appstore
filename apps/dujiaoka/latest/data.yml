@@ -1,0 +1,34 @@
+additionalProperties:
+  formFields:
+    - default: 40256
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "true"
+      edit: true
+      envKey: INSTALL
+      labelEn: Whether to perform initial installation
+      labelZh: 是否进行初始化安装
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+    - default: "false"
+      edit: true
+      envKey: MODIFY
+      labelEn: Modified or not
+      labelZh: 是否已修改
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
