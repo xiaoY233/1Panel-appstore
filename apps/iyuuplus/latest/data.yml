@@ -1,0 +1,66 @@
+additionalProperties:
+  formFields:
+    - default: "40279"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/iyuu"
+      edit: true
+      envKey: IYUU_PATH
+      labelEn: IYUU Path
+      labelZh: IYUU 路径
+      required: true
+      type: text
+    - default: "./data/data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
+    - default: "./data/qbittorrent"
+      edit: true
+      envKey: QBITTORRENT_PATH
+      labelEn: QBittorrent Path
+      labelZh: QBittorrent 路径
+      required: true
+      type: text
+    - default: "/qbittorrent"
+      edit: true
+      envKey: INTERNAL_QBITTORRENT_PATH
+      labelEn: Internal QBittorrent Path
+      labelZh: 内部 QBittorrent 路径
+      required: true
+      type: text
+    - default: "./data/transmission"
+      edit: true
+      envKey: TRANSMISSION_PATH
+      labelEn: Transmission Path
+      labelZh: Transmission 路径
+      required: true
+      type: text
+    - default: "/transmission"
+      edit: true
+      envKey: INTERNAL_TRANSMISSION_PATH
+      labelEn: Internal Transmission Path
+      labelZh: 内部 Transmission 路径
+      required: true
+      type: text
+    - default: "./data/mnt"
+      edit: true
+      envKey: EXTERNAL_MOUNT_PATH
+      labelEn: External Mount Path
+      labelZh: 外部挂载路径
+      required: true
+      type: text
+    - default: "/mnt"
+      edit: true
+      envKey: INTERNAL_MOUNT_PATH
+      labelEn: Internal Mount Path
+      labelZh: 内部挂载路径
+      required: true
+      type: text

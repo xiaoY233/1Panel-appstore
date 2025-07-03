@@ -1,0 +1,19 @@
+name: IYUUPlus
+tags:
+  - 多媒体
+title: 自动辅种工具
+description: 自动辅种工具
+additionalProperties:
+  key: iyuuplus
+  name: IYUUPlus
+  tags:
+    - Media
+  shortDescZh: 自动辅种工具
+  shortDescEn: Automatic seeding tools
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: http://doc.iyuu.cn
+  github: https://github.com/ledccn/iyuuplus-dev
+  document: http://doc.iyuu.cn
