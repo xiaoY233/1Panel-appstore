@@ -1,0 +1,32 @@
+name: Clear
+tags:
+  - 待办事项
+  - 任务管理
+  - 自托管
+title: 简洁之美，效率之选的现代化待办事项管理应用
+description: 一款现代化的全栈待办事项管理应用，提供简洁高效的任务管理体验，支持个人和团队协作。
+additionalProperties:
+  key: clear
+  name: Clear
+  tags:
+    - Tool
+  shortDescZh: 简洁高效的待办事项管理应用，支持容器化部署与多平台适配
+  shortDescEn: A modern, efficient to-do management app with container deployment and multi-platform support
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/WindyDante/Clear
+  github: https://github.com/WindyDante/Clear
+  document: https://github.com/WindyDante/Clear
+  description:
+    en: A modern full-stack to-do management app delivering simple, efficient task management for personal and team use. Features containerized deployment, multi-platform support, and strong security.
+    zh: 一款现代化的全栈待办事项管理应用，提供简洁高效的任务管理体验，支持容器化部署、多平台适配及安全认证。
+    zh-Hant: 一款現代化的全棧待辦事項管理應用，提供簡潔高效的任務管理體驗，支援容器化部署、多平台適配及安全認證。
+    ja: 個人やチーム向けのシンプルで効率的なタスク管理を提供するモダンなフルスタックのToDo管理アプリ。コンテナ化展開やマルチプラットフォーム対応、強力なセキュリティ機能を備える。
+    ms: Aplikasi pengurusan tugas moden yang efisien dan ringkas untuk kegunaan peribadi dan pasukan. Menyokong pelaksanaan dalam kontena, sokongan pelbagai platform dan keselamatan yang kukuh.
+    pt-br: Um aplicativo moderno e eficiente de gerenciamento de tarefas para uso pessoal e em equipe. Oferece implantação em contêiner, suporte multiplataforma e autenticação segura.
+    ru: Современное приложение для управления задачами с простым и эффективным интерфейсом для личного и командного использования. Поддержка контейнеризации, мультиплатформенность и высокая безопасность.
+    ko: 개인 및 팀용으로 간단하고 효율적인 작업 관리를 제공하는 현대적인 풀스택 할 일 관리 앱입니다. 컨테이너화 배포, 다중 플랫폼 지원 및 강력한 보안을 제공합니다.
+  architectures:
+    - amd64
+    - arm64
