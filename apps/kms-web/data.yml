@@ -1,0 +1,19 @@
+name: KMS & WEB
+tags:
+  - 工具
+title: KMS 服务端与 WEB
+description: KMS 服务端与 WEB
+additionalProperties:
+  key: kms-web
+  name: KMS & WEB
+  tags:
+    - Tool
+  shortDescZh: KMS 服务端与 WEB
+  shortDescEn: KMS server and WEB
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/johngong/kms
+  github: https://github.com/gshang2017/docker/tree/master/kms
+  document: https://hub.docker.com/r/johngong/kms

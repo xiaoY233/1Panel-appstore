@@ -1,0 +1,18 @@
+services:
+  kms-web:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+      - "${KMS_PORT}:1688"
+    environment:
+      - KMS_README_WEB=true
+    image: johngong/kms:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

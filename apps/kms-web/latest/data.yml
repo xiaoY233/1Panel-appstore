@@ -1,0 +1,18 @@
+additionalProperties:
+  formFields:
+    - default: 40051
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 1688
+      edit: true
+      envKey: KMS_PORT
+      labelEn: KMS Port
+      labelZh: KMS端口
+      required: true
+      rule: paramPort
+      type: number
