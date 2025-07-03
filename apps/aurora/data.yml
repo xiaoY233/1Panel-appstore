@@ -1,0 +1,19 @@
+name: Aurora
+tags:
+  - 实用工具
+title: 极光面板-一个多服务器端口租用管理面板
+description: 极光面板-一个多服务器端口租用管理面板
+additionalProperties:
+  key: aurora
+  name: Aurora
+  tags:
+    - Tool
+  shortDescZh: 极光面板-一个多服务器端口租用管理面板
+  shortDescEn: A multi-server port leasing management panel
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://github.com/Aurora-Admin-Panel/deploy
+  github: https://github.com/Aurora-Admin-Panel/deploy
+  document: https://github.com/Aurora-Admin-Panel/deploy

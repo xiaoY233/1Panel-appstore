@@ -1,0 +1,56 @@
+additionalProperties:
+  formFields:
+    - default: aurora
+      envKey: PANEL_DB_NAME
+      labelEn: Database
+      labelZh: 数据库名
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: aurora
+      envKey: PANEL_DB_USER
+      labelEn: User
+      labelZh: 数据库用户
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: aurora
+      envKey: PANEL_DB_USER_PASSWORD
+      labelEn: Password
+      labelZh: 数据库用户密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: 40036
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data storage folder
+      labelZh: 数据存放文件夹
+      required: true
+      type: text
+    - default: /root/.ssh/id_rsa
+      edit: true
+      envKey: SSH_KEY_PATH
+      labelEn: SSH key file
+      labelZh: SSH 私钥文件
+      required: true
+      type: text
+    - default: aurora
+      envKey: SECRECY_KEY
+      labelEn: Secret Key
+      labelZh: 保密密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
