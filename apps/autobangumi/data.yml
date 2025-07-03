@@ -1,0 +1,19 @@
+name: AutoBangumi
+tags:
+  - 多媒体
+title: 全自动追番工具
+description: 全自动追番工具
+additionalProperties:
+  key: autobangumi
+  name: AutoBangumi
+  tags:
+    - Media
+  shortDescZh: 全自动追番工具
+  shortDescEn: Automated anime tracking tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.autobangumi.org
+  github: https://github.com/EstrellaXD/Auto_Bangumi
+  document: https://www.autobangumi.org
