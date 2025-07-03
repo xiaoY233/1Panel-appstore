@@ -1,0 +1,23 @@
+name: Wud
+tags:
+  - 实用工具
+title: 监控Docker基础镜像自动更新
+description: 自动更新Docker镜像的工具，支持Web管理
+additionalProperties:
+  key: wud
+  name: Wud
+  tags:
+    - Tools
+  shortDescZh: 监控Docker基础镜像自动更新
+  shortDescEn: Keep your containers up-to-date!
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  architectures:
+    - amd64
+    - arm64
+
+  website: https://getwud.github.io/wud/
+  github: https://github.com/getwud/wud
+  document: https://github.com/getwud/wud
