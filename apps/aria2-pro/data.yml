@@ -1,0 +1,19 @@
+name: Aria2-Pro
+tags:
+  - 工具
+title: 更好用的 Aria2 Docker 容器镜像
+description: 更好用的 Aria2 Docker 容器镜像
+additionalProperties:
+  key: aria2-pro
+  name: Aria2-Pro
+  tags:
+    - Tool
+  shortDescZh: 更好用的 Aria2 Docker 容器镜像
+  shortDescEn: A better-performing Aria2 Docker container image
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://github.com/P3TERX/Aria2-Pro-Docker
+  github: https://github.com/P3TERX/Aria2-Pro-Docker
+  document: https://p3terx.com/archives/docker-aria2-pro.html

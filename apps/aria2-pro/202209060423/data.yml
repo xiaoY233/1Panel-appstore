@@ -1,0 +1,47 @@
+additionalProperties:
+  formFields:
+    - default: 6800
+      edit: true
+      envKey: RPC_PORT_VALUE
+      labelEn: RPC port
+      labelZh: RPC端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 6888
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Listening port
+      labelZh: 监听端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: aria2
+      envKey: TOKEN
+      labelEn: RPC secret
+      labelZh: RPC密钥
+      random: true
+      required: true
+      rule: paramCommon
+      type: text
+    - default: ./data/config
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Path to the configuration file
+      labelZh: 配置文件所在路径
+      required: true
+      type: text
+    - default: ./data/downloads
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download folder path
+      labelZh: 下载文件夹路径
+      required: true
+      type: text
+    - default: https://trackerslist.com/all_aria2.txt
+      edit: true
+      envKey: TRACKER_URL
+      labelEn: TRACKER URL
+      labelZh: TRACKER链接
+      required: true
+      type: text
