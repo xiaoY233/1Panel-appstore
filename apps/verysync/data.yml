@@ -1,0 +1,32 @@
+additionalProperties:
+    key: verysync
+    name: Verysync
+    tags:
+        - Sync
+        - NAS
+        - Backup
+        - PrivateCloud
+        - Docker
+        - CrossPlatform
+    shortDescZh: 简单易用的P2P多平台文件同步软件
+    shortDescEn: Easy to use multi-platform file synchronization software
+    description:
+        en: Fast P2P file synchronization tool based on intelligent technology. Supports multi-platform deployment, suitable for home, enterprise, and developer scenarios.
+        ja: 高速P2Pファイル同期ツール。多プラットフォーム対応。
+        ms: Alat penyegerakan fail P2P pantas, menyokong pelbagai platform.
+        pt-br: Ferramenta de sincronização de arquivos P2P rápida, com suporte multiplataforma.
+        ru: Быстрый инструмент P2P-синхронизации файлов, поддержка различных платформ.
+        ko: 빠른 P2P 파일 동기화 도구, 다양한 플랫폼 지원.
+        zh-hant: 極速P2P檔案同步工具，支援多平台。
+        zh: 简单易用的P2P多平台文件同步软件
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://www.verysync.com/
+    github: https://github.com/Jonnyan404/verysync
+    document: https://www.verysync.com/manual/install/docker.html
+    architectures:
+        - amd64
+        - arm64
+        - arm/v7 
