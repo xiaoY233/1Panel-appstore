@@ -1,0 +1,19 @@
+name: VPS Stock Monitor
+tags:
+  - 实用工具
+title: VPS 库存监控工具
+description: VPS 库存监控工具
+additionalProperties:
+  key: vps-stock-monitor
+  name: VPS Stock Monitor
+  tags:
+    - Tool
+  shortDescZh: VPS 库存监控工具
+  shortDescEn: VPS Stock Monitor Tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/vpslog/vps-stock-monitor
+  github: https://github.com/vpslog/vps-stock-monitor
+  document: https://github.com/vpslog/vps-stock-monitor

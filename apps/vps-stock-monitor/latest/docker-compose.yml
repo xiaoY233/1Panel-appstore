@@ -1,0 +1,19 @@
+services:
+  vps-stock-monitor:
+    image: "vpslog/vps-stock-monitor:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5000"
+    volumes:
+      - "${DATA_PATH}:/app/data"
+    environment:
+      - PROXY_HOST=${PROXY_HOST}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
