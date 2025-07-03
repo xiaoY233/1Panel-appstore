@@ -1,0 +1,21 @@
+name: ATVLoadly
+tags:
+  - 实用工具
+  - 多媒体
+title: 轻松将 IPA 侧载到 AppleTV
+description: 轻松将 IPA 侧载到 AppleTV
+additionalProperties:
+  key: atvloadly
+  name: ATVLoadly
+  tags:
+    - Tool
+    - Media
+  shortDescZh: 轻松将 IPA 侧载到 AppleTV
+  shortDescEn: Easily sideload the IPA to AppleTV
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/bitxeno/atvloadly
+  github: https://github.com/bitxeno/atvloadly
+  document: https://github.com/bitxeno/atvloadly
