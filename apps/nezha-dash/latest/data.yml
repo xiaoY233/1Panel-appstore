@@ -1,0 +1,140 @@
+additionalProperties:
+  formFields:
+    - default: "40309"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      envKey: NEZHA_BASE_URL
+      labelEn: Nezha Base Url
+      labelZh: 哪吒面板地址
+      required: true
+      type: text
+      edit: true
+    - default: ""
+      envKey: NEZHA_AUTH
+      labelEn: Nezha API Token
+      labelZh: 哪吒面板 API Token
+      required: true
+      type: text
+      edit: true
+    - default: "2000"
+      edit: true
+      envKey: NEXT_PUBLIC_NezhaFetchInterval
+      labelEn: Nezha Fetch Interval
+      labelZh: 获取数据间隔（毫秒）
+      required: true
+      type: number
+    - default: "https://nezha-cf.buycoffee.top/apple-touch-icon.png"
+      edit: true
+      envKey: NEXT_PUBLIC_CustomLogo
+      labelEn: Custom Logo
+      labelZh: 自定义 Logo
+      required: true
+      type: text
+    - default: "Nezha-Dash"
+      edit: true
+      envKey: NEXT_PUBLIC_CustomTitle
+      labelEn: Custom Title
+      labelZh: 自定义标题
+      required: true
+      type: text
+    - default: "Nezha-Dash"
+      edit: true
+      envKey: NEXT_PUBLIC_CustomDescription
+      labelEn: Custom Description
+      labelZh: 自定义描述
+      required: true
+      type: text
+    - default: "zh"
+      edit: true
+      envKey: DEFAULT_LOCALE
+      labelEn: DefaultLocale
+      labelZh: 默认语言
+      required: true
+      type: select
+      values:
+        - label: "简体中文"
+          value: "zh"
+        - label: "繁体中文"
+          value: "zh-t"
+        - label: "English"
+          value: "en"
+        - label: "日本語"
+          value: "ja"
+    - default: "false"
+      edit: true
+      envKey: ForceShowAllServers
+      labelEn: Force Show All Servers
+      labelZh: 是否强制显示所有服务器
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_ShowFlag
+      labelEn: Show Flag
+      labelZh: 是否显示旗帜
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_DisableCartoon
+      labelEn: Disable Cartoon
+      labelZh: 是否禁用卡通人物
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_ShowTag
+      labelEn: Show Tag
+      labelZh: 是否显示标签
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_ShowNetTransfer
+      labelEn: Show Net Transfer
+      labelZh: 是否显示流量信息
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: NEXT_PUBLIC_ForceUseSvgFlag
+      labelEn: Force Use Svg Flag
+      labelZh: 是否强制使用 SVG 旗帜
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
