@@ -1,0 +1,19 @@
+name: SPlayer
+tags:
+  - 多媒体
+title: 一个简约的音乐播放器
+description: 一个简约的音乐播放器
+additionalProperties:
+  key: splayer
+  name: SPlayer
+  tags:
+    - Media
+  shortDescZh: 一个简约的音乐播放器
+  shortDescEn: A minimalist music player
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/imsyy/SPlayer
+  github: https://github.com/imsyy/SPlayer
+  document: https://github.com/imsyy/SPlayer
