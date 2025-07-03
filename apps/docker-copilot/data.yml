@@ -1,0 +1,22 @@
+name: Docker-Copilot
+tags:
+    - 实用工具
+title: DockerCopilot
+description: docker容器管理工具
+additionalProperties:
+    key: docker-copilot
+    name: Docker-Copilot
+    tags:
+        - Tools
+    shortDescZh: 一键更新容器
+    shortDescEn: DockerCopilot Application
+    description:
+      zh: 便捷的docker容器管理工具。
+      en: DockerCopilot is a convenient docker container management tool.
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/onlyLTY/dockerCopilot
+    github: https://github.com/onlyLTY/dockerCopilot
+    document: https://github.com/onlyLTY/dockerCopilot

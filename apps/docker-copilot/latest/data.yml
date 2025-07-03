@@ -1,0 +1,19 @@
+additionalProperties:
+  formFields:
+    - default: "12712"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Service Port 12712
+      labelZh: 服务端口 12712
+      required: true
+      rule: paramPort
+      type: number
+    - default: "copilot"
+      edit: true
+      envKey: SECRET_KEY
+      labelEn: secretKey
+      labelZh: 密码，不少于八位且非纯数字
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
