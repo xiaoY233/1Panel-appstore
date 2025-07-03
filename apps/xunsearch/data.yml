@@ -1,0 +1,19 @@
+name: 迅搜 Xunsearch
+tags:
+  - 工具
+title: 一个高性能、全功能的全文检索解决方案
+description: 一个高性能、全功能的全文检索解决方案
+additionalProperties:
+  key: xunsearch
+  name: 迅搜 Xunsearch
+  tags:
+    - Tool
+  shortDescZh: 一个高性能、全功能的全文检索解决方案
+  shortDescEn: A high-performance, full-featured full-text search solution
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: http://www.xunsearch.com
+  github: https://github.com/hightman/xunsearch
+  document: http://www.xunsearch.com/doc/php

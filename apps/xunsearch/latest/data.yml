@@ -1,0 +1,25 @@
+additionalProperties:
+  formFields:
+    - default: 40110
+      edit: true
+      envKey: INDEX_SERVER_PORT
+      labelEn: Index server Port
+      labelZh: 索引服务端配置端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40111
+      edit: true
+      envKey: SEARCH_SERVER_PORT
+      labelEn: Search server port
+      labelZh: 搜索服务端配置端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
