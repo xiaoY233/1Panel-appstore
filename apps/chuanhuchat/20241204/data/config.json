@@ -1,0 +1,64 @@
+{
+    "openai_api_key": "",
+    "google_palm_api_key": "",
+    "xmchat_api_key": "",
+    "minimax_api_key": "",
+    "minimax_group_id": "",
+    "midjourney_proxy_api_base": "",
+    "midjourney_proxy_api_secret": "",
+    "midjourney_discord_proxy_url": "",
+    "midjourney_temp_folder": "./tmp",
+    "spark_appid": "",
+    "spark_api_key": "",
+    "spark_api_secret": "",
+    "claude_api_secret":"",
+    "ernie_api_key": "",
+    "ernie_secret_key": "",
+
+
+
+    "openai_api_type": "openai", 
+    "azure_openai_api_key": "",
+    "azure_openai_api_base_url": "",
+    "azure_openai_api_version": "2023-05-15",
+    "azure_deployment_name": "",
+    "azure_embedding_deployment_name": "",
+    "azure_embedding_model_name": "text-embedding-ada-002",
+
+
+    "language": "zh_CN",
+    "users": [],
+    "local_embedding": false,
+    "hide_history_when_not_logged_in": false,
+    "check_update": true,
+    "default_model": "GPT3.5 Turbo",
+    "chat_name_method_index": 2,
+    "bot_avatar": "default",
+    "user_avatar": "default",
+
+
+    "show_api_billing": false,
+    "sensitive_id": "",
+    "usage_limit": 120,
+    "legacy_api_usage": false, 
+
+
+    "default_chuanhu_assistant_model": "gpt-4",
+    "GOOGLE_CSE_ID": "",
+    "GOOGLE_API_KEY": "",
+    "WOLFRAM_ALPHA_APPID": "",
+    "SERPAPI_API_KEY": "",
+
+
+    "latex_option": "default",
+    "advance_docs": {
+        "pdf": {
+            "two_column": false,
+            "formula_ocr": true
+        }
+    },
+
+
+    "multi_api_key": false,
+    "hide_my_key": false
+}
