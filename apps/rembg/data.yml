@@ -1,0 +1,19 @@
+name: Rembg
+tags:
+  - AI / 大模型
+title: 图像背景去除工具
+description: 图像背景去除工具
+additionalProperties:
+  key: rembg
+  name: Rembg
+  tags:
+    - AI
+  shortDescZh: 图像背景去除工具
+  shortDescEn: A tool to remove images background
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/danielgatis/rembg
+  github: https://github.com/danielgatis/rembg
+  document: https://github.com/danielgatis/rembg

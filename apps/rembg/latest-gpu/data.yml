@@ -1,0 +1,17 @@
+additionalProperties:
+  formFields:
+    - default: "40295"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "s"
+      edit: true
+      envKey: COMMAND
+      labelEn: Startup command
+      labelZh: 启动命令
+      required: true
+      type: text
