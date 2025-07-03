@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: 40142
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "https://hot-api.bbit.fun"
+      edit: true
+      envKey: API_URL
+      labelEn: API interface address (please build your own)
+      labelZh: API接口地址 (请自行搭建)
+      required: true
+      type: text
+    - default: "没有备案，这里填写备案ICP"
+      edit: true
+      envKey: ICP_TEXT
+      labelEn: ICP address
+      labelZh: ICP地址 (自行填写)
+      required: true
+      type: text

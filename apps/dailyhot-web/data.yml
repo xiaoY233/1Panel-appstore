@@ -1,0 +1,19 @@
+name: 今日热榜 DailyHot Web
+tags:
+  - 工具
+title: 一个聚合了中文热门站点数据的项目(前端)
+description: 一个聚合了中文热门站点数据的项目(前端)
+additionalProperties:
+  key: dailyhot-web
+  name: 今日热榜 DailyHot Web
+  tags:
+    - Tool
+  shortDescZh: 一个聚合了中文热门站点数据的项目(前端)
+  shortDescEn: A project that aggregates data for Chinese popular sites (web)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hot.imsyy.top
+  github: https://github.com/imsyy/DailyHot
+  document: https://github.com/imsyy/DailyHot

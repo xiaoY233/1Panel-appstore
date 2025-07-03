@@ -1,0 +1,18 @@
+services:
+  dailyhot-web:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    environment:
+      - "API=${API_URL}"
+      - "ICP=${ICP_TEXT}"
+    image: liwangsheng/dailyhot-web:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
