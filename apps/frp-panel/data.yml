@@ -1,0 +1,19 @@
+name: FRP-Panel (Server/Client)
+tags:
+  - 工具
+title: 多节点 FRP WebUI (服务端/客户端)
+description: 多节点 FRP WebUI (服务端/客户端)
+additionalProperties:
+  key: frp-panel
+  name: FRP-Panel (Server/Client)
+  tags:
+    - Tool
+  shortDescZh: 多节点 FRP WebUI (服务端/客户端)
+  shortDescEn: A multi node frp webui (Server/Client)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/VaalaCat/frp-panel
+  github: https://github.com/VaalaCat/frp-panel
+  document: https://github.com/VaalaCat/frp-panel
