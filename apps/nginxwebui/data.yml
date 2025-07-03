@@ -1,0 +1,19 @@
+name: nginxWebUI
+tags:
+  - Web 服务器
+title: Nginx 网页管理工具
+description: Nginx 网页管理工具
+additionalProperties:
+  key: nginxwebui
+  name: nginxWebUI
+  tags:
+    - Server
+  shortDescZh: Nginx 网页管理工具
+  shortDescEn: Nginx Web page configuration tool
+  type: runtime
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://www.nginxwebui.cn
+  github: https://github.com/cym1102/nginxWebUI
+  document: https://www.nginxwebui.cn/product.html
