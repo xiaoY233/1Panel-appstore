@@ -1,0 +1,19 @@
+name: Proxmox VE
+tags:
+  - 实用工具
+title: 在 Docker 里头跑 Proxmox VE
+description: 在 Docker 里头跑 Proxmox VE
+additionalProperties:
+  key: proxmox-ve
+  name: Proxmox VE
+  tags:
+    - Tool
+  shortDescZh: 在 Docker 里头跑 Proxmox VE
+  shortDescEn: Run Proxmox VE in Docker
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/makedie/proxmox_ve
+  github: https://github.com/GreenDamTan/DockerFile/tree/dev/ProxmoxVE
+  document: https://github.com/GreenDamTan/DockerFile/blob/dev/ProxmoxVE/readme.md

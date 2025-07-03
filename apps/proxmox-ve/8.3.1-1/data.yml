@@ -1,0 +1,27 @@
+additionalProperties:
+    formFields:
+        - default: 8006
+          edit: true
+          envKey: PANEL_APP_PORT_HTTPS
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: 192.168.1.2
+          edit: true
+          envKey: HOST_ADDRESS
+          labelEn: IP Address
+          labelZh: IP地址
+          required: true
+          rule: paramCommon
+          type: text
+        - default: root
+          edit: true
+          envKey: ROOT_PASSWORD
+          labelEn: Root Password
+          labelZh: root密码
+          random: true
+          required: true
+          rule: paramComplexity
+          type: password
