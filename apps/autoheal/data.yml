@@ -1,0 +1,19 @@
+name: Docker Autoheal
+tags:
+  - 工具
+title: 监视和重启不正常的 docker 容器
+description: 监视和重启不正常的 docker 容器
+additionalProperties:
+  key: autoheal
+  name: Docker Autoheal
+  tags:
+    - Tool
+  shortDescZh: 监视和重启不正常的 docker 容器
+  shortDescEn: Monitor and restart unhealthy docker containers
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://github.com/willfarrell/docker-autoheal
+  github: https://github.com/willfarrell/docker-autoheal
+  document: https://github.com/willfarrell/docker-autoheal

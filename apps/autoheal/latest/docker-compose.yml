@@ -1,0 +1,17 @@
+services:
+  autoheal:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - ${ENV1}
+    image: willfarrell/autoheal:latest
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

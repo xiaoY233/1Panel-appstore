@@ -1,0 +1,9 @@
+additionalProperties:
+  formFields:
+    - default: 'AUTOHEAL_CONTAINER_LABEL=all'
+      edit: true
+      envKey: ENV1
+      labelEn: Environmental parameters
+      labelZh: 环境参数
+      required: true
+      type: text
