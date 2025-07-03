@@ -1,0 +1,19 @@
+name: Nging
+tags:
+  - 实用工具
+title: Go 语言 Web 管理面板
+description: Go 语言 Web 管理面板
+additionalProperties:
+  key: nging
+  name: Nging
+  tags:
+    - Tool
+  shortDescZh: Go 语言 Web 管理面板
+  shortDescEn: Go Language Web Management Panel
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/admpub/nging
+  github: https://github.com/admpub/nging
+  document: https://github.com/admpub/nging
