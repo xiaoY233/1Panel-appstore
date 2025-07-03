@@ -1,0 +1,11 @@
+services:
+  als:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: "host"
+    environment:
+      - HTTP_PORT=${PANEL_APP_PORT_HTTP}
+    image: wikihostinc/looking-glass-server
+    labels:  
+      createdBy: "Apps"
+

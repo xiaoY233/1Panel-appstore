@@ -1,0 +1,19 @@
+name: ALS
+tags:
+  - 工具
+title: Another Looking-glass Server，测速服务端
+description: Another Looking-glass Server，测速服务端
+additionalProperties:
+  key: als
+  name: ALS
+  tags:
+    - Tool
+  shortDescZh: Another Looking-glass Server，测速服务端
+  shortDescEn: Another Looking-glass Server,Speed measurement server
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://github.com/wikihost-opensource/als
+  github: https://github.com/wikihost-opensource/als
+  document: https://github.com/wikihost-opensource/als
