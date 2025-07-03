@@ -1,0 +1,19 @@
+name: RSSHub
+tags:
+  - 工具
+title: 一个开源、简单易用、易于扩展的 RSS 生成器
+description: 一个开源、简单易用、易于扩展的 RSS 生成器
+additionalProperties:
+  key: rsshub
+  name: RSSHub
+  tags:
+    - Tool
+  shortDescZh: 一个开源、简单易用、易于扩展的 RSS 生成器
+  shortDescEn: An open-source, easy-to-use, and easy-to-scale RSS generator
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://docs.rsshub.app/
+  github: https://github.com/DIYgod/RSSHub
+  document: https://docs.rsshub.app/
