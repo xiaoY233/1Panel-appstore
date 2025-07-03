@@ -1,0 +1,38 @@
+additionalProperties:
+  formFields:
+    - default: "40315"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/images"
+      disabled: true
+      envKey: MEDIAWIKI_IMAGES_PATH
+      labelEn: MediaWiki Images Path
+      labelZh: MediaWiki 图片路径
+      required: true
+      type: text
+    - default: "./data/data"
+      disabled: true
+      envKey: MEDIAWIKI_DATA_PATH
+      labelEn: MediaWiki Data Path
+      labelZh: MediaWiki 数据路径
+      required: true
+      type: text
+    - default: "/var/www/data"
+      edit: true
+      envKey: INTERNAL_DATA_PATH
+      labelEn: Internal container data paths
+      labelZh: 容器内部数据路径
+      required: true
+      type: text
+    - default: "./data/LocalSettings.php"
+      disabled: true
+      envKey: LOCAL_SETTINGS_PATH
+      labelEn: LocalSettings.php Path ([necessary] Edit compose.yml to close the mapping to regenerate the configuration file)
+      labelZh: LocalSettings.php 路径 (【必要】编辑 compose.yml 关闭映射可重新生成配置文件)
+      required: true
+      type: text

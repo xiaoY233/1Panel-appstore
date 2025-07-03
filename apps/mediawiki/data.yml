@@ -1,0 +1,19 @@
+name: MediaWiki
+tags:
+  - 建站
+title: 开源百科引擎
+description: 开源百科引擎
+additionalProperties:
+  key: mediawiki
+  name: MediaWiki
+  tags:
+    - Website
+  shortDescZh: 开源百科引擎
+  shortDescEn: Open-source wiki engine
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.mediawiki.org
+  github: https://github.com/wikimedia/mediawiki
+  document: https://www.mediawiki.org/wiki/Manual:Installation_guide
