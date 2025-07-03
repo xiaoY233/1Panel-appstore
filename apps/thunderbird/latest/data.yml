@@ -1,0 +1,233 @@
+additionalProperties:
+  formFields:
+    - default: "40327"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web Port
+      labelZh: Web 端口
+      required: true
+      type: number
+    - default: "40328"
+      edit: true
+      envKey: VNC_PORT
+      labelEn: VNC Port
+      labelZh: VNC 端口
+      required: true
+      type: number
+    - default: "password"
+      edit: true
+      envKey: VNC_PASSWORD
+      labelEn: VNC Password
+      labelZh: VNC 密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "./data"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Configuration Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "1000"
+      edit: true
+      envKey: USER_ID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: GROUP_ID
+      labelEn: Group ID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+    - default: ""
+      edit: true
+      envKey: SUP_GROUP_IDS
+      labelEn: Supplementary Group IDs
+      labelZh: 补充用户组 ID
+      required: false
+      type: text
+    - default: "0022"
+      edit: true
+      envKey: UMASK
+      labelEn: Umask
+      labelZh: 文件创建权限掩码
+      required: true
+      type: text
+    - default: "en_US.UTF-8"
+      edit: true
+      envKey: LANG
+      labelEn: Locale
+      labelZh: 语言环境
+      required: true
+      type: text
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TZ
+      labelEn: Timezone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "0"
+      edit: true
+      envKey: KEEP_APP_RUNNING
+      labelEn: Keep App Running
+      labelZh: 保持应用运行
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "1"
+        - label: "False"
+          value: "0"
+    - default: "0"
+      edit: true
+      envKey: APP_NICENESS
+      labelEn: App Niceness
+      labelZh: 应用优先级
+      required: true
+      type: select
+      values:
+        - label: "High"
+          value: "-20"
+        - label: "Normal"
+          value: "0"
+        - label: "Low"
+          value: "19"
+    - default: ""
+      edit: true
+      envKey: INSTALL_PACKAGES
+      labelEn: Install Packages
+      labelZh: 安装包
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PACKAGES_MIRROR
+      labelEn: Packages Mirror
+      labelZh: 软件包镜像
+      required: false
+      type: text
+    - default: "0"
+      edit: true
+      envKey: CONTAINER_DEBUG
+      labelEn: Container Debug
+      labelZh: 容器调试
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "0"
+        - label: "Enabled"
+          value: "1"
+    - default: "1920"
+      edit: true
+      envKey: DISPLAY_WIDTH
+      labelEn: Display Width
+      labelZh: 显示宽度
+      required: true
+      type: number
+    - default: "1080"
+      edit: true
+      envKey: DISPLAY_HEIGHT
+      labelEn: Display Height
+      labelZh: 显示高度
+      required: true
+      type: number
+    - default: "0"
+      edit: true
+      envKey: DARK_MODE
+      labelEn: Dark Mode
+      labelZh: 暗黑模式
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "0"
+        - label: "Enabled"
+          value: "1"
+    - default: "0"
+      edit: true
+      envKey: WEB_AUDIO
+      labelEn: Web Audio
+      labelZh: Web 音频
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "0"
+        - label: "Enabled"
+          value: "1"
+    - default: "0"
+      edit: true
+      envKey: WEB_AUTHENTICATION
+      labelEn: Web Authentication
+      labelZh: Web 身份验证
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "0"
+        - label: "Enabled"
+          value: "1"
+    - default: ""
+      edit: true
+      envKey: WEB_AUTHENTICATION_USERNAME
+      labelEn: Web Authentication Username
+      labelZh: Web 身份验证用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEB_AUTHENTICATION_PASSWORD
+      labelEn: Web Authentication Password
+      labelZh: Web 身份验证密码
+      required: false
+      type: text
+    - default: "1"
+      edit: true
+      envKey: SECURE_CONNECTION
+      labelEn: Secure Connection
+      labelZh: 安全连接
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "0"
+        - label: "Enabled"
+          value: "1"
+    - default: "SSL"
+      edit: true
+      envKey: SECURE_CONNECTION_VNC_METHOD
+      labelEn: Secure VNC Method
+      labelZh: 安全 VNC 方法
+      required: true
+      type: select
+      values:
+        - label: "SSL"
+          value: "SSL"
+        - label: "TLS"
+          value: "TLS"
+    - default: "60"
+      edit: true
+      envKey: SECURE_CONNECTION_CERTS_CHECK_INTERVAL
+      labelEn: Secure Connection Certs Check Interval
+      labelZh: 安全连接证书检查间隔
+      required: true
+      type: number
+    - default: "0"
+      edit: true
+      envKey: ENABLE_CJK_FONT
+      labelEn: Enable CJK Font
+      labelZh: 启用 CJK 字体
+      required: true
+      type: select
+      values:
+        - label: "Disabled"
+          value: "0"
+        - label: "Enabled"
+          value: "1"
