@@ -1,0 +1,32 @@
+name: KeePassXC
+tags:
+    - 实用工具
+title: 跨平台密码管理器
+description: KeePassXC 是一款开源、跨平台的密码管理器，支持Web界面和多种平台
+additionalProperties:
+    key: keepassxc
+    name: KeePassXC
+    tags:
+        - Tool
+    shortDescZh: 跨平台密码管理器
+    shortDescEn: Cross-platform password manager
+    description:
+        en: KeePassXC is an open-source, cross-platform password manager with web interface support
+        ja: KeePassXCはWebインターフェースをサポートするオープンソースのクロスプラットフォームパスワードマネージャーです
+        ms: KeePassXC ialah pengurus kata laluan sumber terbuka merentas platform dengan sokongan antara muka web
+        pt-br: KeePassXC é um gerenciador de senhas de código aberto e multiplataforma com suporte a interface web
+        ru: KeePassXC — это кроссплатформенный менеджер паролей с открытым исходным кодом и поддержкой веб-интерфейса
+        ko: KeePassXC는 웹 인터페이스를 지원하는 오픈 소스 크로스 플랫폼 비밀번호 관리자입니다
+        zh-Hant: KeePassXC 是一款開源、跨平台的密碼管理器，支援 Web 管理
+        zh: KeePassXC 是一款开源、跨平台的密码管理器，支持Web界面和多种平台
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://keepassxc.org/
+    github: https://github.com/keepassxreboot/keepassxc
+    document: https://keepassxc.org/docs/
+    architectures:
+      - amd64
+      - arm64
+      - arm/v7 
