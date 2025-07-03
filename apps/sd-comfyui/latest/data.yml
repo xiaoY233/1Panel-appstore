@@ -1,0 +1,52 @@
+additionalProperties:
+  formFields:
+    - default: 40187
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: '--listen 0.0.0.0 --port 8188'
+      edit: true
+      envKey: SD_CONSOLE_CLI_COMFY
+      labelEn: CLI ARGS for ComfyUI
+      labelZh: ComfyUI 的 CLI_ARGS 参数
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: SD_CONSOLE_APT_COMFY
+      labelEn: Install some package if you want (equivalent to apt-get install -y)
+      labelZh: 想安装的软件包 (等同 apt-get install -y)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SD_CONSOLE_PIP_COMFY
+      labelEn: Install pip package if you want (equivalent to pip install)
+      labelZh: 想安装的 pip 包 (等同 pip install)
+      required: false
+      type: text
+    - default: 0
+      edit: true
+      envKey: SD_CONSOLE_DEVICE_IDS
+      labelEn: GPU ID
+      labelZh: SD 运行指定的 GPU 设备 ID
+      required: true
+      type: number
+    - default: ./data/data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data storage folder
+      labelZh: 数据存放文件夹
+      required: true
+      type: text
+    - default: ./data/output
+      edit: true
+      envKey: OUTPUT_PATH
+      labelEn: Picture output folder
+      labelZh: 图片输出文件夹
+      required: true
+      type: text

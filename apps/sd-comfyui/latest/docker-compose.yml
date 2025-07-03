@@ -1,0 +1,32 @@
+services:
+  sd-comfyui:
+    build: ./comfy
+    image: sd-comfyui:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    runtime: nvidia
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8188"
+    volumes:
+      - ${DATA_PATH}:/data
+      - ${OUTPUT_PATH}:/output
+    environment:
+      - CLI_ARGS=${SD_CONSOLE_CLI_COMFY}
+      - APT_ARGS=${SD_CONSOLE_APT_COMFY}
+      - PIP_ARGS=${SD_CONSOLE_PIP_COMFY}
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+              - driver: nvidia
+                device_ids: ['${SD_CONSOLE_DEVICE_IDS}']
+                capabilities: [gpu,compute,utility]
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true
