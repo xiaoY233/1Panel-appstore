@@ -1,0 +1,19 @@
+name: Raneto
+tags:
+  - 实用工具
+title: 一个免费、开放、简单的 Markdown 支持的 Node.js 知识库
+description: 一个免费、开放、简单的 Markdown 支持的 Node.js 知识库
+additionalProperties:
+  key: raneto
+  name: Raneto
+  tags:
+    - Tool
+  shortDescZh: 一个免费、开放、简单的 Markdown 支持的 Node.js 知识库
+  shortDescEn: A free, open, and simple Markdown supported Node.js knowledge base
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://raneto.com
+  github: https://github.com/ryanlelek/Raneto
+  document: https://docs.raneto.com
