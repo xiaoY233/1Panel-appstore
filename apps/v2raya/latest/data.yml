@@ -1,0 +1,25 @@
+additionalProperties:
+  formFields:
+    - default: 40052
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 32346
+      edit: true
+      envKey: PLUGIN_PORT
+      labelEn: Internal plug-in port
+      labelZh: 内部插件端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text

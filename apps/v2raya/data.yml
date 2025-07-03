@@ -1,0 +1,19 @@
+name: v2rayA
+tags:
+  - 工具
+title: 支持全局透明代理的 Project V 的 Linux 客户端
+description: 支持全局透明代理的 Project V 的 Linux 客户端
+additionalProperties:
+  key: v2raya
+  name: v2rayA
+  tags:
+    - Tool
+  shortDescZh: 支持全局透明代理的 Project V 的 Linux 客户端
+  shortDescEn: A web GUI client of Project V
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://v2raya.org
+  github: https://github.com/v2rayA/v2rayA
+  document: https://v2raya.org/docs/prologue/introduction/
