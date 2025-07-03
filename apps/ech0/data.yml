@@ -1,0 +1,19 @@
+name: ech0
+tags:
+  - 实用工具
+title: Ech0 - 开源、自托管、专注思想流动的轻量级发布平台
+description: Ech0 - 开源、自托管、专注思想流动的轻量级发布平台
+additionalProperties:
+  key: ech0
+  name: ech0
+  tags:
+    - Tool
+  shortDescZh: Ech0 是一款专为轻量级分享而设计的开源自托管平台，支持快速发布与分享你的想法、文字与链接。简单直观的操作界面，轻松管理你的内容，让分享变得更加自由，确保数据完全掌控，随时随地与世界连接。
+  shortDescEn: Ech0 is an open source hosting platform designed for lightweight sharing, supporting the rapid publishing and sharing of your ideas, text and links. With a simple and intuitive interface, it's easy to manage your content, make sharing more free, ensure full control of your data, and connect with the world anytime, anywhere.
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://memo.vaaat.com/
+  github: https://github.com/lin-snow/Ech0
+  document: https://github.com/lin-snow/Ech0/blob/main/README.md
