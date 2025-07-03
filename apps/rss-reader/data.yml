@@ -1,0 +1,19 @@
+name: RSS Reader
+tags:
+  - 工具
+title: 一个极简的 RSS 在线浏览工具
+description: 一个极简的 RSS 在线浏览工具
+additionalProperties:
+  key: rss-reader
+  name: RSS Reader
+  tags:
+    - Tool
+  shortDescZh: 一个极简的 RSS 在线浏览工具
+  shortDescEn: A minimalist RSS online browsing tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://rss.lass.cc
+  github: https://github.com/srcrs/rss-reader
+  document: https://github.com/srcrs/rss-reader
