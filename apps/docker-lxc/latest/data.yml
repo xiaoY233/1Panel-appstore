@@ -1,0 +1,66 @@
+additionalProperties:
+  formFields:
+    - default: 40044
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: SSH Port
+      labelZh: SSH 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 50000-50010
+      edit: true
+      envKey: EXTERNAL_PORT
+      labelEn: External port
+      labelZh: 外部端口
+      required: true
+      type: text
+    - default: 50000-50010
+      edit: true
+      envKey: INTERNAL_PORT
+      labelEn: Internal port
+      labelZh: 内部端口
+      required: true
+      type: text
+    - default: ./data/data
+      edit: true
+      envKey: EXTERNAL_DATA1
+      labelEn: External folder path 1
+      labelZh: 外部文件夹路径1
+      required: true
+      type: text
+    - default: /data
+      edit: true
+      envKey: INTERNAL_DATA1
+      labelEn: Internal folder path 1
+      labelZh: 内部文件夹路径1
+      required: true
+      type: text
+    - default: ./data/www
+      edit: true
+      envKey: EXTERNAL_DATA2
+      labelEn: External folder path 2
+      labelZh: 外部文件夹路径2
+      required: true
+      type: text
+    - default: /www
+      edit: true
+      envKey: INTERNAL_DATA2
+      labelEn: Internal folder path 2
+      labelZh: 内部文件夹路径2
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: SSH_KEY
+      labelEn: SSH public key
+      labelZh: SSH 公钥
+      required: false
+      type: text
+    - default: "lxc1"
+      edit: true
+      envKey: LXC_HOSTNAME
+      labelEn: LXC hostname
+      labelZh: LXC主机名
+      required: true
+      type: text
