@@ -1,0 +1,19 @@
+name: Amprobe
+tags:
+  - 实用工具
+title: 一款轻量级主机及 Docker 容器监控工具
+description: 一款轻量级主机及 Docker 容器监控工具
+additionalProperties:
+  key: amprobe
+  name: Amprobe
+  tags:
+    - Tool
+  shortDescZh: 一款轻量级主机及 Docker 容器监控工具
+  shortDescEn: A lightweight host and Docker container monitoring tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://github.com/amuluze/amprobe
+  github: https://github.com/amuluze/amprobe
+  document: https://amprobedoc.amuluze.com
