@@ -1,0 +1,32 @@
+name: NZBGet
+tags:
+    - 实用工具
+title: 高性能的Usenet下载工具
+description: NZBGet 是一个高性能的Usenet下载工具，支持Web界面管理和自动化下载
+additionalProperties:
+    key: nzbget
+    name: NZBGet
+    tags:
+        - Tool
+    shortDescZh: 高性能的Usenet下载工具
+    shortDescEn: High-performance Usenet downloader
+    description:
+        en: NZBGet is a high-performance Usenet downloader with web interface and automation support
+        ja: NZBGetはWebインターフェースと自動化サポートを備えた高性能Usenetダウンローダーです
+        ms: NZBGet ialah pemuat turun Usenet berprestasi tinggi dengan antara muka web dan sokongan automasi
+        pt-br: NZBGet é um downloader Usenet de alto desempenho com interface web e suporte a automação
+        ru: NZBGet — это высокопроизводительный загрузчик Usenet с веб-интерфейсом и поддержкой автоматизации
+        ko: NZBGet는 웹 인터페이스와 자동화 지원이 포함된 고성능 Usenet 다운로더입니다
+        zh-Hant: NZBGet 是一個高性能的 Usenet 下載工具，支援 Web 管理和自動化
+        zh: NZBGet 是一个高性能的Usenet下载工具，支持Web界面管理和自动化下载
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://nzbget.com/
+    github: https://github.com/nzbgetcom/nzbget
+    document: https://nzbget.com/documentation/
+    architectures:
+        - amd64
+        - arm64
+        - arm/v7 
