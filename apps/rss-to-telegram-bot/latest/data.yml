@@ -1,0 +1,101 @@
+additionalProperties:
+  formFields:
+    - default: 40054
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: BOT_TOKEN
+      labelEn: Telegram Bot token (@BotFather)
+      labelZh: Telegram Bot token (@BotFather)
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAM_USER_ID
+      labelEn: Telegram user id (@userinfobot)
+      labelZh: Telegram用户ID (@userinfobot)
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAPH_API_TOKEN1
+      labelEn: Telegram api token 1
+      labelZh: Telegram api token 1
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAPH_API_TOKEN2
+      labelEn: Telegram api token 2
+      labelZh: Telegram api token 2
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAPH_API_TOKEN3
+      labelEn: Telegram api token 3
+      labelZh: Telegram api token 3
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAPH_API_TOKEN4
+      labelEn: Telegram api token 4
+      labelZh: Telegram api token 4
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAPH_API_TOKEN5
+      labelEn: Telegram api token 5
+      labelZh: Telegram api token 5
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TELEGRAPH_API_TOKEN6
+      labelEn: Telegram api token 6
+      labelZh: Telegram api token 6
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: TG_API_ID
+      labelEn: Telegram api id (https://core.telegram.org/api/obtaining_api_id)
+      labelZh: Telegram api id (https://core.telegram.org/api/obtaining_api_id)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TG_API_HASH
+      labelEn: Telegram api hash
+      labelZh: Telegram api hash
+      required: false
+      type: text
+    - default: "Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/96.0"
+      edit: true
+      envKey: USERAGENT
+      labelEn: User-Agent
+      labelZh: User-Agent
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PROXY_SERVER
+      labelEn: SOCKS5 Proxy (socks5://172.17.0.1:1080)
+      labelZh: SOCKS5代理 (socks5://172.17.0.1:1080)
+      required: false
+      type: text

@@ -1,0 +1,19 @@
+name: RSS-to-Telegram-Bot
+tags:
+  - 工具
+title: 关心你的阅读体验的 Telegram RSS 机器人
+description: 关心你的阅读体验的 Telegram RSS 机器人
+additionalProperties:
+  key: rss-to-telegram-bot
+  name: RSS-to-Telegram-Bot
+  tags:
+    - Tool
+  shortDescZh: 关心你的阅读体验的 Telegram RSS 机器人
+  shortDescEn: A Telegram RSS bot that cares about your reading experience
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Rongronggg9/RSS-to-Telegram-Bot
+  github: https://github.com/Rongronggg9/RSS-to-Telegram-Bot
+  document: https://github.com/Rongronggg9/RSS-to-Telegram-Bot
