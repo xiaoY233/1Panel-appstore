@@ -1,0 +1,19 @@
+name: NPC
+tags:
+  - 工具
+title: 内网穿透代理服务器 NPS 的客户端
+description: 内网穿透代理服务器 NPS 的客户端
+additionalProperties:
+  key: npc
+  name: NPC
+  tags:
+    - Tool
+  shortDescZh: 内网穿透代理服务器 NPS 的客户端
+  shortDescEn: Intranet Penetrating Proxy Server NPS Client
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://ehang-io.github.io/nps
+  github: https://github.com/ehang-io/nps
+  document: https://ehang-io.github.io/nps/#/?id=nps

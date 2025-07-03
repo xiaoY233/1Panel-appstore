@@ -1,0 +1,28 @@
+additionalProperties:
+  formFields:
+    - default: 1.2.3.4:8025
+      edit: true
+      envKey: NPS_SERVER_ADDR
+      labelEn: NPS server address
+      labelZh: NPS 服务端地址
+      required: true
+      type: text
+    - default: "xly7traGe3r0t6UWltristuh1"
+      edit: true
+      envKey: NPS_VKEY
+      labelEn: Client connection key displayed by the server
+      labelZh: 服务端显示的客户端连接密钥
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "true"
+      envKey: TLS_ENABLE_SWITCH
+      labelEn: Whether TLS is enabled for server-client communication
+      labelZh: 服务端与客户端的通信是否启用 TLS
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
