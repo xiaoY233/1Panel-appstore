@@ -1,0 +1,34 @@
+additionalProperties:
+  formFields:
+    - default: "40325"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "https://script.localhost.com"
+      edit: true
+      envKey: BASE_URL
+      labelEn: Base URL
+      labelZh: 基本 URL
+      required: true
+      rule: paramExtUrl
+      type: text
+    - default: "40326"
+      edit: true
+      envKey: BETA_PORT
+      labelEn: Beta Port
+      labelZh: Beta 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "https://beta.localhost.com"
+      edit: true
+      envKey: BETA_BASE_URL
+      labelEn: Beta Base URL
+      labelZh: Beta 基本 URL
+      required: true
+      rule: paramExtUrl
+      type: text
