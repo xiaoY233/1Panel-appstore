@@ -1,0 +1,16 @@
+additionalProperties:
+  formFields:
+    - default: "/var/run/docker.sock"
+      edit: true
+      envKey: DOCKER_SOCK_PATH
+      labelEn: Docker Socket Path
+      labelZh: Docker 套接字路径
+      required: true
+      type: text
+    - default: "/etc/hosts"
+      edit: true
+      envKey: HOSTS_PATH
+      labelEn: Hosts File Path
+      labelZh: Hosts 文件路径
+      required: true
+      type: text

@@ -1,0 +1,19 @@
+name: Docker Hoster
+tags:
+  - 实用工具
+title: 在宿主机 hosts 上解析容器名
+description: 在宿主机 hosts 上解析容器名
+additionalProperties:
+  key: docker-hoster
+  name: Docker Hoster
+  tags:
+    - Tool
+  shortDescZh: 在宿主机 hosts 上解析容器名
+  shortDescEn: Docker local hostname resolution
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/solipsist01/docker-hoster
+  github: https://github.com/dvddarias/docker-hoster
+  document: https://github.com/dvddarias/docker-hoster

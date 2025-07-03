@@ -1,0 +1,16 @@
+services:
+  docker-hoster:
+    image: "solipsist01/docker-hoster:20241103005433"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - ${DOCKER_SOCK_PATH}:/tmp/docker.sock
+      - ${HOSTS_PATH}:/tmp/hosts
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
