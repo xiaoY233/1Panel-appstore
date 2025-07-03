@@ -1,0 +1,19 @@
+name: Zdir
+tags:
+  - 建站
+title: 轻量级目录列表程序
+description: 轻量级目录列表程序
+additionalProperties:
+  key: zdir
+  name: Zdir
+  tags:
+    - Website
+  shortDescZh: 轻量级目录列表程序
+  shortDescEn: Lightweight directory listing program
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://soft.xiaoz.org
+  github: https://github.com/helloxz/zdir
+  document: https://doc.xiaoz.me/books/zdir-3
