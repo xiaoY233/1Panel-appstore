@@ -1,0 +1,19 @@
+name: StackEdit
+tags:
+  - 工具
+title: 浏览器里的全功能开源 Markdown 编辑器
+description: 浏览器里的全功能开源 Markdown 编辑器
+additionalProperties:
+  key: stackedit
+  name: StackEdit
+  tags:
+    - Tool
+  shortDescZh: 浏览器里的全功能开源 Markdown 编辑器
+  shortDescEn: In-browser Markdown editor
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://stackedit.io
+  github: https://github.com/benweet/stackedit
+  document: https://github.com/benweet/stackedit
