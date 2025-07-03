@@ -1,0 +1,14 @@
+additionalProperties:
+  key: syncthing-relaysrv
+  name: Syncthing-relaysrv
+  tags:
+    - Tool
+  shortDescZh: syncthing 中继服务器
+  shortDescEn: the relay server for the syncthing
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://syncthing.net
+  github: https://github.com/syncthing/syncthing
+  document: https://docs.syncthing.net
