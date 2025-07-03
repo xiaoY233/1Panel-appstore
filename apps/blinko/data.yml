@@ -1,0 +1,19 @@
+name: Blinko
+tags:
+  - 实用工具
+title: 一款开源、自托管的个人笔记工具
+description: 一款开源、自托管的个人笔记工具
+additionalProperties:
+  key: blinko
+  name: Blinko
+  tags:
+    - Tool
+  shortDescZh: 一款开源、自托管的个人笔记工具
+  shortDescEn: An open-source, self-hosted personal note tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://blinko-demo.vercel.app
+  github: https://github.com/blinko-space/blinko
+  document: https://blinko-doc.vercel.app/intro.html
