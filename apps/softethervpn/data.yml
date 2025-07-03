@@ -1,0 +1,21 @@
+name: SoftEtherVPN
+tags:
+  - 实用工具
+  - 安全
+title: 开源多协议 VPN 软件
+description: 开源多协议 VPN 软件
+additionalProperties:
+  key: softethervpn
+  name: SoftEtherVPN
+  tags:
+    - Tool
+    - Security
+  shortDescZh: 开源多协议 VPN 软件
+  shortDescEn: Open-source multi-protocol VPN software
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.softether.org
+  github: https://github.com/SoftEtherVPN/SoftEtherVPN
+  document: https://www.softether.org/4-docs
