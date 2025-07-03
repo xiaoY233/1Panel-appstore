@@ -1,0 +1,25 @@
+additionalProperties:
+  formFields:
+    - default: 40161
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40162
+      edit: true
+      envKey: PANEL_APP_PORT_XIAOYA
+      labelEn: xiaoya Alist Port
+      labelZh: 小雅 Alist 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text

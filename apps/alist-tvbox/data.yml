@@ -1,0 +1,19 @@
+name: Alist-TVBox
+tags:
+  - 工具
+title: AList 代理，支持 xiaoya 版 AList 界面管理
+description: AList 代理，支持 xiaoya 版 AList 界面管理
+additionalProperties:
+  key: alist-tvbox
+  name: Alist-TVBox
+  tags:
+    - Tool
+  shortDescZh: AList 代理，支持 xiaoya 版 AList 界面管理
+  shortDescEn: AList proxy server for TvBox, support playlist and search
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/power721/alist-tvbox
+  github: https://github.com/power721/alist-tvbox
+  document: https://github.com/power721/alist-tvbox
