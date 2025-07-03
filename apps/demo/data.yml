@@ -1,0 +1,19 @@
+name: 1Panel Apps
+tags:
+  - 建站
+title: 适配 1Panel 应用商店的通用应用模板
+description: 适配 1Panel 应用商店的通用应用模板
+additionalProperties:
+  key: 1panel-apps
+  name: 1Panel Apps
+  tags:
+    - Website
+  shortDescZh: 适配 1Panel 应用商店的通用应用模板
+  shortDescEn: Universal app template for the 1Panel App Store
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/okxlin/appstore
+  github: https://github.com/okxlin/appstore
+  document: https://github.com/okxlin/appstore
