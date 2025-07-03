@@ -1,0 +1,19 @@
+name: MeTube
+tags:
+  - 多媒体
+title: 媒体下载工具
+description: 媒体下载工具
+additionalProperties:
+  key: metube
+  name: MeTube
+  tags:
+    - Media
+  shortDescZh: 媒体下载工具
+  shortDescEn: Media downloader tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/alexta69/metube
+  github: https://github.com/alexta69/metube
+  document: https://github.com/alexta69/metube

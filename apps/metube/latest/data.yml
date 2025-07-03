@@ -1,0 +1,154 @@
+additionalProperties:
+  formFields:
+    - default: "40289"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data"
+      edit: true
+      envKey: DOWNLOAD_DIR
+      labelEn: Download Directory
+      labelZh: 下载目录
+      required: true
+      type: text
+    - default: "1000"
+      disabled: true
+      envKey: UID
+      labelEn: UID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1000"
+      disabled: true
+      envKey: GID
+      labelEn: GID
+      labelZh: 用户组 ID
+      required: true
+      type: number
+    - default: "auto"
+      edit: true
+      envKey: DEFAULT_THEME
+      labelEn: Default Theme
+      labelZh: 默认主题
+      required: true
+      type: select
+      values:
+        - label: "Light"
+          value: "light"
+        - label: "Dark"
+          value: "dark"
+        - label: "Auto"
+          value: "auto"
+    - default: "/downloads/audio"
+      disabled: true
+      envKey: AUDIO_DOWNLOAD_DIR
+      labelEn: Audio Download Directory
+      labelZh: 音频下载目录
+      required: false
+      type: text
+    - default: "/downloads/.metube"
+      disabled: true
+      envKey: STATE_DIR
+      labelEn: State Directory
+      labelZh: 状态目录
+      required: true
+      type: text
+    - default: "/downloads/temp"
+      disabled: true
+      envKey: TEMP_DIR
+      labelEn: Temp Directory
+      labelZh: 临时目录
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: DOWNLOAD_DIRS_INDEXABLE
+      labelEn: Download Dirs Indexable
+      labelZh: 目录可索引
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "true"
+      edit: true
+      envKey: CUSTOM_DIRS
+      labelEn: Custom Directories
+      labelZh: 自定义目录
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "true"
+      edit: true
+      envKey: CREATE_CUSTOM_DIRS
+      labelEn: Create Custom Directories
+      labelZh: 创建自定义目录
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: DELETE_FILE_ON_TRASHCAN
+      labelEn: Delete File on Trashcan
+      labelZh: 删除文件
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "/"
+      edit: true
+      envKey: URL_PREFIX
+      labelEn: URL Prefix
+      labelZh: URL 前缀
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: PUBLIC_HOST_URL
+      labelEn: Public Host URL
+      labelZh: 公共主机URL
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PUBLIC_HOST_AUDIO_URL
+      labelEn: Public Host Audio URL
+      labelZh: 公共音频主机URL
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: DEFAULT_OPTION_PLAYLIST_STRICT_MODE
+      labelEn: Strict Playlist Mode
+      labelZh: 严格播放列表模式
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "0"
+      edit: true
+      envKey: DEFAULT_OPTION_PLAYLIST_ITEM_LIMIT
+      labelEn: Playlist Item Limit
+      labelZh: 播放列表项限制
+      required: true
+      type: number
