@@ -1,0 +1,19 @@
+name: Streaming-Media-Server-Pro
+tags:
+  - 工具
+title: 一个强大的 IPTV 源后端服务，具有视频缓冲区功能
+description: 一个强大的 IPTV 源后端服务，具有视频缓冲区功能
+additionalProperties:
+  key: streaming-media-server-pro
+  name: Streaming-Media-Server-Pro
+  tags:
+    - Tool
+  shortDescZh: 一个强大的 IPTV 源后端服务，具有视频缓冲区功能
+  shortDescEn: A powerful IPTV source backend service with video buffer function
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/239144498/Streaming-Media-Server-Pro
+  github: https://github.com/239144498/Streaming-Media-Server-Pro
+  document: https://github.com/239144498/Streaming-Media-Server-Pro
