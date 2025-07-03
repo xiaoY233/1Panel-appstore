@@ -1,0 +1,19 @@
+name: Deluge
+tags:
+  - 实用工具
+title: 跨平台的 BitTorrent 客户端
+description: 跨平台的 BitTorrent 客户端
+additionalProperties:
+  key: deluge
+  name: Deluge
+  tags:
+    - Tool
+  shortDescZh: 跨平台的 BitTorrent 客户端
+  shortDescEn: Cross-platform BitTorrent client
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://deluge-torrent.org
+  github: https://github.com/linuxserver/docker-deluge
+  document: https://deluge.readthedocs.io

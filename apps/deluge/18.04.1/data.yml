@@ -1,0 +1,68 @@
+additionalProperties:
+  formFields:
+    - default: "40321"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "6881"
+      edit: true
+      envKey: DELUGE_PEER_PORT
+      labelEn: Peer Port
+      labelZh: Peer 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "58846"
+      edit: true
+      envKey: DELUGE_PORT_RPC
+      labelEn: RPC Port
+      labelZh: RPC 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: PUID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: PGID
+      labelEn: Group ID
+      labelZh: 组 ID
+      required: true
+      type: number
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "error"
+      edit: true
+      envKey: DELUGE_LOGLEVEL
+      labelEn: Deluge Log Level
+      labelZh: Deluge 日志级别
+      required: true
+      type: text
+    - default: "./data/config"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Deluge Config Path
+      labelZh: Deluge 配置路径
+      required: true
+      type: text
+    - default: "./data/downloads"
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Downloads Path
+      labelZh: 下载路径
+      required: true
+      type: text
