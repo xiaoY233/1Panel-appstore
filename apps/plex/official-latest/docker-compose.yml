@@ -1,0 +1,36 @@
+services:
+  plex:
+    image: "plexinc/pms-docker:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:32400/tcp"
+      - "${PANEL_APP_PORT_TCP_3005}:3005/tcp"
+      - "${PANEL_APP_PORT_TCP_8324}:8324/tcp"
+      - "${PANEL_APP_PORT_TCP_32469}:32469/tcp"
+      - "${PANEL_APP_PORT_UDP_1900}:1900/udp"
+      - "${PANEL_APP_PORT_UDP_32410}:32410/udp"
+      - "${PANEL_APP_PORT_UDP_32412}:32412/udp"
+      - "${PANEL_APP_PORT_UDP_32413}:32413/udp"
+      - "${PANEL_APP_PORT_UDP_32414}:32414/udp"
+    environment:
+      - TZ=${TIMEZONE}
+      - PLEX_CLAIM=${CLAIM_TOKEN}
+      - ADVERTISE_IP=${ADVERTISE_IP}
+      - HOSTNAME=${HOSTNAME}
+      - PLEX_UID=${PLEX_UID}
+      - PLEX_GID=${PLEX_GID}
+      - CHANGE_CONFIG_DIR_OWNERSHIP=${CHANGE_CONFIG_DIR_OWNERSHIP}
+      - ALLOWED_NETWORKS=${ALLOWED_NETWORKS}
+    volumes:
+      - ${DATABASE_PATH}:/config
+      - ${TRANSCODE_PATH}:/transcode
+      - ${MEDIA_PATH}:/data
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

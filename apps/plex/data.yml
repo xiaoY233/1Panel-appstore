@@ -1,0 +1,19 @@
+name: Plex Media Server
+tags:
+  - 多媒体
+title: Plex 媒体服务器
+description: Plex 媒体服务器
+additionalProperties:
+  key: plex
+  name: Plex Media Server
+  tags:
+    - Media
+  shortDescZh: Plex 媒体服务器
+  shortDescEn: Plex Media Server
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.plex.tv
+  github: https://github.com/plexinc/pms-docker
+  document: https://support.plex.tv
