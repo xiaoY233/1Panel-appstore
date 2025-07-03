@@ -1,0 +1,31 @@
+name: NetBox
+tags:
+    - 实用工具
+title: 数据中心和网络自动化管理平台
+description: NetBox 是一款开源的数据中心和网络资源管理平台，支持Web界面和API
+additionalProperties:
+    key: netbox
+    name: NetBox
+    tags:
+        - Tool
+    shortDescZh: 数据中心和网络自动化管理平台
+    shortDescEn: Data center and network automation platform
+    description:
+        en: NetBox is an open-source data center and network automation platform with web interface and API
+        ja: NetBoxはWebインターフェースとAPIを備えたオープンソースのデータセンター・ネットワーク自動化プラットフォームです
+        ms: NetBox ialah platform automasi pusat data dan rangkaian sumber terbuka dengan antara muka web dan API
+        pt-br: NetBox é uma plataforma de automação de data center e rede de código aberto com interface web e API
+        ru: NetBox — это платформа автоматизации центров обработки данных и сетей с открытым исходным кодом, веб-интерфейсом и API
+        ko: NetBox는 웹 인터페이스와 API를 지원하는 오픈 소스 데이터 센터 및 네트워크 자동화 플랫폼입니다
+        zh-Hant: NetBox 是一款開源的數據中心和網路自動化管理平台，支援 Web 管理和 API
+        zh: NetBox 是一款开源的数据中心和网络资源管理平台，支持Web界面和API
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://netbox.dev/
+    github: https://github.com/netbox-community/netbox
+    document: https://docs.netbox.dev/
+    architectures:
+      - amd64
+      - arm64 
