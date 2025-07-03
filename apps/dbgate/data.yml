@@ -1,0 +1,19 @@
+name: DbGate
+tags:
+  - 开发工具
+title: 跨平台的数据库管理器
+description: 跨平台的数据库管理器
+additionalProperties:
+  key: dbgate
+  name: DbGate
+  tags:
+    - DevTool
+  shortDescZh: 跨平台的数据库管理器
+  shortDescEn: Cross-platform database manager
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://dbgate.org
+  github: https://github.com/dbgate/dbgate
+  document: https://dbgate.org/docs/
