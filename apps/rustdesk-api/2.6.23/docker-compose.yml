@@ -1,0 +1,55 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  rustdesk-api:
+    image: lejianwen/rustdesk-api:v2.6.23
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:21114
+    env_file:
+      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
+      - ${ENV_FILE:-/etc/1panel/envs/default.env}
+    volumes:
+      - ${RUSTDESK_API_ROOT_PATH}/data:/data
+    environment:
+      - TZ=Asia/Shanghai
+      - RUSTDESK_API_LANG=zh-CN
+      - RUSTDESK_API_RUSTDESK_ID_SERVER=${RUSTDESK_SERVER_URL}:21116
+      - RUSTDESK_API_RUSTDESK_RELAY_SERVER=${RUSTDESK_SERVER_URL}:21117
+      - RUSTDESK_API_RUSTDESK_API_SERVER=${RUSTDESK_SERVER_URL}:${PANEL_APP_PORT_HTTP:-21114}
+      - RUSTDESK_API_RUSTDESK_KEY=${KEY}
+  rustdesk-server-s6:
+    image: rustdesk/rustdesk-server-s6:latest
+    container_name: server-${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - 21115:21115
+      - 21116:21116
+      - 21116:21116/udp
+      - 21117:21117
+      - 21118:21118
+      - 21119:21119
+    env_file:
+      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
+      - ${ENV_FILE:-/etc/1panel/envs/default.env}
+    volumes:
+      - ${RUSTDESK_API_ROOT_PATH}/data:/data
+      - ${HBBR_RUN_FILE:-./conf/hbbr/run}:/etc/s6-overlay/s6-rc.d/hbbr/run
+      - ${HBBS_RUN_FILE:-./conf/hbbs/run}:/etc/s6-overlay/s6-rc.d/hbbs/run
+    environment:
+      - TZ=Asia/Shanghai
+      - RUSTDESK_API_LANG=zh-CN
+      - RELAY=${RUSTDESK_SERVER_URL}:21117
+      - ENCRYPTED_ONLY=1
+      - RUSTDESK_API_RUSTDESK_KEY=${KEY}
