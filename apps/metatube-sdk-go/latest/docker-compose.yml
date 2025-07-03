@@ -1,0 +1,21 @@
+services:
+  metatube-sdk-go:
+    image: "ghcr.io/metatube-community/metatube-server:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}"
+    environment:
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
+    volumes:
+      - ${DATA_PATH}:/var/run
+    command: -dsn "postgres://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}" -port ${PANEL_APP_PORT_HTTP} -db-auto-migrate -db-prepared-stmt
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

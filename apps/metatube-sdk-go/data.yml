@@ -1,0 +1,19 @@
+name: MetaTube SDK Go
+tags:
+  - 多媒体
+title: MetaTube 服务的后端
+description: MetaTube 服务的后端
+additionalProperties:
+  key: metatube-sdk-go
+  name: MetaTube SDK Go
+  tags:
+    - Media
+  shortDescZh: MetaTube 服务的后端
+  shortDescEn: Backend of the MetaTube service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://metatube-community.github.io
+  github: https://github.com/metatube-community/metatube-sdk-go
+  document: https://metatube-community.github.io
