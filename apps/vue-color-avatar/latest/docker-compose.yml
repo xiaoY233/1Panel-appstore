@@ -1,0 +1,12 @@
+services:
+  vue-color-avatar:
+    image: wenyang0/vue-color-avatar:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5173"
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
