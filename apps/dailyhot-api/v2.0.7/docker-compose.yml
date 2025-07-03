@@ -1,0 +1,15 @@
+services:
+  dailyhot-api:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:6688"
+    image: imsyy/dailyhot-api:v2.0.7
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true

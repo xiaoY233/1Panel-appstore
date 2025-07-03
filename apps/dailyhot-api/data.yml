@@ -1,0 +1,19 @@
+name: 今日热榜 DailyHot API
+tags:
+  - 工具
+title: 一个聚合了中文热门站点数据的项目 (API)
+description: 一个聚合了中文热门站点数据的项目 (API)
+additionalProperties:
+  key: dailyhot-api
+  name: 今日热榜 DailyHot API
+  tags:
+    - Tool
+  shortDescZh: 一个聚合了中文热门站点数据的项目 (API)
+  shortDescEn: A project that aggregates data for Chinese popular sites (API)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hot.imsyy.top
+  github: https://github.com/imsyy/DailyHotApi
+  document: https://github.com/imsyy/DailyHotApi
