@@ -1,0 +1,19 @@
+name: Edge Browser
+tags:
+  - 实用工具
+title: Microsoft Edge Insider 预览版
+description: Microsoft Edge Insider 预览版
+additionalProperties:
+  key: edge-browser
+  name: Edge Browser
+  tags:
+    - Tool
+  shortDescZh: Microsoft Edge Insider 预览版
+  shortDescEn: Microsoft Edge Insider Preview
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.microsoft.com/zh-cn/edge
+  github: https://www.microsoft.com/zh-cn/edge
+  document: https://www.microsoft.com/zh-cn/edge
