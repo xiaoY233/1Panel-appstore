@@ -1,0 +1,19 @@
+name: ModStartBlog
+tags:
+  - 建站
+title: 开源个人博客系统
+description: 开源个人博客系统
+additionalProperties:
+  key: modstartblog
+  name: ModStartBlog
+  tags:
+    - Website
+  shortDescZh: 开源博客系统
+  shortDescEn: Open Source Blog System
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://modstart.com
+  github: https://gitee.com/modstart/ModStartBlog
+  document: https://modstart.com/doc
