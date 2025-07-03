@@ -1,0 +1,13 @@
+additionalProperties:
+  key: gitlab
+  name: GitLab
+  tags:
+    - DevOps
+  shortDescZh: 一个自托管的Git仓库管理工具
+  shortDescEn: A self-hosted Git repository management tool
+  type: website
+  crossVersionUpdate: False
+  limit: 0
+  website: https://about.gitlab.com/
+  github: https://about.gitlab.com/
+  document: https://docs.gitlab.com/user/get_started/
