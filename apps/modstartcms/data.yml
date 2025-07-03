@@ -1,0 +1,19 @@
+name: ModStartCMS
+tags:
+  - 建站
+title: 开源企业建站系统
+description: 开源企业建站系统
+additionalProperties:
+  key: modstartcms
+  name: ModStartCMS
+  tags:
+    - Website
+  shortDescZh: 开源企业建站系统
+  shortDescEn: Open Source Corp Website Building System
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://modstart.com
+  github: https://github.com/modstart/ModStartCMS
+  document: https://modstart.com/doc
