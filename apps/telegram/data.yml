@@ -1,0 +1,19 @@
+name: Telegram Desktop
+tags:
+  - 工具
+title: 适用于Kasm Workspaces 的电报桌面
+description: 适用于Kasm Workspaces 的电报桌面
+additionalProperties:
+  key: telegram
+  name: Telegram Desktop
+  tags:
+    - Tool
+  shortDescZh: 适用于Kasm Workspaces 的电报桌面
+  shortDescEn: Telegram Desktop for Kasm Workspaces
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://telegram.org
+  github: https://github.com/telegramdesktop/tdesktop
+  document: https://telegram.org/faq
