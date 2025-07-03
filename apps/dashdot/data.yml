@@ -1,0 +1,19 @@
+name: dashdot
+tags:
+  - 工具
+title: 一个简单、现代的服务器仪表板
+description: 一个简单、现代的服务器仪表板
+additionalProperties:
+  key: dashdot
+  name: dashdot
+  tags:
+    - Tool
+  shortDescZh: 一个简单、现代的服务器仪表板
+  shortDescEn: A simple, modern server dashboard
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://getdashdot.com
+  github: https://github.com/MauriceNino/dashdot
+  document: https://getdashdot.com/docs/install
