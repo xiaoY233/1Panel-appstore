@@ -1,0 +1,19 @@
+name: Element Web
+tags:
+  - 工具
+title: 一款围绕您构建的安全通信平台
+description: 一款围绕您构建的安全通信平台
+additionalProperties:
+  key: element-web
+  name: Element Web
+  tags:
+    - Tool
+  shortDescZh: 一款围绕您构建的安全通信平台
+  shortDescEn: A secure communications platform built around you
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://element.io
+  github: https://github.com/vector-im/element-web
+  document: https://github.com/vector-im/element-web
