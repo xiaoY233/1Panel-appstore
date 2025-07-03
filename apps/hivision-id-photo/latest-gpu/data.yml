@@ -1,0 +1,53 @@
+additionalProperties:
+  formFields:
+    - default: "40330"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "7860"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP_INTERNAL
+      labelEn: Internal Port
+      labelZh: 内部端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "python3 -u app.py --host 0.0.0.0 --port 7860"
+      edit: true
+      envKey: COMMAND
+      labelEn: Command
+      labelZh: 启动命令
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: FACE_PLUS_API_KEY
+      labelEn: FACE Plus API Key
+      labelZh: FACE Plus API 密钥
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: FACE_PLUS_API_SECRET
+      labelEn: FACE Plus API Secret
+      labelZh: FACE Plus API 密钥 Secret
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: RUN_MODE
+      labelEn: Run Mode
+      labelZh: 运行模式
+      required: false
+      type: text
+    - default: "zh"
+      edit: true
+      envKey: DEFAULT_LANG
+      labelEn: Default Language
+      labelZh: 默认语言
+      required: false
+      type: text

@@ -1,0 +1,19 @@
+name: HivisionIDPhoto
+tags:
+  - AI / 大模型
+title: 一个轻量级的 AI 证件照制作工具
+description: 一个轻量级的 AI 证件照制作工具
+additionalProperties:
+  key: hivision-id-photo
+  name: HivisionIDPhoto
+  tags:
+    - AI
+  shortDescZh: 一个轻量级的 AI 证件照制作工具
+  shortDescEn: A lightweight and efficient AI ID photos tools
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Zeyi-Lin/HivisionIDPhotos
+  github: https://github.com/Zeyi-Lin/HivisionIDPhotos
+  document: https://github.com/Zeyi-Lin/HivisionIDPhotos
