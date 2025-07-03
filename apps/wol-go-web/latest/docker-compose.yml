@@ -1,0 +1,15 @@
+services:
+  wol-go-web:
+    image: "chishin/wol-go-web:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: host
+    environment:
+      - PORT=${PANEL_APP_PORT_HTTP}
+      - KEY=${KEY}
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - WEB=${WEB}
+      - TZ=${TIME_ZONE}
+    labels:
+      createdBy: "Apps"

@@ -1,0 +1,51 @@
+additionalProperties:
+  formFields:
+    - default: "40270"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "false"
+      edit: true
+      envKey: KEY
+      labelEn: API Key
+      labelZh: API 密钥
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: USERNAME
+      labelEn: Username
+      labelZh: 用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: PASSWORD
+      labelEn: Password
+      labelZh: 密码
+      required: false
+      rule: paramComplexity
+      type: password
+    - default: "true"
+      edit: true
+      envKey: WEB
+      labelEn: Web Interface
+      labelZh: Web 界面
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text

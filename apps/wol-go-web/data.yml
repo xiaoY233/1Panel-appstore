@@ -1,0 +1,19 @@
+name: WolGoWeb
+tags:
+  - 实用工具
+title: 网络唤醒工具
+description: 网络唤醒工具
+additionalProperties:
+  key: wol-go-web
+  name: WolGoWeb
+  tags:
+    - Tool
+  shortDescZh: 网络唤醒工具
+  shortDescEn: Wake-on-LAN tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/xiaoxinpro/WolGoWeb
+  github: https://github.com/xiaoxinpro/WolGoWeb
+  document: https://github.com/xiaoxinpro/WolGoWeb
