@@ -1,0 +1,19 @@
+name: Docker-Android
+tags:
+  - 实用工具
+title: 在 Docker 中运行 Android
+description: 在 Docker 中运行 Android
+additionalProperties:
+  key: docker-android
+  name: Docker-Android
+  tags:
+    - Tool
+  shortDescZh: 在 Docker 中运行 Android
+  shortDescEn: Run Android in Docker
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/budtmo/docker-android
+  github: https://github.com/budtmo/docker-android
+  document: https://github.com/budtmo/docker-android

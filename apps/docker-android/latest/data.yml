@@ -1,0 +1,50 @@
+additionalProperties:
+  formFields:
+    - default: "budtmo/docker-android:latest"
+      edit: true
+      envKey: IMAGE
+      labelEn: Container Image
+      labelZh: 容器镜像
+      required: true
+      type: text
+    - default: "always"
+      edit: true
+      envKey: RESTART_POLICY
+      labelEn: Restart Policy
+      labelZh: 重启策略
+      required: true
+      type: select
+      values:
+        - label: "Always"
+          value: "always"
+        - label: "Unless Stopped"
+          value: "unless-stopped"
+        - label: "No"
+          value: "no"
+    - default: "Samsung Galaxy S10"
+      edit: true
+      envKey: EMULATOR_DEVICE
+      labelEn: Emulator Device
+      labelZh: 模拟的设备
+      required: true
+      type: text
+    - default: "true"
+      edit: true
+      envKey: WEB_VNC
+      labelEn: Web VNC
+      labelZh: Web VNC
+      required: true
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+    - default: "40288"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number

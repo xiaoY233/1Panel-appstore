@@ -1,0 +1,20 @@
+services:
+  docker-android:
+    image: ${IMAGE}
+    container_name: ${CONTAINER_NAME}
+    restart: ${RESTART_POLICY}
+    networks:
+      - 1panel-network
+    devices:
+      - /dev/kvm
+    environment:
+      - EMULATOR_DEVICE=${EMULATOR_DEVICE}
+      - WEB_VNC=${WEB_VNC}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:6080
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
