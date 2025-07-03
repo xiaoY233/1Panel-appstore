@@ -1,0 +1,43 @@
+services:
+  go-chatgpt-api:
+    container_name: ${CONTAINER_NAME}-api
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
+    environment:
+      - GO_CHATGPT_API_PROXY=socks5://chatgpt-proxy-server-warp:65535
+      - GO_CHATGPT_API_PANDORA=${API_PANDORA}
+      - GO_CHATGPT_API_ARKOSE_TOKEN_URL=${ARKOSE_TOKEN_URL}
+      - GO_CHATGPT_API_OPENAI_EMAIL=${OPENAI_EMAIL}
+      - GO_CHATGPT_API_OPENAI_PASSWORD=${OPENAI_PASSWORD}
+    image: linweiyuan/go-chatgpt-api:latest
+    depends_on:
+      - chatgpt-proxy-server-warp
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "1"
+    labels:  
+      createdBy: "Apps"
+
+  chatgpt-proxy-server-warp:
+    container_name: ${CONTAINER_NAME}-warp
+    restart: always
+    networks:
+      - 1panel-network
+    image: linweiyuan/chatgpt-proxy-server-warp:latest
+    environment:
+      - LOG_LEVEL=INFO
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "1"
+    labels:  
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

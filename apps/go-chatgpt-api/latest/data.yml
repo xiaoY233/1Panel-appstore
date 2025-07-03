@@ -1,0 +1,38 @@
+additionalProperties:
+  formFields:
+    - default: 40041
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "1"
+      edit: true
+      envKey: API_PANDORA
+      labelEn: Pandora API mode
+      labelZh: 潘多拉API模式
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: ARKOSE_TOKEN_URL
+      labelEn: ARKOSE Token URL
+      labelZh: ARKOSE_TOKEN 链接
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: OPENAI_EMAIL
+      labelEn: OpenAI account email
+      labelZh: OpenAI账户邮箱
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: OPENAI_PASSWORD
+      labelEn: OpenAI account password
+      labelZh: OpenAI账户密码
+      required: false
+      type: text

@@ -1,0 +1,19 @@
+name: go-chatgpt-api
+tags:
+  - 工具
+title: 一个尝试绕过 Cloudflare 来使用 ChatGPT 接口的程序
+description: 一个尝试绕过 Cloudflare 来使用 ChatGPT 接口的程序
+additionalProperties:
+  key: go-chatgpt-api
+  name: go-chatgpt-api
+  tags:
+    - Tool
+  shortDescZh: 一个尝试绕过 Cloudflare 来使用 ChatGPT 接口的程序
+  shortDescEn: A program that attempts to bypass Cloudflare to use the ChatGPT interface
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/linweiyuan/go-chatgpt-api
+  github: https://github.com/linweiyuan/go-chatgpt-api
+  document: https://github.com/linweiyuan/go-chatgpt-api
