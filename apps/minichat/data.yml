@@ -1,0 +1,19 @@
+name: Minichat
+tags:
+  - 建站
+title: 极简聊天应用
+description: 极简聊天应用
+additionalProperties:
+  key: minichat
+  name: Minichat
+  tags:
+    - Website
+  shortDescZh: 极简聊天应用
+  shortDescEn: Minimalist chat application
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://minichat.seeyou.me
+  github: https://github.com/okhanyu/minichat
+  document: https://github.com/okhanyu/minichat

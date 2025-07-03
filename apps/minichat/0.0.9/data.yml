@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: "40276"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/config.yaml"
+      disabled: true
+      envKey: CONFIG_PATH
+      labelEn: Configuration Path
+      labelZh: 配置路径
+      required: true
+      type: text
+    - default: "bulma"
+      edit: true
+      envKey: TEMPLATE_NAME
+      labelEn: Template Name
+      labelZh: 模板名称
+      required: true
+      type: text

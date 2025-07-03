@@ -1,0 +1,19 @@
+services:
+  minichat:
+    image: "okhanyu/minichat:0.0.9"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
+    volumes:
+      - "${CONFIG_PATH}:/app/config.yaml"
+    environment:
+      - TEMPLATE_NAME=${TEMPLATE_NAME}
+    labels:  
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
