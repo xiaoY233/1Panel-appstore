@@ -1,0 +1,19 @@
+name: Ugly Avatar
+tags:
+  - 实用工具
+title: 丑陋头像生成器
+description: 丑陋头像生成器
+additionalProperties:
+  key: ugly-avatar
+  name: Ugly Avatar
+  tags:
+    - Tool
+  shortDescZh: 丑陋头像生成器
+  shortDescEn: Ugly Avatar Generator
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://txstc55.github.io/ugly-avatar
+  github: https://github.com/txstc55/ugly-avatar
+  document: https://github.com/txstc55/ugly-avatar
