@@ -1,0 +1,19 @@
+name: Spider Admin Pro
+tags:
+  - 工具
+title: 一个可视化的 Scrapy 爬虫管理平台，依赖于 Scrapyd
+description: 一个可视化的 Scrapy 爬虫管理平台，依赖于 Scrapyd
+additionalProperties:
+  key: spider-admin-pro
+  name: Spider Admin Pro
+  tags:
+    - Tool
+  shortDescZh: 一个可视化的 Scrapy 爬虫管理平台，依赖于 Scrapyd
+  shortDescEn: A visual Scrapy crawler management platform that relies on Scrapyd
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/mouday/spider-admin-pro
+  github: https://github.com/mouday/spider-admin-pro
+  document: https://github.com/mouday/spider-admin-pro
