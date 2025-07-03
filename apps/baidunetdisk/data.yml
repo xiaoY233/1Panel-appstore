@@ -1,0 +1,19 @@
+name: 百度网盘
+tags:
+  - 工具
+title: 百度网盘是百度推出的一项云存储服务
+description: 百度网盘是百度推出的一项云存储服务
+additionalProperties:
+  key: baidunetdisk
+  name: 百度网盘
+  tags:
+    - Tool
+  shortDescZh: 百度网盘是百度推出的一项云存储服务
+  shortDescEn: BaiduNetdisk is a cloud storage service launched by Baidu
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://pan.baidu.com/
+  github: https://github.com/gshang2017/docker/tree/master/baidunetdisk
+  document: https://github.com/gshang2017/docker/tree/master/baidunetdisk

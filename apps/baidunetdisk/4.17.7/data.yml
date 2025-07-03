@@ -1,0 +1,33 @@
+additionalProperties:
+  formFields:
+    - default: 40035
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: VNCPassword
+      edit: true
+      envKey: VNC_PASSWORD
+      labelEn: Access Password
+      labelZh: 访问密码
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: ./data/config
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config file path
+      labelZh: 配置文件所在路径
+      required: true
+      type: text
+    - default: ./data/downloads
+      edit: true
+      envKey: DOWNLOAD_PATH
+      labelEn: Download folder path
+      labelZh: 下载文件夹路径
+      required: true
+      type: text
