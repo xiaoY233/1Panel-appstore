@@ -1,0 +1,19 @@
+name: Blossom
+tags:
+  - 工具
+title: 一个支持私有部署的云端双链笔记软件
+description: 一个支持私有部署的云端双链笔记软件
+additionalProperties:
+  key: blossom
+  name: Blossom
+  tags:
+    - Tool
+  shortDescZh: 一个支持私有部署的云端双链笔记软件
+  shortDescEn: A note-taking software which support self-hosted and cloud-based dual-chain storing
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.wangyunf.com/blossom-doc/
+  github: https://github.com/blossom-editor/blossom
+  document: https://www.wangyunf.com/blossom-doc/
