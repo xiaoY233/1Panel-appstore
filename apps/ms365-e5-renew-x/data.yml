@@ -1,0 +1,19 @@
+name: Microsoft 365 E5 Renew X
+tags:
+  - 工具
+title: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
+description: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
+additionalProperties:
+  key: ms365-e5-renew-x
+  name: Microsoft 365 E5 Renew X
+  tags:
+    - Tool
+  shortDescZh: Docker 版本的 Microsoft 365 E5 调用 API 续订服务
+  shortDescEn: Docker version of Microsoft 365 E5 calls API renewal service
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X
+  github: https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X
+  document: https://blog.csdn.net/qq_33212020/article/details/119747634

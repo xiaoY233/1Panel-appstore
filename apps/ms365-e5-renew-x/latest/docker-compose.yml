@@ -1,0 +1,20 @@
+services:
+  ms365-e5-renew-x:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:1066"
+    volumes:
+      - ./Deploy:/app/Deploy
+      - ./appdata:/app/appdata
+    environment:
+      - TZ=${TIME_ZONE}
+    image: hanhongyong/ms365-e5-renew-x:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
