@@ -1,0 +1,19 @@
+name: Diosic
+tags:
+  - 工具
+title: 一个开源的基于网络的音乐收集服务器和流媒体
+description: 一个开源的基于网络的音乐收集服务器和流媒体
+additionalProperties:
+  key: diosic
+  name: Diosic
+  tags:
+    - Tool
+  shortDescZh: 一个开源的基于网络的音乐收集服务器和流媒体
+  shortDescEn: An open source web-based music collection server and streamer
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/Reknij/diosic
+  github: https://github.com/Reknij/diosic
+  document: https://reknij.github.io/DiosicDocCN/

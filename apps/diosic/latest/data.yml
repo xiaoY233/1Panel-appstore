@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: 40177
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data/data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: ./data/library
+      edit: true
+      envKey: MUSIC_PATH
+      labelEn: Music folder path
+      labelZh: 音乐文件夹路径
+      required: true
+      type: text
+    - default: "我的音乐库"
+      edit: true
+      envKey: LIBRARY_NAME
+      labelEn: Music library name
+      labelZh: 音乐库名称
+      required: true
+      type: text
