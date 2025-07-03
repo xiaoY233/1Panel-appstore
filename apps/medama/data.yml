@@ -1,0 +1,19 @@
+name: Medama
+tags:
+  - 实用工具
+title: 自托管、注重隐私的网站分析
+description: 自托管、注重隐私的网站分析
+additionalProperties:
+  key: medama
+  name: Medama
+  tags:
+    - Tool
+  shortDescZh: 自托管、注重隐私的网站分析
+  shortDescEn: Self-hostable, privacy-focused website analytics
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://oss.medama.io
+  github: https://github.com/medama-io/medama
+  document: https://oss.medama.io
