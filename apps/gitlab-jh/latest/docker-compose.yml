@@ -1,0 +1,25 @@
+version: "3.6" 
+services: 
+  gitlab-jh: 
+    image: registry.gitlab.cn/omnibus/gitlab-jh:latest
+    container_name: ${CONTAINER_NAME}
+    hostname: localhost
+    restart: always
+    networks: 
+      - 1panel-network
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://localhost/'
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:80
+      - ${PANEL_APP_PORT_22}:22
+    volumes:
+      - './config:/etc/gitlab'
+      - './logs:/var/log/gitlab'
+      - './data:/var/opt/gitlab'
+    labels: 
+      createdBy: "Apps" 
+
+networks: 
+  1panel-network: 
+    external: true
