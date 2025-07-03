@@ -1,0 +1,21 @@
+services:
+  mosdns:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      1panel-network:
+        ipv4_address: ${SUBNET}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:53/tcp"
+      - "${PANEL_APP_PORT_HTTP}:53/udp"
+      - "${PANEL_APP_PORT_API}:8080"
+    volumes:
+      - "${DATA_PATH}:/etc/mosdns"
+    image: irinesistiana/mosdns:latest
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
+

@@ -1,0 +1,207 @@
+# 参考文档1：https://www.xukecheng.tech/use-mosdns-and-adguardhome-to-build-your-own-dns
+# 参考文档2：https://github.com/IrineSistiana/mosdns/discussions/605
+
+log:
+  level: info   # 日志级别。可选 "debug" "info" "warn" "error"。默认 "info"。
+  production: true            # 纯 json 输出。
+
+# API 入口设置     
+api:
+  http: "127.0.0.1:8080" # 在该地址启动 api 接口。
+
+# []string, 从其他配置文件载入 plugins 插件设置。
+# include 的插件会比本配置文件中的插件先初始化。
+include: []
+
+plugins:
+
+  # 重定向域名
+  - tag: redirect
+    type: redirect
+    args:
+      rules:
+        - www.cnbeta.com www.cnbeta.com.tw
+
+  # 国内解析域名
+  - tag: "geosite-cn"
+    type: domain_set
+    args:
+      files: 
+        - "/etc/mosdns/direct-list.txt"
+        - "/etc/mosdns/apple-cn.txt"
+        - "/etc/mosdns/google-cn.txt"
+
+  # 国外解析域名
+  - tag: "geosite-nocn"
+    type: domain_set
+    args:
+      files: 
+        - "/etc/mosdns/proxy-list.txt"
+        - "/etc/mosdns/gfw.txt"
+
+  # 国内解析IP
+  - tag: "geoip-cn"
+    type: ip_set
+    args:
+      files: "/etc/mosdns/CN-ip-cidr.txt"
+
+  # 强制国内解析域名
+  - tag: "force-cn"
+    type: domain_set
+    args:
+      files: "/etc/mosdns/force-cn.txt"
+
+  # 强制国外解析域名
+  - tag: "force-nocn"
+    type: domain_set
+    args:
+      files: "/etc/mosdns/force-nocn.txt"
+
+  # 自定义hosts
+  - tag: hosts
+    type: hosts
+    args:
+      files:
+        - "/etc/mosdns/hosts"
+
+  # 缓存
+  - tag: "cache"
+    type: "cache"
+    args:
+      size: 1024
+      lazy_cache_ttl: 0
+      dump_file: /etc/mosdns/cache.dump
+      dump_interval: 600
+
+  # 转发至国内DNS，并发查询
+  - tag: forward_local
+    type: forward
+    args:
+      concurrent: 3
+      upstreams:
+        - addr: "https://dns.alidns.com/dns-query"
+        - addr: "tls://dns.alidns.com"
+        - addr: "https://1.12.12.12/dns-query"
+        - addr: "https://120.53.53.53/dns-query"
+
+  # 转发至国外DNS，并发查询
+  - tag: forward_remote
+    type: forward
+    args:
+      concurrent: 3
+      upstreams:
+        - addr: "https://cloudflare-dns.com/dns-query"
+        - addr: "tls://1dot1dot1dot1.cloudflare-dns.com"
+        - addr: "https://dns.google/dns-query"
+        - addr: "tls://dns.google"
+
+  # fallback的primary服务器,返回非国内ip则drop_resp
+  - tag: local_sequence
+    type: sequence
+    args:
+      - exec: $forward_local
+      - exec: ttl 60-3600
+      - matches:
+        - "!resp_ip $geoip-cn"
+        - "has_resp"
+        exec: drop_resp
+
+  # fallback的secondary服务器,返回非国内ip则添加至ipset,返回国内ip只接受不会添加ipset
+  - tag: remote_sequence
+    type: sequence
+    args:
+      - exec: $forward_remote
+      - matches: "!resp_ip $geoip-cn"
+        exec: ipset gfwlist,inet,24
+      - exec: accept
+
+  # fallback sequence
+  - tag: fallback
+    type: fallback
+    args:
+      primary: local_sequence
+      secondary: remote_sequence
+      threshold: 500
+      always_standby: true
+
+  # gfwlist解析出的ip添加至ipset，添加前先判断是否为国内ip或内网ip
+  - tag: gfw-list
+    type: sequence
+    args:
+      - exec: ttl 300-3600
+      - matches: "!resp_ip $geoip-cn"
+        exec: ipset gfwlist,inet,24
+      - exec: accept
+
+  # 主运行序列
+  - tag: main_sequence
+    type: sequence
+    args:
+      - exec: $hosts
+      - exec: query_summary hosts
+      - matches: has_wanted_ans
+        exec: accept
+      
+      - exec: query_summary qtype65
+      - matches: 
+        - qtype 65
+        exec: reject 0
+
+      # 屏蔽广告
+#      - matches: qname &/etc/mosdns/reject-list.txt &/etc/mosdns/my-reject-list.txt
+#        exec: reject
+
+      - exec: prefer_ipv4
+
+      - exec: $redirect
+
+      # 动态域名跳过缓存
+      - matches: "!qname 00006801.com"
+        exec: $cache
+      - matches: has_resp
+        exec: accept
+
+      - matches: 
+        - qname $geosite-cn
+        exec: $forward_local
+      - exec: query_summary geosite-cn
+      - matches: has_wanted_ans
+        exec: accept
+
+      - matches: 
+        - qname $force-cn
+        exec: $forward_local
+      - exec: query_summary force-cn
+      - matches: has_wanted_ans
+        exec: accept
+
+      - matches:
+        - qname $geosite-nocn
+        exec: $forward_remote
+      - exec: query_summary geosite-nocn
+      - matches: has_wanted_ans
+        exec: goto gfw-list
+
+      - matches:
+        - qname $force-nocn
+        exec: $forward_remote
+      - exec: query_summary force-nocn
+      - matches: has_wanted_ans
+        exec: goto gfw-list
+
+      - exec: $fallback
+      
+  # 启动监听服务
+  - tag: "udp_server"
+    type: "udp_server"
+    args:
+      entry: main_sequence 
+      listen: 0.0.0.0:53
+
+  - tag: "tcp_server"
+    type: "tcp_server"
+    args:
+      entry: main_sequence
+      listen: 0.0.0.0:53
+
+
