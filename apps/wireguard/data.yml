@@ -1,0 +1,21 @@
+name: WireGuard
+tags:
+  - 实用工具
+  - 安全
+title: 一种极其简单但快速且现代的 VPN
+description: 一种极其简单但快速且现代的 VPN
+additionalProperties:
+  key: wireguard
+  name: WireGuard
+  tags:
+    - Tool
+    - Security
+  shortDescZh: 一种极其简单但快速且现代的 VPN
+  shortDescEn: An extremely simple yet fast and modern VPN
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.wireguard.com
+  github: https://github.com/wireguard
+  document: https://www.wireguard.com
