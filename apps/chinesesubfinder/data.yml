@@ -1,0 +1,19 @@
+name: ChineseSubFinder
+tags:
+  - 工具
+title: 自动化中文字幕下载
+description: 自动化中文字幕下载
+additionalProperties:
+  key: chinesesubfinder
+  name: ChineseSubFinder
+  tags:
+    - Tool
+  shortDescZh: 自动化中文字幕下载
+  shortDescEn: Automatic Chinese subtitle download
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/ChineseSubFinder/ChineseSubFinder
+  github: https://github.com/ChineseSubFinder/ChineseSubFinder
+  document: https://github.com/ChineseSubFinder/ChineseSubFinder

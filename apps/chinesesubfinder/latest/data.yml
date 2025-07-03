@@ -1,0 +1,39 @@
+additionalProperties:
+  formFields:
+    - default: 40158
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 40159
+      edit: true
+      envKey: PANEL_APP_PORT_IMAGE
+      labelEn: WebUI video list with the port used to read pictures (127.0.0.1:port)
+      labelZh: webui 视频列表读取图片用的端口 (127.0.0.1:port)
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 数据文件夹路径
+      required: true
+      type: text
+    - default: ./data/media
+      edit: true
+      envKey: MEDIA_PATH
+      labelEn: Media folder path
+      labelZh: 媒体文件夹路径
+      required: true
+      type: text
+    - default: ./data/media2
+      edit: true
+      envKey: MEDIA_PATH2
+      labelEn: Media folder path
+      labelZh: 媒体文件夹路径
+      required: true
+      type: text
