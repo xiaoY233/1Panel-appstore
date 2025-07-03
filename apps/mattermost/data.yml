@@ -1,0 +1,19 @@
+name: Mattermost
+tags:
+  - 实用工具
+title: 开源团队协作平台
+description: 开源团队协作平台
+additionalProperties:
+  key: mattermost
+  name: Mattermost
+  tags:
+    - Tool
+  shortDescZh: 开源团队协作平台
+  shortDescEn: Open-source team collaboration platform
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://mattermost.com
+  github: https://github.com/mattermost/mattermost
+  document: https://docs.mattermost.com
