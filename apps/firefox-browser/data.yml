@@ -1,0 +1,19 @@
+name: Firefox Browser
+tags:
+  - 工具
+title: 一个免费的开源网络浏览器
+description: 一个免费的开源网络浏览器
+additionalProperties:
+  key: firefox-browser
+  name: Firefox Browser
+  tags:
+    - Tool
+  shortDescZh: 一个免费的开源网络浏览器
+  shortDescEn: A free and open-source web browser
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.mozilla.org/
+  github: https://www.mozilla.org/
+  document: https://www.mozilla.org/
