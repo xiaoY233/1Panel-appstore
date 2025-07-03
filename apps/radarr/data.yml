@@ -1,0 +1,19 @@
+name: Radarr
+tags:
+  - 多媒体
+title: 电影收藏管理器
+description: 电影收藏管理器
+additionalProperties:
+  key: radarr
+  name: Radarr
+  tags:
+    - Media
+  shortDescZh: 电影收藏管理器
+  shortDescEn: Movie organizer/manager
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://radarr.video
+  github: https://github.com/Radarr/Radarr
+  document: https://radarr.video/docs/
