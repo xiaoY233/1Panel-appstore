@@ -1,0 +1,19 @@
+name: LibreOffice
+tags:
+  - 工具
+title: 一款功能强大的办公软件
+description: 一款功能强大的办公软件
+additionalProperties:
+  key: libreoffice
+  name: LibreOffice
+  tags:
+    - Tool
+  shortDescZh: 一款功能强大的办公软件
+  shortDescEn: A free and powerful office suite
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.libreoffice.org
+  github: https://hub.docker.com/r/linuxserver/libreoffice
+  document: https://www.libreoffice.org
