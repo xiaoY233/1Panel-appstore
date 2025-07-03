@@ -1,0 +1,19 @@
+name: Sonarr
+tags:
+  - 多媒体
+title: 面向新闻组和 Bittorrent 流媒体用户的智能 PVR
+description: 面向新闻组和 Bittorrent 流媒体用户的智能 PVR
+additionalProperties:
+  key: sonarr
+  name: Sonarr
+  tags:
+    - Media
+  shortDescZh: 面向新闻组和 Bittorrent 流媒体用户的智能 PVR
+  shortDescEn: Smart PVR for newsgroup and bittorrent users
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://sonarr.tv
+  github: https://github.com/Sonarr/Sonarr
+  document: https://wiki.servarr.com

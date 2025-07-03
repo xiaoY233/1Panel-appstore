@@ -1,0 +1,52 @@
+additionalProperties:
+  formFields:
+    - default: "40317"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: PUID
+      labelEn: User ID
+      labelZh: 用户 ID
+      required: true
+      type: number
+    - default: "1000"
+      edit: true
+      envKey: PGID
+      labelEn: Group ID
+      labelZh: 组 ID
+      required: true
+      type: number
+    - default: "Asia/Shanghai"
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "./data/config"
+      edit: true
+      envKey: SONARR_CONFIG_PATH
+      labelEn: Sonarr Config Path
+      labelZh: Sonarr 配置路径
+      required: true
+      type: text
+    - default: "./data/tv"
+      edit: true
+      envKey: TV_SERIES_PATH
+      labelEn: TV Series Path
+      labelZh: 电视剧路径
+      required: true
+      type: text
+    - default: "./data/downloads"
+      edit: true
+      envKey: DOWNLOADS_PATH
+      labelEn: Downloads Path
+      labelZh: 下载路径
+      required: true
+      type: text
