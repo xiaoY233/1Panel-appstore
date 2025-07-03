@@ -1,0 +1,24 @@
+name: Qwen-Free-API
+tags:
+  - AI / 大模型
+title: 🚀 阿里通义千问2.5大模型逆向API
+description: 阿里通义 (Qwen) 接口转API 
+additionalProperties:
+  key: qwen-free-api
+  name: Qwen-Free-API
+  tags:
+    - AI
+    - Tools
+  shortDescZh: 🚀 阿里通义千问2.5大模型逆向API
+  shortDescEn: A 1Panel deployment for qwen-free-api
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  architectures:
+    - amd64
+    - arm64
+
+  website: https://www.aliyun.com/product/bailian
+  github: https://github.com/LLM-Red-Team/qwen-free-api
+  document: https://github.com/LLM-Red-Team/kimi-free-api
