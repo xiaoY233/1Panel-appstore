@@ -1,0 +1,19 @@
+name: LANraragi
+tags:
+  - 多媒体
+title: 一个开源的漫画存档服务
+description: 一个开源的漫画存档服务
+additionalProperties:
+  key: lanraragi
+  name: LANraragi
+  tags:
+    - Media
+  shortDescZh: 一个开源的漫画存档服务
+  shortDescEn: Open source server for archival of comics/manga
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://lrr.tvc-16.science
+  github: https://github.com/Difegue/LANraragi
+  document: https://sugoi.gitbook.io/lanraragi/v/dev

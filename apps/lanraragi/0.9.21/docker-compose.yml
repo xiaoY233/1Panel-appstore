@@ -1,0 +1,24 @@
+services:
+  lanraragi:
+    image: "difegue/lanraragi:v.0.9.21"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    volumes:
+      - ${CONTENT_DIRECTORY}:/home/koyomi/lanraragi/content
+      - ${THUMBNAIL_DIRECTORY}:/home/koyomi/lanraragi/content/thumb
+      - ${DATABASE_DIRECTORY}:/home/koyomi/lanraragi/database
+      - ${PLUGIN_DIRECTORY}:/home/koyomi/lanraragi/lib/LANraragi/Plugin
+    environment:
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTPS_PROXY}
+      - TZ=${TIME_ZONE}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
