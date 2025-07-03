@@ -1,0 +1,45 @@
+additionalProperties:
+  formFields:
+    - default: 40252
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "/dir1,/data/dir1,user1,pass1,true;/dir2,/data/dir2,null,null,false"
+      edit: true
+      envKey: DAV
+      labelEn: WebDAV Configuration (referring to the path inside the container)
+      labelZh: WebDAV 配置 (指的容器内部的路径)
+      required: true
+      type: text
+    - default: ./data/data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data folder path
+      labelZh: 外部数据文件夹路径
+      required: true
+      type: text
+    - default: /data
+      edit: true
+      envKey: INNER_DATA_PATH
+      labelEn: Path to the internal data folder corresponding to the external data
+      labelZh: 外部数据对应的内部数据文件夹路径
+      required: true
+      type: text
+    - default: ./data/data2
+      edit: true
+      envKey: DATA_PATH2
+      labelEn: Data folder path 2
+      labelZh: 外部数据文件夹路径2
+      required: true
+      type: text
+    - default: /data2
+      edit: true
+      envKey: INNER_DATA_PATH2
+      labelEn: Path to internal data folder corresponding to external data2
+      labelZh: 外部数据对应的内部数据文件夹路径2
+      required: true
+      type: text
