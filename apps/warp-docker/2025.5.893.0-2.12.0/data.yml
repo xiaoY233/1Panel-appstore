@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: 40244
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 2
+      edit: true
+      envKey: WARP_SLEEP
+      labelEn: Warp Sleep
+      labelZh: Warp 睡眠时间
+      required: true
+      type: number
+    - default: ""
+      edit: true
+      envKey: WARP_LICENSE_KEY
+      labelEn: Warp License Key
+      labelZh: Warp 许可证密钥
+      required: false
+      type: text
+    - default: ./data
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text

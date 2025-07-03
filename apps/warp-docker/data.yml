@@ -1,0 +1,19 @@
+name: Warp-Docker
+tags:
+  - 实用工具
+title: 在 Docker 中运行 Cloudflare WARP
+description: 在 Docker 中运行 Cloudflare WARP
+additionalProperties:
+  key: warp-docker
+  name: Warp-Docker
+  tags:
+    - Tool
+  shortDescZh: 在 Docker 中运行 Cloudflare WARP
+  shortDescEn: Run Cloudflare WARP in Docker
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/caomingjun/warp
+  github: https://github.com/cmj2002/warp-docker
+  document: https://github.com/cmj2002/warp-docker

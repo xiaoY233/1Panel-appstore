@@ -1,0 +1,25 @@
+services:
+  warp:
+    image: caomingjun/warp:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - '${PANEL_APP_PORT_HTTP}:1080'
+    environment:
+      - WARP_SLEEP=${WARP_SLEEP}
+      - WARP_LICENSE_KEY=${WARP_LICENSE_KEY}
+    cap_add:
+      - NET_ADMIN
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=0
+      - net.ipv4.conf.all.src_valid_mark=1
+    volumes:
+      - '${DATA_PATH}:/var/lib/cloudflare-warp'
+    labels:  
+      createdBy: "Apps"
+
+networks:  
+  1panel-network:  
+    external: true
