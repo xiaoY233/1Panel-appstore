@@ -1,0 +1,19 @@
+name: MDC-NG
+tags:
+  - 多媒体
+title: 你的次世代媒体库管理方案
+description: 你的次世代媒体库管理方案
+additionalProperties:
+  key: mdc-ng
+  name: MDC-NG
+  tags:
+    - Media
+  shortDescZh: 你的次世代媒体库管理方案
+  shortDescEn: Yet another Movie Data Capture tool
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/mdcng/mdc
+  github: https://github.com/mdc-ng/mdc-ng
+  document: https://github.com/mdc-ng/mdc-ng
