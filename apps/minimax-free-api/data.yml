@@ -1,0 +1,24 @@
+name: Minimax-Free-API
+tags:
+  - AI / 大模型
+title: 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
+description: 支持最新MiniMax-Text-01、MiniMax-VL-01模型，支持高速流式输出、支持多轮对话、支持语音合成等
+additionalProperties:
+  key: minimax-free-api
+  name: Minimax-Free-API
+  tags:
+    - AI
+    - Tools
+  shortDescZh: 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
+  shortDescEn: A 1Panel deployment for minimax-free-api
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  architectures:
+    - amd64
+    - arm64
+
+  website: https://platform.minimaxi.com/
+  github: https://github.com/LLM-Red-Team/minimax-free-api
+  document: https://github.com/LLM-Red-Team/minimax-free-api
