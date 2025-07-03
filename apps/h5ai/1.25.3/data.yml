@@ -1,0 +1,47 @@
+additionalProperties:
+  formFields:
+    - default: 40048
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ./data/share
+      edit: true
+      envKey: DATA_PATH
+      labelEn: The path to the shared data folder
+      labelZh: 分享的数据文件夹路径
+      required: true
+      type: text
+    - default: ./data/config
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Path to the configuration file
+      labelZh: 配置文件所在路径
+      required: true
+      type: text
+    - default: "true"
+      edit: true
+      envKey: AUTH_ENABLE
+      labelEn: "Authentication (On: true, Off: false)"
+      labelZh: 身份验证(开启:true，关闭:false)
+      required: true
+      type: text
+    - default: h5ai
+      envKey: USER
+      labelEn: User
+      labelZh: 用户名
+      random: true
+      required: false
+      rule: paramCommon
+      type: text
+    - default: h5ai
+      envKey: PASSWORD
+      labelEn: Password
+      labelZh: 用户密码
+      random: true
+      required: false
+      rule: paramComplexity
+      type: password

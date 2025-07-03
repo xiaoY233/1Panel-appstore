@@ -1,0 +1,19 @@
+name: h5ai
+tags:
+  - 工具
+title: 用于Apache httpd，lighttpd和nginx的HTTP Web服务器索引
+description: 用于Apache httpd，lighttpd和nginx的HTTP Web服务器索引
+additionalProperties:
+  key: h5ai
+  name: h5ai
+  tags:
+    - Tool
+  shortDescZh: 用于Apache httpd，lighttpd和nginx的HTTP Web服务器索引
+  shortDescEn: HTTP web server index for Apache httpd, lighttpd and nginx
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://hub.docker.com/r/bin20088/h5ai
+  github: https://github.com/lrsjng/h5ai
+  document: https://github.com/lrsjng/h5ai
