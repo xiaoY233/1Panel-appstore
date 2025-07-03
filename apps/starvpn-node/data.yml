@@ -1,0 +1,25 @@
+additionalProperties:
+    key: starvpn-node
+    name: 星空组网 (节点)
+    tags:
+        - VPN
+        - Network
+        - Proxy
+        - Docker
+        - CrossPlatform
+    shortDescZh: 简单易用的自托管 VPN 服务，支持多平台。
+    shortDescEn: Easy-to-use self-hosted VPN service, cross-platform supported.
+    description:
+        en: Easy-to-use self-hosted VPN service. Supports Docker quick deployment, suitable for personal and team secure networking.
+        zh: StarVPN 是一款支持多平台的自托管 VPN 服务，支持 Docker 快速部署，适合个人和团队安全上网。
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://starvpn.cn/
+    github: https://github.com/starvpn/
+    document: https://doc.starvpn.cn/#/customNode
+    architectures:
+        - amd64
+        - arm64
+        - arm/v7 
