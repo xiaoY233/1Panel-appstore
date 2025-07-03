@@ -1,0 +1,19 @@
+name: EasyTier
+tags:
+  - 实用工具
+title: 一个简单、安全、去中心化的内网穿透 VPN 组网方案
+description: 一个简单、安全、去中心化的内网穿透 VPN 组网方案
+additionalProperties:
+  key: easytier
+  name: EasyTier
+  tags:
+    - Tool
+  shortDescZh: 一个简单、安全、去中心化的内网穿透 VPN 组网方案
+  shortDescEn: A simple, safe and decentralized VPN networking solution
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://www.easytier.top
+  github: https://github.com/EasyTier/EasyTier
+  document: https://www.easytier.top
