@@ -1,0 +1,25 @@
+name: Hubcmd-ui
+tags:
+    - Other
+title: HubCMD-UI Docker镜像加速UI面板
+description: Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
+additionalProperties:
+    key: hubcmdui
+    name: Hubcmd-ui
+    tags:
+        - Tool
+    shortDescZh: Docker镜像加速查询UI面板
+    shortDescEn: Docker image display UI panel
+    type: website
+    crossVersionUpdate: true
+    limit: 1
+    recommend: 0
+    website: https://github.com/dqzboy/Docker-Proxy
+    github: https://github.com/dqzboy/Docker-Proxy
+    document: https://dqzboy.github.io/docs/
+    description:
+      en: Docker image acceleration command query, image search, configuration tutorial document display UI panel
+      zh: Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
+      architectures:
+        - amd64
+        - arm64
