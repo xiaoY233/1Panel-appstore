@@ -1,0 +1,19 @@
+name: Gopeed
+tags:
+  - 工具
+title: 一款现代化的下载器
+description: 一款现代化的下载器
+additionalProperties:
+  key: gopeed
+  name: Gopeed
+  tags:
+    - Tool
+  shortDescZh: 一款现代化的下载器
+  shortDescEn: High speed downloader that supports all platforms
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://gopeed.com
+  github: https://github.com/GopeedLab/gopeed
+  document: https://docs.gopeed.com
