@@ -1,0 +1,19 @@
+name: Tale Book
+tags:
+  - 工具
+title: 一个简洁但强大的私人书籍管理系统
+description: 一个简洁但强大的私人书籍管理系统
+additionalProperties:
+  key: talebook
+  name: Tale Book
+  tags:
+    - Tool
+  shortDescZh: 一个简洁但强大的私人书籍管理系统
+  shortDescEn: A better online books library management website
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.talebook.org
+  github: https://github.com/talebook/talebook
+  document: https://github.com/talebook/talebook
