@@ -1,0 +1,19 @@
+name: FRP-Panel (Master)
+tags:
+  - 工具
+title: 多节点 FRP WebUI (控制节点)
+description: 多节点 FRP WebUI (控制节点)
+additionalProperties:
+  key: frp-panel-master
+  name: FRP-Panel (Master)
+  tags:
+    - Tool
+  shortDescZh: 多节点 FRP WebUI (控制节点)
+  shortDescEn: A multi node frp webui (Console)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/VaalaCat/frp-panel
+  github: https://github.com/VaalaCat/frp-panel
+  document: https://github.com/VaalaCat/frp-panel
