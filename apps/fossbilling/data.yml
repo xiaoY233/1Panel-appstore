@@ -1,0 +1,19 @@
+name: FOSSBilling
+tags:
+  - 建站
+title: 一款用于高效计费和客户管理的免费开源解决方案
+description: 一款用于高效计费和客户管理的免费开源解决方案
+additionalProperties:
+  key: fossbilling
+  name: FOSSBilling
+  tags:
+    - Website
+  shortDescZh: 一款用于高效计费和客户管理的免费开源解决方案
+  shortDescEn: A free open source, billing and client management solution
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://fossbilling.org
+  github: https://github.com/FOSSBilling/FOSSBilling
+  document: https://fossbilling.org/docs

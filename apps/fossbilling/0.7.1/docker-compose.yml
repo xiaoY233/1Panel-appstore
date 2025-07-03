@@ -1,0 +1,20 @@
+services:
+  fossbilling:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    volumes:
+      - fossbilling:/var/www/html
+    image: fossbilling/fossbilling:0.7.1
+    labels:  
+      createdBy: "Apps"
+
+volumes:
+  fossbilling:
+
+networks:  
+  1panel-network:  
+    external: true
