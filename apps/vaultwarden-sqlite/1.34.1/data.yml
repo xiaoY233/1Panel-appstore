@@ -1,0 +1,50 @@
+additionalProperties:
+  formFields:
+    - default: 1919
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        ja: ポート
+        ms: Port
+        pt-br: Porta
+        ru: Порт
+        ko: 포트
+        zh: HTTP 端口
+        zh-Hant: HTTP 連接埠
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: "https://example.com"
+      envKey: PANEL_VW_DOMAIN
+      labelEn: Domain
+      labelZh: 访问域名
+      label:
+        en: Domain
+        ja: ドメイン
+        ms: Domain
+        pt-br: Domínio
+        ru: Домен
+        ko: 도메인
+        zh: 访问域名
+        zh-Hant: 訪問網域
+      required: true
+      type: text
+
+    - default: ""
+      envKey: PANEL_VW_ADMIN_TOKEN
+      labelEn: Admin Token
+      labelZh: 管理员密钥
+      label:
+        en: Admin Token
+        ja: 管理者トークン
+        ms: Token Admin
+        pt-br: Token de Administrador
+        ru: Админ токен
+        ko: 관리자 토큰
+        zh: 管理员密钥
+        zh-Hant: 管理員密鑰
+      required: true
+      type: password
