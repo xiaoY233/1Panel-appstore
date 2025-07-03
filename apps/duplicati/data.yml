@@ -1,0 +1,19 @@
+name: Duplicati
+tags:
+  - 实用工具
+title: 在云存储服务上安全地存储加密备份
+description: 在云存储服务上安全地存储加密备份
+additionalProperties:
+  key: duplicati
+  name: Duplicati
+  tags:
+    - Tool
+  shortDescZh: 在云存储服务上安全地存储加密备份
+  shortDescEn: Store securely encrypted backups on cloud storage services
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.duplicati.com
+  github: https://github.com/duplicati/duplicati
+  document: https://docs.duplicati.com

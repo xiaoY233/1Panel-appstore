@@ -1,0 +1,31 @@
+additionalProperties:
+  formFields:
+    - default: "40261"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "./data/backups"
+      edit: true
+      envKey: BACKUPS_PATH
+      labelEn: External Backups Path
+      labelZh: 外部备份路径
+      required: true
+      type: text
+    - default: "/backups"
+      edit: true
+      envKey: INTERNAL_BACKUPS_PATH
+      labelEn: Internal Backups Path
+      labelZh: 内部备份路径
+      required: true
+      type: text
+    - default: "./data/data"
+      edit: true
+      envKey: DATA_PATH
+      labelEn: Data Path
+      labelZh: 数据路径
+      required: true
+      type: text
