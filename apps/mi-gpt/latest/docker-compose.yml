@@ -1,0 +1,29 @@
+services:
+  mi-gpt:
+    image: "idootop/mi-gpt:latest"
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data/.migpt.js:/app/.migpt.js
+    environment:
+      - "OPENAI_MODEL=${OPENAI_MODEL}"
+      - "OPENAI_API_KEY=${OPENAI_API_KEY}"
+      - "OPENAI_BASE_URL=${OPENAI_BASE_URL}"
+      # 删除以下行前的#号表示启用
+      #- "OPENAI_API_VERSION=${OPENAI_API_VERSION}"
+      #- "AZURE_OPENAI_API_KEY=${AZURE_OPENAI_API_KEY}"
+      #- "AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT}"
+      #- "AZURE_OPENAI_DEPLOYMENT=${AZURE_OPENAI_DEPLOYMENT}"
+      #- "AUDIO_SILENT=${AUDIO_SILENT}"
+      #- "AUDIO_BEEP=${AUDIO_BEEP}"
+      #- "AUDIO_ACTIVE=${AUDIO_ACTIVE}"
+      #- "AUDIO_ERROR=${AUDIO_ERROR}"
+      #- "TTS_BASE_URL=${TTS_BASE_URL}"
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

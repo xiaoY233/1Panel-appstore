@@ -1,0 +1,86 @@
+additionalProperties:
+  formFields:
+    - default: "gpt-4o"
+      edit: true
+      envKey: OPENAI_MODEL
+      labelEn: Model
+      labelZh: 模型
+      required: false
+      type: text
+    - default: "sk-xxxxxxxxxxxxxxx"
+      edit: true
+      envKey: OPENAI_API_KEY
+      labelEn: API Key
+      labelZh: API 密钥
+      required: false
+      type: password
+    - default: "https://api.openai.com/v1"
+      edit: true
+      envKey: OPENAI_BASE_URL
+      labelEn: Base URL
+      labelZh: 基础 URL
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: OPENAI_API_VERSION
+      labelEn: Azure OpenAI API Version (Edit to remove comments in compose.yml to take effect)
+      labelZh: Azure OpenAI API 版本 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AZURE_OPENAI_API_KEY
+      labelEn: Azure OpenAI API Key (Edit to remove comments in compose.yml to take effect)
+      labelZh: Azure OpenAI API 密钥 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: AZURE_OPENAI_ENDPOINT
+      labelEn: Azure OpenAI Endpoint (Edit to remove comments in compose.yml to take effect)
+      labelZh: Azure OpenAI 端点 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AZURE_OPENAI_DEPLOYMENT
+      labelEn: Azure OpenAI Deployment (Edit to remove comments in compose.yml to take effect)
+      labelZh: Azure OpenAI 部署名 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AUDIO_SILENT
+      labelEn: Audio Silent URL (Edit to remove comments in compose.yml to take effect)
+      labelZh: 静音音频链接 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AUDIO_BEEP
+      labelEn: Audio Beep URL (Edit to remove comments in compose.yml to take effect)
+      labelZh: 提示音链接 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AUDIO_ACTIVE
+      labelEn: Audio Active URL (Edit to remove comments in compose.yml to take effect)
+      labelZh: 唤醒音频链接 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AUDIO_ERROR
+      labelEn: Audio Error URL (Edit to remove comments in compose.yml to take effect)
+      labelZh: 错误音频链接 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: TTS_BASE_URL
+      labelEn: TTS Base URL (Edit to remove comments in compose.yml to take effect)
+      labelZh: TTS 接口地址 (编辑去除compose.yml里的注释生效)
+      required: false
+      type: text
