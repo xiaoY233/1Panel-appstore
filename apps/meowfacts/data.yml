@@ -1,0 +1,19 @@
+name: meowfacts
+tags:
+  - 工具
+title: 一个简单的 API，它返回一个 catfact
+description: 一个简单的 API，它返回一个 catfact
+additionalProperties:
+  key: meowfacts
+  name: meowfacts
+  tags:
+    - Tool
+  shortDescZh: 一个简单的 API，它返回一个 catfact
+  shortDescEn: a simple api which returns a catfact
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/wh-iterabb-it/meowfacts
+  github: https://github.com/wh-iterabb-it/meowfacts
+  document: https://github.com/wh-iterabb-it/meowfacts
