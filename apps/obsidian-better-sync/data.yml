@@ -1,0 +1,19 @@
+name: Obsidian BetterSync
+tags:
+  - 实用工具
+title: Obsidian 在线同步插件
+description: Obsidian 在线同步插件
+additionalProperties:
+  key: better-sync-service
+  name: Obsidian BetterSync
+  tags:
+    - Tool
+  shortDescZh: Obsidian 在线同步插件
+  shortDescEn: Obsidian BetterSync
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/haierkeys/obsidian-better-sync-service
+  github: https://github.com/haierkeys/obsidian-better-sync-service
+  document: https://github.com/haierkeys/obsidian-better-sync-service/blob/master/readme-zh.md
