@@ -1,6 +1,6 @@
 services:
   lobe:
-    image: lobehub/lobe-chat-database:1.101.1
+    image: lobehub/lobe-chat-database:1.102.4
     container_name: lobe-chat
     network_mode: 'service:network-service'
     depends_on:
@@ -80,7 +80,7 @@ services:
     entrypoint: ["sh", "/entrypoint.sh"]
 
   casdoor:
-    image: casbin/casdoor:v1.982.0
+    image: casbin/casdoor:v1.983.0
     container_name: lobe-casdoor
     entrypoint: /bin/sh -c './server --createDatabase=true'
     network_mode: 'service:network-service'
