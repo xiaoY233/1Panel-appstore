@@ -1,20 +1,17 @@
 services:
   nps:
-    image: duan2001/nps:v0.32.4
+    image: yisier1/nps:v0.26.26
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
       - ${NPS_BRIDGE_PORT}:${NPS_BRIDGE_PORT}
       - ${NPS_BRIDGE_TLS_PORT}:${NPS_BRIDGE_TLS_PORT}
-      - ${NPS_BRIDGE_WS_PORT}:${NPS_BRIDGE_WS_PORT}
-      - ${NPS_BRIDGE_WSS_PORT}:${NPS_BRIDGE_WSS_PORT}
       - ${NPS_HTTP_PROXY_PORT}:${NPS_HTTP_PROXY_PORT}
       - ${NPS_HTTPS_PROXY_PORT}:${NPS_HTTPS_PROXY_PORT}
       - ${NPS_RANDOM_PORT_START}-${NPS_RANDOM_PORT_END}:${NPS_RANDOM_PORT_START}-${NPS_RANDOM_PORT_END}
     restart: always
     volumes:
       - ./conf:/conf
-      - ./web:/web
       - /etc/localtime:/etc/localtime:ro
     environment:
       NPS_WEB_HOST: ${NPS_WEB_HOST}
@@ -24,11 +21,14 @@ services:
       NPS_WEB_OPEN_SSL: ${NPS_WEB_OPEN_SSL}
       NPS_PUBLIC_VKEY: ${NPS_PUBLIC_VKEY}
       NPS_BRIDGE_PORT: ${NPS_BRIDGE_PORT}
+      NPS_BRIDGE_TLS_PORT: ${NPS_BRIDGE_TLS_PORT}
       NPS_AUTH_CRYPT_KEY: ${NPS_AUTH_CRYPT_KEY}
       NPS_HTTP_PROXY_IP: ${NPS_HTTP_PROXY_IP}
       NPS_HTTP_PROXY_PORT: ${NPS_HTTP_PROXY_PORT}
       NPS_HTTPS_PROXY_PORT: ${NPS_HTTPS_PROXY_PORT}
-    network_mode: 1panel-network
+      TLS_ENABLE_SWITCH: ${TLS_ENABLE_SWITCH}
+    networks:
+      - 1panel-network
     labels:
       createdBy: "Apps"
 
