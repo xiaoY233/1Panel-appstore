@@ -4,7 +4,7 @@ networks:
 
 services:
   kimai2:
-    image: kimai/kimai2:apache-2.23.0
+    image: kimai/kimai2:apache-2.38.0
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
@@ -13,11 +13,10 @@ services:
       - 1panel-network
     ports:
       - ${PANEL_APP_PORT_HTTP}:8001
-    env_file:
-      - ${GLOBAL_ENV_FILE:-/etc/1panel/envs/global.env}
-      - ${ENV_FILE:-/etc/1panel/envs/default.env}
     volumes:
       - ${KIMAI2_ROOT_PATH}/data:/opt/kimai/var/data
       - ${KIMAI2_ROOT_PATH}/plugins:/opt/kimai/var/plugins
     environment:
       - DATABASE_URL=mysql://${DB_USER}:${DB_USER_PASSWORD}@${DB_HOSTNAME}:${DB_PORT}/${DB_NAME}?charset=utf8mb4
+      - ADMINMAIL=${ADMINMAIL}
+      - ADMINPASS=${ADMINPASS}
