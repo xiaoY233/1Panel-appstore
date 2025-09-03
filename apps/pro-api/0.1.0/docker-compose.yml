@@ -1,6 +1,6 @@
 services:
   pro-api:
-    image: duolabmeng/pro-api:latest
+    image: duolabmeng/pro-api:v0.1.0
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
