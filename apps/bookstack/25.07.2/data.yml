@@ -19,7 +19,7 @@ additionalProperties:
           value: mariadb
         - label: Percona
           value: percona
-    - default: "/home/bookstack"
+    - default: "./data"
       edit: true
       envKey: BOOKSTACK_ROOT_PATH
       labelZh: 数据持久化路径
