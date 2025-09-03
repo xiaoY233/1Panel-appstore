@@ -1,25 +1,16 @@
 additionalProperties:
   formFields:
-    - default: "host"
-      edit: true
-      envKey: NETWORK_MODE
-      labelEn: Drive path
-      labelZh: 网络模式
-      required: true
-      type: select
-      values:
-        - label: 主机网络模式
-          value: "host"
-        - label: 桥接网络模式
-          value: "bridge"
-        - label: 无网络模式
-          value: "none"
-        - label: 1panel-network
-          value: "1panel-network"
-    - default: "/home/aria2"
+    - default: "./superng6_aria2_data"
       edit: true
       envKey: ARIA2_ROOT_PATH
       labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      required: true
+      type: text
+    - default: "./downloads"
+      edit: true
+      envKey: ARIA2_DOWNLOADS_PATH
+      labelZh: 下载文件保存路径
       labelEn: Data persistence path
       required: true
       type: text
