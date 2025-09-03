@@ -1,6 +1,6 @@
 services:
   affine:
-    image: ghcr.io/toeverything/affine-graphql:stable
+    image: ghcr.io/toeverything/affine:0.24.1
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:3010
@@ -12,7 +12,6 @@ services:
       affine_migration:
         condition: service_completed_successfully
     volumes:
-      # custom configurations
       - ${UPLOAD_LOCATION}:/root/.affine/storage
       - ${CONFIG_LOCATION}:/root/.affine/config
     environment:
@@ -20,20 +19,22 @@ services:
       - DATABASE_URL=postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_DATABASE:-affine}
       - AFFINE_INDEXER_ENABLED=false
     networks:
-            - 1panel-network
+      - 1panel-network
     restart: always
     labels:
-        createdBy: Apps
+      createdBy: Apps
   affine_migration:
-    image: ghcr.io/toeverything/affine-graphql:stable
+    image: ghcr.io/toeverything/affine:0.24.1
     container_name: ${CONTAINER_NAME}_migration_job
     volumes:
-      # custom configurations
       - ${UPLOAD_LOCATION}:/root/.affine/storage
       - ${CONFIG_LOCATION}:/root/.affine/config
-    command: ['sh', '-c', 'node ./scripts/self-host-predeploy.js']
+    command:
+      - sh
+      - -c
+      - node ./scripts/self-host-predeploy.js
     networks:
-        - 1panel-network
+      - 1panel-network
     environment:
       - REDIS_SERVER_HOST=redis
       - DATABASE_URL=postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_DATABASE:-affine}
@@ -44,42 +45,50 @@ services:
       redis:
         condition: service_healthy
     labels:
-        createdBy: Apps
-    restart: no
+      createdBy: Apps
+      skipStatusCheck: 'true'
+    restart: 'no'
   redis:
     image: redis
     container_name: ${CONTAINER_NAME}_redis
     healthcheck:
-      test: ['CMD', 'redis-cli', '--raw', 'incr', 'ping']
+      test:
+        - CMD
+        - redis-cli
+        - --raw
+        - incr
+        - ping
       interval: 10s
       timeout: 5s
       retries: 5
     networks:
-        - 1panel-network
+      - 1panel-network
     labels:
-        createdBy: Apps
+      createdBy: Apps
     restart: always
-
   postgres:
     image: pgvector/pgvector:pg16
     container_name: ${CONTAINER_NAME}_postgres
     volumes:
       - ${DB_DATA_LOCATION}:/var/lib/postgresql/data
     networks:
-        - 1panel-network
+      - 1panel-network
     labels:
-        createdBy: Apps
+      createdBy: Apps
     environment:
       POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_DATABASE:-affine}
-      POSTGRES_INITDB_ARGS: '--data-checksums'
-      # you better set a password for you database
-      # or you may add 'POSTGRES_HOST_AUTH_METHOD=trust' to ignore postgres security policy
+      POSTGRES_INITDB_ARGS: --data-checksums
       POSTGRES_HOST_AUTH_METHOD: trust
     healthcheck:
       test:
-        ['CMD', 'pg_isready', '-U', "${DB_USERNAME}", '-d', "${DB_DATABASE:-affine}"]
+        - CMD
+        - pg_isready
+        - -U
+        - ${DB_USERNAME}
+        - -d
+        - ${DB_DATABASE:-affine}
       interval: 10s
       timeout: 5s
       retries: 5

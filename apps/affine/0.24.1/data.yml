@@ -41,7 +41,7 @@ additionalProperties:
       label:
         en: Password
         zh: 数据库用户密码
-    - default: ~/.affine/self-host/storage
+    - default: ./.affine/self-host/storage
       envKey: UPLOAD_LOCATION
       labelEn: Upload Location
       labelZh: 上传目录
@@ -50,7 +50,7 @@ additionalProperties:
       label:
         en: Upload Location
         zh: 上传目录
-    - default: ~/.affine/self-host/storage
+    - default: ./.affine/self-host/storage
       envKey: CONFIG_LOCATION
       labelEn: Config Location
       labelZh: 配置目录
@@ -59,7 +59,7 @@ additionalProperties:
       label:
         en: Config Location
         zh: 配置目录
-    - default: ~/.affine/self-host/postgres/pgdata
+    - default: ./.affine/self-host/postgres/pgdata
       envKey: DB_DATA_LOCATION
       labelEn: Postgre Data Location
       labelZh: Postgre 数据目录
