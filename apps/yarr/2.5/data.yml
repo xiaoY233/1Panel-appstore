@@ -8,7 +8,7 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: "/home/yarr"
+    - default: "./data"
       edit: true
       envKey: YARR_ROOT_PATH
       labelEn: Root Path
