@@ -4,7 +4,7 @@ networks:
 
 services:
   v2raya:
-    image: mzz2017/v2raya:v2.2.7.1
+    image: mzz2017/v2raya:v2.2.7.4
     container_name: ${CONTAINER_NAME}
     labels:
       createdBy: "Apps"
@@ -14,10 +14,15 @@ services:
     privileged: true
     ports:
       - ${PANEL_APP_PORT_HTTP}:2017
-      - 20170-20172:20170-20172
+      - ${SOCKS5_PROXY_PORT}:20170
+      - ${HTTP_PROXY_PORT}:20171
+      - ${HTTP_SHUNT_PROXY_PORT}:20172
     volumes:
-      - ${V2RAYA_ROOT_PATH}/v2raya:/etc/v2raya
+      - ./v2raya:/etc/v2raya
+      - /etc/localtime:/etc/localtime:ro
+      - /lib/modules:/lib/modules:ro
     environment:
       - V2RAYA_ADDRESS=0.0.0.0:2017
+      - V2RAYA_LOG_FILE=/tmp/v2raya.log
       - V2RAYA_PLUGINLISTENPORT=32346
       - V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray

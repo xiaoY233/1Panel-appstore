@@ -10,7 +10,10 @@ additionalProperties:
     - Tool
   shortDescZh: 支持全局透明代理的 Project V 的 Linux 客户端
   shortDescEn: A web GUI client of Project V
-  type: tool
+  description:
+    en: A web GUI client of Project V
+    zh: 支持全局透明代理的 Project V 的 Linux 客户端
+  type: website
   crossVersionUpdate: true
   limit: 1
   recommend: 0
