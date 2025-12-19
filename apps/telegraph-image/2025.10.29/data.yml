@@ -1,0 +1,97 @@
+additionalProperties:
+  formFields:
+    - default: "8080"
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      label:
+        en: HTTP Port
+        zh: HTTP 端口
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+
+    - default: ./data
+      envKey: KV_DATABASE_DIR
+      labelEn: KV Database Persistence Directory
+      labelZh: KV 数据库持久化目录
+      label:
+        en: KV Database Persistence Directory
+        zh: KV 数据库持久化目录
+      required: true
+      type: text
+      edit: true
+
+    - default: ""
+      envKey: BASIC_USER
+      labelEn: Dashboard Username
+      labelZh: 管理面板用户名
+      label:
+        en: Dashboard Username
+        zh: 管理面板用户名
+      required: true
+      type: text
+      edit: true
+      rule: paramCommon
+    - default: ""
+      envKey: BASIC_PASS
+      labelEn: Dashboard Password
+      labelZh: 管理面板密码
+      label:
+        en: Dashboard Password
+        zh: 管理面板密码
+      required: true
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
+
+    - default: ""
+      envKey: TG_Chat_ID
+      labelEn: Telegram Channel ID
+      labelZh: Telegram 频道 ID
+      label:
+        en: Telegram Channel ID
+        zh: Telegram 频道 ID
+      required: true
+      type: text
+      edit: true
+
+    - default: ""
+      envKey: TG_Bot_Token
+      labelEn: Telegram Bot Token
+      labelZh: Telegram Bot Token
+      label:
+        en: Telegram Bot Token
+        zh: Telegram Bot Token
+      required: true
+      type: text
+      edit: true
+
+    - default: "false"
+      envKey: WhiteList_Mode
+      labelEn: WhiteList Mode
+      labelZh: 白名单模式
+      label:
+        en: WhiteList Mode
+        zh: 白名单模式
+      required: false
+      type: select
+      edit: true
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+
+    - default: ""
+      envKey: ModerateContentApiKey
+      labelEn: ModerateContent NSFW API key
+      labelZh: ModerateContent 图片审查 API key
+      label:
+        en: ModerateContent NSFW API key
+        zh: ModerateContent 图片审查 API key
+      required: false
+      type: text
+      edit: true

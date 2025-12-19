@@ -1,0 +1,14 @@
+services:
+  stars-client:
+    restart: always
+    privileged: true
+    network_mode: host
+    container_name: stars.client
+    environment:
+      - STARS_USER=${STARS_USER}
+      - STARS_PASS=${STARS_PASS}
+    volumes:
+      - ./data:/data
+    image: xianwei2022/stars.client:5.2.3
+    labels:  
+      createdBy: "Apps"

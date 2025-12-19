@@ -1,9 +1,0 @@
-services:
-  dashboard:
-    image: ghcr.io/nezhahq/nezha:v1.13.2
-    container_name: nezha-dashboard
-    restart: always
-    volumes:
-      - ./data:/dashboard/data
-    ports:
-      - 8008:8008

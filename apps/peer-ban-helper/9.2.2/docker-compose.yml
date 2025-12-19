@@ -1,0 +1,21 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  peerbanhelper:
+    image: ghostchu/peerbanhelper:v9.2.2
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    network_mode:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:9898
+    volumes:
+      - ${PEERBANHELPER_ROOT_PATH}/app:/app/data
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai

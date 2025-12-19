@@ -1,0 +1,25 @@
+services:
+  new-api:
+    image: calciumion/new-api:v0.9.3.0
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    networks:
+      - 1panel-network
+    command: --log-dir /app/logs
+    volumes:
+      - ./data:/data
+      - ./logs:/app/logs
+    environment:
+      - TZ=${TZ}
+#      - SESSION_SECRET=${SESSION_SECRET}
+#      - REDIS_CONN_STRING=redis://redis
+#      - NODE_TYPE=slave  # 多机部署时从节点取消注释该行
+#      - SYNC_FREQUENCY=60  # 需要定期从数据库加载数据时取消注释该行
+#      - FRONTEND_BASE_URL=https://openai.justsong.cn  # 多机部署时从节点取消注释该行
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

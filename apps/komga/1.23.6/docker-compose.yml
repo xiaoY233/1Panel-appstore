@@ -1,0 +1,21 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  komga:
+    image: gotson/komga:1.23.6
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    user: 1000:1000
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:25600
+    volumes:
+      - ${KOMGA_ROOT_PATH}/config:/config
+      - ${KOMGA_ROOT_PATH}/data:/data
+    environment:
+      - TZ=Asia/Shanghai

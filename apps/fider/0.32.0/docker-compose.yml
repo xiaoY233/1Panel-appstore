@@ -1,0 +1,31 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  fider:
+    image: getfider/fider:v0.32.0
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    environment:
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_NAME}?sslmode=disable
+      - BASE_URL=${BASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - EMAIL_NOREPLY=${EMAIL_NOREPLY}
+      - EMAIL_SMTP_HOST=${EMAIL_SMTP_HOST}
+      - EMAIL_SMTP_PORT=${EMAIL_SMTP_PORT}
+      - EMAIL_SMTP_USERNAME=${EMAIL_SMTP_USERNAME}
+      - EMAIL_SMTP_PASSWORD=${EMAIL_SMTP_PASSWORD}
+      - EMAIL_SMTP_ENABLE_STARTTLS=${EMAIL_SMTP_ENABLE_STARTTLS}
+      - EMAIL_MAILGUN_API=${EMAIL_MAILGUN_API}
+      - EMAIL_MAILGUN_DOMAIN=${EMAIL_MAILGUN_DOMAIN}
+      - EMAIL_MAILGUN_REGION=${EMAIL_MAILGUN_REGION}
+      - EMAIL_AWSSES_REGION=${EMAIL_AWSSES_REGION}
+      - EMAIL_AWSSES_ACCESS_KEY_ID=${EMAIL_AWSSES_ACCESS_KEY_ID}
+      - EMAIL_AWSSES_SECRET_ACCESS_KEY=${EMAIL_AWSSES_SECRET_ACCESS_KEY}

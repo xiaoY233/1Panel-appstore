@@ -1,0 +1,23 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  kavita:
+    image: jvmilazz0/kavita:0.8.8
+    container_name: ${CONTAINER_NAME}
+    labels:
+      createdBy: "Apps"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:5000
+    volumes:
+      - ${KAVITA_ROOT_PATH}/manga:/manga
+      - ${KAVITA_ROOT_PATH}/comics:/comics
+      - ${KAVITA_ROOT_PATH}/books:/books
+      - ${KAVITA_ROOT_PATH}/config:/kavita/config
+    environment:
+      - TZ=Asia/Shanghai
+      - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
