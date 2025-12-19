@@ -10,10 +10,13 @@ additionalProperties:
     - Tool
   shortDescZh: 适用于 QX、Loon、Surge、Stash 和 Shadowrocket 的高级订阅管理器
   shortDescEn: Advanced Subscription Manager for QX, Loon, Surge, Stash and Shadowrocket
+  description:
+    en: Advanced Subscription Manager for QX, Loon, Surge, Stash and Shadowrocket
+    zh: 适用于 QX、Loon、Surge、Stash 和 Shadowrocket 的高级订阅管理器
   type: tool
   crossVersionUpdate: true
   limit: 0
   recommend: 0
   website: https://hub.docker.com/r/xream/sub-store
   github: https://github.com/sub-store-org/Sub-Store
-  document: https://www.notion.so/Sub-Store-6259586994d34c11a4ced5c406264b46
+  document: https://xream.notion.site/Sub-Store-abe6a96944724dc6a36833d5c9ab7c87
