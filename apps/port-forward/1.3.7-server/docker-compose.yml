@@ -1,0 +1,13 @@
+services:
+  port-forward-server:
+    image: ghcr.io/pooneyy/port-forward:1.3.7-server
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    network_mode: host
+    volumes:
+      - "./data/data:/app/pfg/forward-server/data"
+      - "./data/conf:/app/pfg/forward-server/conf"
+    cap_add:
+      - NET_ADMIN
+    labels:  
+      createdBy: "Apps" 

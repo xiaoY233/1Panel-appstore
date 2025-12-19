@@ -1,0 +1,358 @@
+additionalProperties:
+  formFields:
+    - child:
+        default: ""
+        envKey: PANEL_DB_HOST
+        required: true
+        type: service
+      default: postgresql
+      edit: true
+      envKey: PANEL_DB_TYPE
+      labelZh: 数据库 服务 (前置检查)
+      labelEn: Database Service (Pre-check)
+      label:
+        en: Database Service (Pre-check)
+        zh: 数据库 服务 (前置检查)
+      required: true
+      type: apps
+      values:
+        - label: PostgreSQL
+          value: postgresql
+        - label: MySQL
+          value: mysql
+        - label: MariaDB
+          value: mariadb
+        - label: Percona
+          value: percona
+    - default: "./data"
+      edit: true
+      envKey: GITEA_ROOT_PATH
+      labelZh: 数据持久化路径
+      labelEn: Data persistence path
+      label:
+        en: Data persistence path
+        zh: 数据持久化路径
+      required: true
+      type: text
+    - default: 3000
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: WebUI 端口
+      labelEn: WebUI port
+      label:
+        en: WebUI port
+        zh: WebUI 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 22
+      envKey: PANEL_APP_PORT_SSH
+      labelZh: SSH 端口
+      labelEn: SSH Port
+      label:
+        en: SSH Port
+        zh: SSH 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: postgresql
+      edit: true
+      envKey: DB_TYPE
+      labelZh: 数据库 类型
+      labelEn: Database Type
+      label:
+        en: Database Type
+        zh: 数据库 类型
+      required: true
+      type: select
+      values:
+        - label: PostgreSQL
+          value: postgresql
+        - label: MySQL (MariaDB, Percona)
+          value: mysql
+        - label: SQLite3 (忽略数据库配置)
+          value: sqlite3
+    - default: "127.0.0.1"
+      edit: true
+      envKey: DB_HOSTNAME
+      labelZh: 数据库 主机地址
+      labelEn: Database Host
+      label:
+        en: Database Host
+        zh: 数据库 主机地址
+      required: false
+      type: text
+    - default: 5432
+      edit: true
+      envKey: DB_PORT
+      labelZh: 数据库 端口
+      labelEn: Database Port
+      label:
+        en: Database Port
+        zh: 数据库 端口
+      required: false
+      rule: paramPort
+      type: number
+    - default: "gitea"
+      edit: true
+      envKey: DB_USER
+      labelZh: 数据库 用户名
+      labelEn: Database User
+      label:
+        en: Database User
+        zh: 数据库 用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: DB_PASSWD
+      labelEn: Database Password
+      labelZh: 数据库 密码
+      label:
+        en: Database Password
+        zh: 数据库 密码
+      random: true
+      required: false
+      rule: paramComplexity
+      type: password
+    - default: "gitea"
+      edit: true
+      envKey: DB_NAME
+      labelZh: 数据库 名称
+      labelEn: Database Name
+      label:
+        en: Database Name
+        zh: 数据库 名称
+      required: false
+      type: text
+    - default: "Gitea"
+      edit: true
+      envKey: APP_NAME
+      labelZh: 应用名称
+      labelEn: Application Name
+      label:
+        en: Application Name
+        zh: 应用名称
+      required: true
+      type: text
+    - default: "localhost"
+      edit: true
+      envKey: DOMAIN
+      labelZh: HTTP 克隆域名
+      labelEn: HTTP Clone Domain
+      label:
+        en: HTTP Clone Domain
+        zh: HTTP 克隆域名
+      required: true
+      type: text
+    - default: "localhost"
+      edit: true
+      envKey: SSH_DOMAIN
+      labelZh: SSH 克隆域名
+      labelEn: SSH Clone Domain
+      label:
+        en: SSH Clone Domain
+        zh: SSH 克隆域名
+      required: true
+      type: text
+    - default: 22
+      edit: true
+      envKey: SSH_PORT
+      labelZh: SSH 克隆显示端口
+      labelEn: SSH Clone Display Port
+      label:
+        en: SSH Clone Display Port
+        zh: SSH 克隆显示端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: ROOT_URL
+      labelZh: 公共 URL (覆盖级)
+      labelEn: Public URL (Override)
+      label:
+        en: Public URL (Override)
+        zh: 公共 URL (覆盖级)
+      required: false
+      rule: paramExtUrl
+      type: text
+    - default: "false"
+      edit: true
+      envKey: LFS_START_SERVER
+      labelZh: 启用 Git LFS 支持
+      labelEn: Enable Git LFS Support
+      label:
+        en: Enable Git LFS Support
+        zh: 启用 Git LFS 支持
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: DISABLE_REGISTRATION
+      labelZh: 禁用注册
+      labelEn: Disable Registration
+      label:
+        en: Disable Registration
+        zh: 禁用注册
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: REQUIRE_SIGNIN_VIEW
+      labelZh: 强制登录
+      labelEn: Require Signin
+      label:
+        en: Require Signin
+        zh: 强制登录
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+    - default: "false"
+      edit: true
+      envKey: INSTALL_LOCK
+      labelZh: 禁止访问安装页面
+      labelEn: Disable Access to Install Page
+      label:
+        en: Disable Access to Install Page
+        zh: 禁止访问安装页面
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: SECRET_KEY
+      labelZh: 全局加密密钥
+      labelEn: Global Secret Key
+      label:
+        en: Global Secret Key
+        zh: 全局加密密钥
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: PROXY_ENABLED
+      labelZh: 启用代理 (全局 + Webhook)
+      labelEn: Enable Proxy (Global + Webhook)
+      label:
+        en: Enable Proxy (Global + Webhook)
+        zh: 启用代理 (全局 + Webhook)
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: PROXY_URL
+      labelZh: 代理服务器地址 (全局 + Webhook)
+      labelEn: Proxy Server URL (Global + Webhook)
+      label:
+        en: Proxy Server URL (Global + Webhook)
+        zh: 代理服务器地址 (全局 + Webhook)
+      required: false
+      type: text
+    - default: "**"
+      edit: true
+      envKey: PROXY_HOSTS
+      labelZh: 代理网址 (全局 + Webhook)
+      labelEn: Proxy Hosts (Global + Webhook)
+      label:
+        en: Proxy Hosts (Global + Webhook)
+        zh: 代理网址 (全局 + Webhook)
+      required: false
+      type: text
+    - default: "false"
+      edit: true
+      envKey: MAILER_ENABLED
+      labelZh: 启用邮件服务
+      labelEn: Enable Mailer Service
+      label:
+        en: Enable Mailer Service
+        zh: 启用邮件服务
+      required: true
+      type: select
+      values:
+        - label: 开启
+          value: "true"
+        - label: 关闭
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: MAILER_SMTP_ADDR
+      labelZh: 邮件服务器地址
+      labelEn: Mailer Server Address
+      label:
+        en: Mailer Server Address
+        zh: 邮件服务器地址
+      required: false
+      type: text
+    - default: 465
+      edit: true
+      envKey: MAILER_SMTP_PORT
+      labelZh: 邮件服务器端口
+      labelEn: Mailer Server Port
+      label:
+        en: Mailer Server Port
+        zh: 邮件服务器端口
+      required: false
+      type: number
+    - default: ""
+      edit: true
+      envKey: MAILER_USER
+      labelZh: 邮件服务用户名
+      labelEn: Mailer Username
+      label:
+        en: Mailer Username
+        zh: 邮件服务用户名
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: MAILER_PASSWD
+      labelZh: 邮件服务密码
+      labelEn: Mailer Password
+      label:
+        en: Mailer Password
+        zh: 邮件服务密码
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: MAILER_FROM
+      labelZh: 邮件服务发件人
+      labelEn: Mailer From
+      label:
+        en: Mailer From
+        zh: 邮件服务发件人
+      required: false
+      type: text
+    - default: "[Gitea]"
+      edit: true
+      envKey: MAILER_SUBJECT_PREFIX
+      labelZh: 邮件服务主题前缀
+      labelEn: Mailer Subject Prefix
+      label:
+        en: Mailer Subject Prefix
+        zh: 邮件服务主题前缀
+      required: false
+      type: text

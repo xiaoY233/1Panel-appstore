@@ -3,12 +3,13 @@ services:
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
-      - "${PANEL_APP_PORT_HTTP}:9000"
-      - "${PRIVATE_HTTP_LISTEN}:9001"
+      - ${PANEL_APP_PORT_HTTP}:9000
+      - ${PRIVATE_HTTP_LISTEN}:9001
     volumes:
-      - ${DATA_PATH}/storage:/better-sync/storage/
-      - ${DATA_PATH}/config:/better-sync/config/
-    image: haierkeys/obsidian-better-sync-service:latest
+      - ${DATA_PATH}/storage:/fast-note-sync/storage
+      - ${DATA_PATH}/config:/fast-note-sync/config
+    image: haierkeys/fast-note-sync-service:latest
+    pull_policy: always
     labels:
       createdBy: "Apps"
     networks:

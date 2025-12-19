@@ -1,0 +1,20 @@
+services:
+  better-sync:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:9000
+      - ${PRIVATE_HTTP_LISTEN}:9001
+    volumes:
+      - ${DATA_PATH}/storage:/fast-note-sync/storage
+      - ${DATA_PATH}/config:/fast-note-sync/config
+    image: haierkeys/fast-note-sync-service:0.11.5
+    labels:
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true
+
