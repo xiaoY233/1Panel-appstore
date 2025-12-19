@@ -1,6 +1,6 @@
 services:
   lobe:
-    image: lobehub/lobe-chat-database:1.128.7
+    image: lobehub/lobe-chat-database:1.143.2
     container_name: lobe-chat
     network_mode: 'service:network-service'
     depends_on:
@@ -35,6 +35,7 @@ services:
 
   network-service:
     image: alpine
+    pull_policy: always
     container_name: lobe-network
     restart: always
     ports:
@@ -48,6 +49,7 @@ services:
 
   postgresql:
     image: pgvector/pgvector:pg17
+    pull_policy: always
     container_name: lobe-postgres
     ports:
       - '5432:5432'
@@ -80,7 +82,7 @@ services:
     entrypoint: ["sh", "/entrypoint.sh"]
 
   casdoor:
-    image: casbin/casdoor:v2.72.0
+    image: casbin/casdoor:2.196.1
     container_name: lobe-casdoor
     entrypoint: /bin/sh -c './server --createDatabase=true'
     network_mode: 'service:network-service'
