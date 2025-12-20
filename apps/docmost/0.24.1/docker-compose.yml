@@ -9,7 +9,7 @@ services:
     environment:
       APP_URL: "http://localhost:3000"
       APP_SECRET: "52f235dee223c92a83a934ada13b83075c9855fe966b3cbf9dd86810e2b742ee"
-      DATABASE_URL: "postgresql://docmost:${PANEL_DB_USER_PASSWORD}@db:5432/docmost?schema=public"
+      DATABASE_URL: "postgresql://username:password@db:5432/docmost?schema=public"
       REDIS_URL: "redis://redis:6379"
     image: docmost/docmost:0.24.1
     labels:  
