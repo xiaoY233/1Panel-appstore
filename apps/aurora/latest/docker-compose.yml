@@ -10,7 +10,7 @@ services:
       - ${DATA_PATH}/aurora:/app/ansible/priv_data_dirs
     environment:
       TZ: 'Asia/Shanghai'
-      DATABASE_URL: postgresql://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@postgres:5432/${PANEL_DB_NAME}
+      DATABASE_URL: postgresql://username:password@postgres:5432/${PANEL_DB_NAME}
       ASYNC_DATABASE_URL: "postgresql+asyncpg://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@postgres:5432/${PANEL_DB_NAME}"
       TRAFFIC_INTERVAL_SECONDS: 600
       DDNS_INTERVAL_SECONDS: 120
@@ -32,7 +32,7 @@ services:
     environment:
       TZ: 'Asia/Shanghai'
       PYTHONPATH: .
-      DATABASE_URL: postgresql://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@postgres:5432/${PANEL_DB_NAME}
+      DATABASE_URL: postgresql://username:password@postgres:5432/${PANEL_DB_NAME}
       ASYNC_DATABASE_URL: "postgresql+asyncpg://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@postgres:5432/${PANEL_DB_NAME}"
       SECREY_KEY: ${SECRECY_KEY}
     image: leishi1313/aurora-admin-backend:latest
