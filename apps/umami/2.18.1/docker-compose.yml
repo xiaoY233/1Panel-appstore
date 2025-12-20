@@ -17,4 +17,4 @@ services:
       - DISABLE_TELEMETRY = 1
       - REMOVE_TRAILING_SLASH = 1
       - DATABASE_TYPE=postgresql
-      - DATABASE_URL=postgresql://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOSTNAME}:${DB_PORT}/${DB_DATABASE_NAME}
+      - DATABASE_URL=postgresql://username:password@${DB_HOSTNAME}:${DB_PORT}/${DB_DATABASE_NAME}
