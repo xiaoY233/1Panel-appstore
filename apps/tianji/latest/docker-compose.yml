@@ -9,7 +9,7 @@ services:
     ports:
       - ${PANEL_APP_PORT_HTTP}:12345
     environment:
-      - DATABASE_URL=postgresql://${PANEL_DB_USER}:${PANEL_DB_USER_PASSWORD}@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}
+      - DATABASE_URL=postgresql://username:password@${PANEL_DB_HOST}:${PANEL_DB_PORT}/${PANEL_DB_NAME}
       - JWT_SECRET=${JWT_SECRET}
       - ALLOW_REGISTER=${ALLOW_REGISTER}
       - ALLOW_OPENAPI=${ALLOW_OPENAPI}
